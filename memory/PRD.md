@@ -191,3 +191,33 @@ no restrictions softened.
 - **Status:** COMPLETE — Contents page renders cleanly, page numbers are
   correct, all 26 TOC links navigate to the right pages in the PDF, no red
   body text remains, tracked-change history is intact.
+
+---
+## Update (round 7) — Final TMHCC wording update + comparison/gap/summary refresh
+- **Input:** user-uploaded CURRENT FINAL wording `TMHCC_Media_Combined_0526_FINAL_polished.docx`
+  (saved /app/work/r7/source_uploaded.docx). Supporting docs + 5 competitor wordings reused from
+  prior rounds (/app/work/compare/txt + out). Gap numbering verified from build_gap.py priority sort:
+  **Gap 2 = Worldwide/US-Canada Media Liability (S12); Gap 8 = ICOW/Book Debts (S3); Gap 10 = Computer/IT breakdown (S1/S2)**.
+- **Document handling:** uploaded doc had only 1 residual w:rPrChange (no ins/del). Accepted → clean
+  baseline; applied NEW edits as fresh tracked changes (author "TMHCC Wording Review"): 9 ins / 2 del.
+  Produced TrackedChanges.docx + Clean.docx. Engine: /app/work/r7/build_wording.py (lxml ins/del/accept-all).
+- **Wording edits (tracked):**
+  * T1 — Admission of Liability [para 507]: blanket condition-precedent REPLACED with ordinary condition + prejudice qualifier.
+  * T1 audit — Sections 1–11 claims-notification is NOT a CP ("will notify… as soon as practicable"); police/security/storage/risk-improvement + section-level (S12/13/14/15) CPs retained.
+  * T2 — new "Proof of Ownership and Value" claims condition added to Policy Claims Conditions (S1–11), between Notification to the Police and Terms of Settlement.
+  * T4 (Gap 8) — already met; "Accounts Receivable" re-labelled "(Book Debts)" in S3 Definitions + Basis of Settlement (ICOW/AICOW already named).
+  * T11 — Section 15 standardised to "CyberGuard™ (Cyber Liability)" (body heading + contents; SoC too).
+- **No-edit / sign-off:** Gap 2 (S12) — worldwide-ex-US/Canada by default today; clean Schedule-selectable
+  worldwide + USA/Canada option drafted into the S12 SIGN-OFF list only (Task 7), NOT in wording. Gap 10 —
+  S1 IT-Property Breakdown ≡ Yutree Computer Breakdown; S2 M&E Breakdown optional ext ≡ Yutree general M&E;
+  no change (flagged: brief assumed IT-breakdown "in S2" but it's in S1+S3; narrowing S2 = removing cover).
+- **Supporting docs updated (brand2.py / docx_brand.py builders + new r7data.py):**
+  * Gap-Fill (build_gap.py + r7data.py): Round-7 status section, copy-paste wording for every rec (Task 9),
+    market-leading opportunities rewritten (standalone + reputation; NO Personal Accident; Personal Assault distinction), Section 12 sign-off list (Task 7).
+  * Full Comparison (build_full.py + r7data.py): deepened evidenced-strengths section — 6 areas with our clause/page + competitor benchmark + UNCONFIRMED labels (Task 8).
+  * Summary of Cover (build_soc.py): claims obligations corrected (admission = ordinary condition; S1–11 notification not a CP), Proof of Ownership added, Book Debts, CyberGuard™ (Cyber Liability), worldwide-ex-US/Canada note; no Personal Accident.
+  * QA/Change Report: new build_qa_r7.py — files, doc-handling, change log, CP audit, Gap 2/8/10, sign-off list, checklist, Reviewer Notes.
+- **Deliverables (/app/deliverables, docx + LibreOffice PDF):** TrackedChanges, Clean, Coverage_Comparison_FULL,
+  GapFill_Enhancement_Strategy, Summary_of_Cover_FINAL, QA_Report. Tracked changes verified to render
+  (strikethrough/underline) in PDF (page 17 Admission; 18 Proof of Ownership; 2 contents S15; 37–38 Book Debts).
+- **Status:** COMPLETE. All Section 12 items + PA + Section-2 breakdown narrowing held for legal/UW sign-off.

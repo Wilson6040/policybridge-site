@@ -8,6 +8,7 @@ from docx.oxml import OxmlElement
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 import brand2 as b
 import cmpdata as d
+import r7data as r7
 
 PRIO = {
     "High":        ("FBE6EA", "A4233B"),
@@ -38,21 +39,43 @@ def attr_table(doc, pairs, label_w=4.2, val_w=13.2):
     return t
 
 
-def rec_card(doc, rec, idx):
-    b.h2(doc, f"{idx}.  {rec['title']}")
+STATUS_COLOR = {
+    "Implemented now (tracked change)": ("E3F1E6", "2E7D44"),
+    "Already covered \u2014 no wording change": ("E3F1E6", "2E7D44"),
+    "Parked \u2014 Section 12 sign-off list": ("FBF1DA", "8A6A1E"),
+    "Parked \u2014 for consideration": ("EEF1F3", "5B6166"),
+    "Parked \u2014 NOT being added": ("FBE6EA", "A4233B"),
+    "No change \u2014 deliberate restriction": ("EEF1F3", "5B6166"),
+}
+
+
+def rec_card(doc, rec, idx, gi=None):
+    b.h2(doc, f"Gap {idx}.  {rec['title']}")
     prio_chip(doc, rec['priority'])
-    attr_table(doc, [
+    extra = r7.GAP_R7.get(gi, {}) if gi is not None else {}
+    if extra.get('status'):
+        bg, fg = STATUS_COLOR.get(extra['status'], ("EEF1F3", "5B6166"))
+        p = doc.paragraphs[-1]
+        rr = p.add_run("    [ Round 7: " + extra['status'] + " ]")
+        b._set_run(rr, size=9, bold=True, color=fg)
+    pairs = [
         ("Competitor(s)", rec['comp']),
         ("What the competitor does", rec['does']),
         ("Current TMHCC position", rec['tmhcc']),
         ("Gap / opportunity", rec['gap']),
-        ("Proposed TMHCC action", rec['action']),
+        ("Recommended action", rec['action']),
+        ("Exact policy location", extra.get('loc', "See action above.")),
+        ("Copy-paste-ready wording", extra.get('wording', "\u2014")),
+        ("Priority", rec['priority']),
+        ("Underwriting impact", extra.get('uw', rec['uw'])),
+        ("Legal sign-off required", extra.get('signoff', "See review note")),
+        ("Implemented now or parked", extra.get('impl', "\u2014")),
         ("Commercial benefit", rec['commercial']),
-        ("Broker / client benefit", rec['broker']),
-        ("Underwriting risk", rec['uw']),
-        ("Claims risk", rec['claims']),
         ("Legal / underwriting review", rec['legal']),
-    ])
+    ]
+    attr_table(doc, pairs)
+    if extra.get('final'):
+        b.callout(doc, "Final position:", extra['final'])
 
 
 def build():
@@ -88,6 +111,30 @@ def build():
     b.bullet(doc, "Add a Distributors & Purchasers extension and journalistic source-protection costs to Media Liability (both Tysers).", bold_lead="3.  ")
     b.bullet(doc, "Clarify where criminal / regulatory defence costs live (S12 vs S13/S14) \u2014 a near nil-cost fix that removes an apparent gap.", bold_lead="4.  ")
     b.callout(doc, "Discipline retained:", "TMHCC should KEEP its more restrictive positions on patents, communicable disease and default US/Canada jurisdiction. These are deliberate, defensible underwriting choices, not gaps \u2014 the worldwide/US-Canada exposure is best offered as a rated option rather than given away.")
+
+    # ---- ROUND 7 IMPLEMENTATION STATUS ----
+    doc.add_page_break()
+    b.h1(doc, "Round 7 \u2014 implementation status (final wording)")
+    b.para(doc, "This edition aligns the strategy with the FINAL updated TMHCC wording. The following amendments were applied to the wording as fresh tracked changes (from a clean accepted baseline); Section 12 items are held for sign-off and are NOT in the wording.", align='just')
+    t = b.make_table(doc, ["Item", "Final wording position", "Status", "Sign-off"], [5.2, 8.2, 3.4, 2.0])
+    rows = [
+      ("Admission-of-Liability claims condition", "Blanket 'condition precedent' replaced with an ordinary condition + prejudice qualifier (Policy Claims Conditions, Sections 1\u201311).", "Implemented (tracked)", "No"),
+      ("Proof of Ownership & Value", "New headed claims condition added to Policy Claims Conditions (Sections 1\u201311) \u2014 item-level evidence for theft/loss of high-value & agreed-value items.", "Implemented (tracked)", "No"),
+      ("Gap 8 \u2014 ICOW / Book Debts (S3)", "ICOW & AICOW already named; 'Accounts Receivable' head re-labelled '(Book Debts)'.", "Implemented (tracked)", "No"),
+      ("Gap 10 \u2014 Computer/IT Breakdown", "Confirmed already covered \u2014 S1 IT-Property Breakdown (\u2261 Yutree Computer Breakdown) + S2 M&E Breakdown optional ext (\u2261 Yutree general). No change.", "Confirmed \u2014 no change", "No"),
+      ("Section 15 title", "Standardised to 'CyberGuard\u2122 (Cyber Liability)' in body heading and contents.", "Implemented (tracked)", "Confirm label"),
+      ("Gap 2 \u2014 Worldwide Media Liability", "Worldwide-ex-US/Canada by default today; clean Schedule-selectable worldwide + USA/Canada option drafted.", "Held \u2014 S12 sign-off", "Yes"),
+      ("Section 12 enhancements (7)", "Distributors & purchasers, criminal/regulatory defence, source-protection, representation costs, asbestos/pollution write-back, KC clause, Media Material definition.", "Held \u2014 S12 sign-off", "Yes"),
+    ]
+    for r in rows:
+        c = t.add_row().cells
+        b.text_cell(c[0], r[0], size=8.2, bold=True, color=b.TEAL)
+        b.text_cell(c[1], r[1], size=8.0)
+        sb = ("E3F1E6","2E7D44") if "Implemented" in r[2] or "Confirmed" in r[2] else ("FBF1DA","8A6A1E")
+        b.text_cell(c[2], r[2], size=8.0, bold=True, color=sb[1], bg=sb[0], align='center')
+        b.text_cell(c[3], r[3], size=8.0, align='center')
+    b.zebra(t)
+    b.callout(doc, "How to read the cards:", "Each recommendation card below now carries the exact policy location, copy-paste-ready wording, priority, underwriting impact, legal sign-off (Yes/No) and whether it is implemented now or parked \u2014 so the wording can be updated easily later.")
 
     # ---- STRATEGIC OBJECTIVE ----
     doc.add_page_break()
@@ -128,7 +175,7 @@ def build():
     b.h1(doc, "Coverage gaps to consider filling", num="4")
     b.para(doc, "Detailed recommendation cards, in priority order.")
     for n, i in enumerate(order, start=1):
-        rec_card(doc, d.GAPFILL[i], n)
+        rec_card(doc, d.GAPFILL[i], n, gi=i)
 
     # ---- 5. EXCLUSION WRITE-BACKS ----
     doc.add_page_break()
@@ -183,7 +230,9 @@ def build():
     b.bullet(doc, "Adopt a King\u2019s Counsel dispute-resolution clause in S12 (as Yutree) to give clients certainty on defence/settlement disputes \u2014 procedural, low risk.", bold_lead="Adopt:  ")
     b.bullet(doc, "Add an express cross-reference in S12 confirming that statutory / criminal-defence cover is provided under S13 (Legal Expenses) and S14 (Management Liability).", bold_lead="Clarify:  ")
     b.bullet(doc, "Add a signpost in S1/S2 confirming computer / IT breakdown is included (Yutree shows a named Computer Breakdown section).", bold_lead="Clarify:  ")
-    b.bullet(doc, "RETAIN claim-notification as an express condition precedent \u2014 this is more protective than the competitors and should not be softened.", bold_lead="Retain:  ")
+    b.bullet(doc, "Round 7 \u2014 the blanket Admission-of-Liability CONDITION PRECEDENT has been replaced with an ordinary condition + prejudice qualifier (aligns with the competitor market). The Sections 1\u201311 claims-notification clause is NOT a condition precedent (it reads 'will notify\u2026 as soon as practicable') and was left as-is.", bold_lead="Done:  ")
+    b.bullet(doc, "RETAIN the section-level claims-notification CPs (S12/S13/S14/S15), the police/theft-reporting CP, the unattended-vehicle / premises-security CPs, the rushes/originals/negatives storage CPs and the risk-improvement/maintenance CPs \u2014 these are normal and protective.", bold_lead="Retain:  ")
+    b.bullet(doc, "Round 7 \u2014 a new 'Proof of Ownership and Value' claims condition was added (item-level, reasonable, not a blanket forfeiture or condition precedent).", bold_lead="Done:  ")
     b.bullet(doc, "RETAIN the detailed S12 computer-security conditions \u2014 strong risk control; ensure they are workable for SME media clients.", bold_lead="Retain:  ")
 
     # ---- 8. LIMITS / SUB-LIMITS ----
@@ -214,16 +263,43 @@ def build():
     # ---- 9. MARKET-LEADING OPPORTUNITIES ----
     doc.add_page_break()
     b.h1(doc, "Market-leading wording opportunities", num="9")
-    b.para(doc, "Implemented together, the high-priority items let TMHCC claim a genuine, evidence-based market-leading position:")
-    for s in [
-        "\u2018The only media & entertainment wording with all fifteen sections \u2014 now including a Personal Accident & Business Travel option.\u2019",
-        "\u2018Worldwide media-liability cover available, including a rated US/Canada extension.\u2019",
-        "\u2018Distribution chain protected \u2014 distributors & purchasers extension.\u2019",
-        "\u2018Standalone cyber, legal expenses and management liability built in \u2014 not bolt-ons.\u2019",
-        "\u2018Reputation management, withdrawal-of-content and data-protection defence as standard in media liability.\u2019",
-    ]:
+    b.para(doc, "Evidence-based positioning supported by the comparison and the source wordings. Personal Accident is NOT included (see distinction below).", align='just')
+
+    for key in ("standalone", "reputation"):
+        m = r7.MARKETLEADING_R7[key]
+        b.h3(doc, m['title'])
+        attr_table(doc, [
+            ("Current TMHCC position", m['tmhcc']),
+            ("Competitor support", m['comp']),
+            ("Clause / location", m['cite']),
+            ("Recommended action / wording", m['rec']),
+            ("Underwriting risk", m['uw']),
+            ("Legal sign-off required", m['signoff']),
+        ])
+
+    dis = r7.MARKETLEADING_R7['distinction']
+    b.callout(doc, "Personal Accident vs Personal Assault \u2014 explicit distinction:",
+              dis['pa'] + "  " + dis['assault'])
+
+    b.h3(doc, "Positioning statements (subject to sign-off)")
+    for s in r7.MARKETLEADING_R7['positioning']:
         b.bullet(doc, s)
-    b.callout(doc, "Positioning:", "TMHCC can credibly market the wording as broader, clearer and more complete than all five competitor wordings reviewed (Tysers, Yutree, Liberty, Allianz and AXA XL) \u2014 subject to legal/underwriting sign-off.")
+    b.callout(doc, "Positioning:", "Where competitor wordings are attached (Tysers, Yutree, Liberty, Allianz, AXA XL), these statements are evidenced by the comparison. Any statement that depends on a competitor wording NOT in file is labelled UNCONFIRMED in the Full Coverage Comparison.")
+
+    # ---- 9b. SECTION 12 \u2014 SUGGESTED UPGRADES (FOR SIGN-OFF) ----
+    doc.add_page_break()
+    b.h1(doc, "Section 12 (Media Liability) \u2014 Suggested Upgrades (for sign-off)")
+    b.para(doc, "These are NOT applied to the wording \u2014 not even as tracked changes. Each is presented as a suggested upgrade requiring TMHCC legal/underwriting sign-off. None is final.", align='just')
+    for u in r7.SECTION12_UPGRADES:
+        b.h3(doc, u['title'])
+        attr_table(doc, [
+            ("Amendment type", u['atype']),
+            ("Exact location for insertion", u['loc']),
+            ("Copy-paste-ready upgrade wording", u['wording']),
+            ("Rationale & competitor support", u['rationale']),
+            ("Sign-off note", u['signoff'] + "  \u2014  REQUIRED before adoption; do not treat as final."),
+        ])
+    b.callout(doc, "Section 12 control:", "All Section 12 Media Liability amendments require legal/underwriting sign-off and are held here only. They do not appear in the tracked-changes wording or the clean final wording.")
 
     # ---- 10. UNDERWRITING RISK ASSESSMENT ----
     doc.add_page_break()

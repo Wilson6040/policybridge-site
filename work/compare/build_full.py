@@ -5,6 +5,7 @@ from docx import Document
 from docx.shared import Cm, Pt
 import brand2 as b
 import cmpdata as d
+import r7data as r7
 
 VERDICT_LABEL = {
     "tmhcc": ("TMHCC stronger", b.TEAL),
@@ -137,7 +138,28 @@ def build():
         b.text_cell(cells[1], why, size=8.6)
     b.zebra(t)
 
-    # ---------------- 8. AREAS WHERE COMPETITORS ARE BROADER ----------------
+    # ---------------- 6b. TMHCC STRENGTHS — EVIDENCED (IN DEPTH) ----------------
+    doc.add_page_break()
+    b.h1(doc, "TMHCC strengths \u2014 evidenced against the final wording")
+    b.para(doc, "Each strength below is (a) confirmed by citing the TMHCC clause and contents page, and (b) benchmarked against the named competitors. Where a competitor matches or beats us, it is stated. Competitor points that cannot be confirmed from an attached wording are labelled UNCONFIRMED.", align='just')
+    for s in r7.COMPARISON_STRENGTHS_R7:
+        b.h3(doc, s['area'])
+        t2 = b.make_table(doc, ["", ""], [4.6, 21.4])
+        for k, v in [
+            ("TMHCC position", s['ours']),
+            ("Our clause / page", s['cite']),
+            ("Competitor benchmark", s['comp']),
+            ("Verdict", s['verdict']),
+            ("Confirmation status", s['flag']),
+        ]:
+            c = t2.add_row().cells
+            b.text_cell(c[0], k, size=8.3, bold=True, color=b.TEAL, bg="EAF1F5")
+            col = "A4233B" if (k == "Confirmation status" and "UNCONFIRMED" in v) else b.INK
+            b.text_cell(c[1], v, size=8.4, color=col)
+        # drop the empty header row
+        t2.rows[0]._tr.getparent().remove(t2.rows[0]._tr)
+        b.spacer(doc, 6)
+    b.callout(doc, "Discipline:", "TMHCC is not forced to win rows the wording does not support. The Section 2 worldwide and floating-contents positions are confirmed in the TMHCC wording; the competitor day-limits and location-basis points are marked UNCONFIRMED until the live competitor wordings are re-checked clause-by-clause.")
     doc.add_page_break()
     b.h1(doc, "Areas where competitors are broader", num="7")
     b.para(doc, "Stated objectively \u2014 where a competitor genuinely provides broader, clearer or materially useful cover. Each item is carried into the separate Gap-Fill / Wording Enhancement Strategy.")

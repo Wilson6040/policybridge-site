@@ -55,7 +55,7 @@ add_table(
         ["12  Media Liability", "Defamation, IP, privacy & media liability", "Claims-made"],
         ["13  Commercial Legal Expenses", "Legal costs for insured events (ARAG)", "Claims-made"],
         ["14  Management Liability", "Directors\u2019, officers\u2019 & corporate liability", "Claims-made"],
-        ["15  CyberGuard\u2122 Cyber Liability", "First & third-party cyber cover", "Claims-made/Discovered"],
+        ["15  CyberGuard\u2122 (Cyber Liability)", "First & third-party cyber cover", "Claims-made/Discovered"],
     ],
     widths=[2400, 5400, 1900],
 )
@@ -144,6 +144,8 @@ section(
     "interruption of the Business by an insured Incident (i.e. damage covered under the property "
     "Sections).",
     [
+        "Increase in Cost of Working (ICOW) and Additional Increase in Cost of Working (AICOW) \u2013 named settlement heads",
+        "Accounts Receivable (Book Debts); Increase in Cost of Working (Computers)",
         "Denial of Access; Customers and Suppliers; Public Utilities",
         "Specified Illness and Miscellaneous Contingencies",
         "Alternative Trading; Automatic Reinstatement; Payments on Account",
@@ -440,10 +442,17 @@ for e in [
 # ---------- Conditions & claims obligations ----------
 add_h1(doc, "KEY CONDITIONS AND CLAIMS OBLIGATIONS")
 for c in [
-    "Notification of a claim is a Condition Precedent to liability \u2013 the Insured must notify as soon "
-    "as practicable (Sections 1\u201311).",
+    "Notification of a claim (Sections 1\u201311): the Insured must notify the Insurer as soon as practicable. "
+    "This is an obligation \u2013 it is NOT, in the final wording, a blanket condition precedent for Sections 1\u201311.",
     "Notification to the Police following theft, attempted theft or malicious damage is a Condition Precedent.",
-    "No admission of liability, offer, settlement or payment may be made without the insurer\u2019s written consent.",
+    "Admission of Liability: the Insured must not make any admission of liability, promise, payment, "
+    "compensation, offer, negotiation or settlement of a claim without the Insurer\u2019s written consent. In the "
+    "final wording this is an ordinary condition (not a condition precedent): the Insurer may only rely on a "
+    "breach to the extent its position has been prejudiced by the breach.",
+    "Proof of Ownership and Value: following theft or loss, the Insurer may request reasonable evidence of "
+    "ownership and value for any high value item or any item insured on an Agreed Value basis (e.g. invoices, "
+    "valuations, photographs, serial numbers). An affected item\u2019s claim may not be paid where the Insured fails "
+    "to provide the evidence reasonably requested (item-level \u2013 not a blanket forfeiture).",
     "The Insured must take reasonable steps to mitigate loss and to maintain protections/security.",
     "Property Sections are subject to Protection & Maintenance conditions (fire protection, minimum "
     "security, intruder alarm and unoccupancy) \u2013 several are conditions precedent.",
@@ -523,6 +532,10 @@ for n in [
     "Only the Sections shown as operative in the Schedule are in force.",
     "Several Sections are written on a claims-made basis \u2013 timely notification is essential and is a "
     "condition precedent in many cases.",
+    "This summary reflects the FINAL wording. Section 12 (Media Liability) enhancements under consideration "
+    "(e.g. a Schedule-selectable worldwide / USA-Canada option) are NOT yet part of cover and require legal/"
+    "underwriting sign-off; the current Section 12 position (worldwide excluding USA/Canada unless the Schedule "
+    "states otherwise) applies.",
     "Check sums insured and limits carefully \u2013 the policy is subject to Average (underinsurance).",
     "This is a non-consumer commercial contract and is not suitable for consumers.",
 ]:
