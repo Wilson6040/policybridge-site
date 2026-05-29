@@ -82,3 +82,42 @@ no restrictions softened.
 - Download/export guidance given: "Save to GitHub" to export the whole project, or download via the app.
   Emergent has no built-in email delivery (would need SendGrid/SES).
 - Deliverables (docx+pdf) in /app/deliverables and /app/backend/deliverables.
+
+---
+## Update (round 4) — Competitor coverage comparison + TMHCC gap-fill strategy
+- **New brief:** benchmark the TMHCC Media & Music Combined (0526) MASTER wording against four
+  competitor wordings and produce two separate branded documents + a QA report (fifth competitor
+  pending — carried as a reserved "Wording E" placeholder column throughout).
+- **Wordings parsed (full text via pdftotext / python-docx):**
+  TMHCC (15 sections, master) · Tysers "Focus" Media (capacity Zurich, 9 sections) ·
+  Yutree Media & Entertainment (capacity AXA, 12 sections) · Liberty Entertainment Combined (6
+  sections) · Allianz Entertainment "Complete" (8 sections).
+- **Key findings (grounded):** TMHCC is the broadest — only wording with all 15 sections and the
+  ONLY one with Loss of Licence (S10), Legal Expenses (S13), Management Liability (S14) and a genuine
+  standalone Cyber section (S15 CyberGuard). Liberty & Allianz are property/BI/liability packages with
+  NO media/PI/cyber/legal/mgmt cover. Competitor advantages sit in shared sections: Tysers PI is
+  worldwide + covers patents + statutory defence (GBP 1m) + distributors-&-purchasers + source
+  protection; Tysers & Yutree offer Personal Accident (TMHCC has none); Yutree has reputation-mgmt/
+  withdrawal/criminal-defence + a KC clause; Allianz splits ICOW/Book Debts. TMHCC clearer on
+  data-protection defence and on dis-applying its cyber/date exclusion to the liability sections.
+- **Design source = supplied "Coverage Comparison" template (.doc):** Tokio Marine HCC logo
+  (image1.png), Lato font, palette teal #00648B / gold #B88A3C / rust #C0563F, legend
+  (✓ / ◐ / ✗ / ?), 7-col matrix (Section | TMHCC | Wording A–E). Replicated in python-docx.
+- **Deliverables (docx + PDF) in /app/deliverables and /app/backend/deliverables:**
+  - TMHCC_Media_Coverage_Comparison_FULL (24pp, landscape): cover, exec summary, methodology,
+    at-a-glance matrix (15 sections + PA), Media-Liability/PI feature matrix, competitor-by-competitor,
+    TMHCC strengths, areas competitors broader, exclusions (general + PI), conditions/claims, limits/
+    sub-limits, legal/UW review notes, clause-mapping appendix.
+  - TMHCC_Media_GapFill_Enhancement_Strategy (16pp, portrait): exec summary, strategic objective,
+    priority summary, 12 recommendation cards, exclusion write-backs, definitions, conditions, limits,
+    market-leading opportunities, UW risk assessment, implementation roadmap, sign-off notes.
+  - TMHCC_Media_Comparison_QA_Methodology (6pp): docs reviewed, method, strengths/gaps, recommended
+    enhancements, exclusion issues, assumptions, sign-off points, final 10-point report.
+- **In-app Document Centre extended:** backend DOCUMENTS gains 3 entries (ids comparison_full /
+  comparison_gapfill / comparison_qa) with a "group" field; frontend groups cards into
+  "Media & Entertainment — market comparison" and "Media & Music Combined wording (0526)".
+  Backend verified by testing agent (32/32 pass). Frontend grouping verified by screenshot.
+- **Build tooling:** /app/work/compare/ — brand2.py (branding/PDF helpers), cmpdata.py (analysed data),
+  build_full.py / build_gap.py / build_qa.py; source extracts in /app/work/compare/txt.
+- **Status:** COMPLETE for 4 competitors. Re-run once the 5th competitor (Wording E) is supplied.
+- All recommendations are evidence-based and market-ready SUBJECT TO TMHCC legal/underwriting sign-off.
