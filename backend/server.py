@@ -77,58 +77,60 @@ WORDING_GROUP = "Media & Music Combined wording (0526)"
 DOCUMENTS = [
     {
         "id": "comparison_full",
-        "title": "Full Coverage Comparison",
-        "subtitle": "TMHCC vs 5 competitors",
-        "description": "A like-for-like, section-by-section comparison of the TMHCC Media & Music "
+        "title": "Full Coverage Comparison (Client / Broker)",
+        "subtitle": "TMHCC vs 5 competitors — selection tool",
+        "description": "A client- and broker-facing, section-by-section comparison of the TMHCC Media & Music "
                        "Combined wording against all five competitor wordings — Tysers (Zurich), "
-                       "Yutree (AXA), Liberty, Allianz and AXA XL (XL Catlin). Coverage matrix, "
-                       "Media-Liability feature detail, competitor-by-competitor analysis, "
-                       "exclusions / conditions / limits and clause mapping.",
+                       "Yutree (AXA), Liberty, Allianz and AXA XL. A positive selection tool showing TMHCC's "
+                       "strengths and where TMHCC matches or beats the market. Contains no internal gap "
+                       "analysis, sub-limit working or sign-off notes.",
         "base": "TMHCC_Media_Coverage_Comparison_FULL",
         "accent": "#00648B",
         "group": COMPARISON_GROUP,
     },
     {
         "id": "comparison_gapfill",
-        "title": "Gap-Fill / Wording Enhancement Strategy",
-        "subtitle": "Strategic recommendations",
-        "description": "Evidence-based recommendations to make the TMHCC base wording more holistic and "
-                       "demonstrably market-leading — coverage gaps to fill, exclusion write-backs, "
-                       "definitions/conditions to clarify, an underwriting risk assessment and an "
-                       "implementation roadmap. Each item is supported by at least one competitor wording.",
+        "title": "Full Gap Analysis (Internal)",
+        "subtitle": "Granular gaps, sub-limits & sign-off",
+        "description": "SEPARATE internal/working document. Clause-for-clause and definition-for-definition gap "
+                       "analysis with copy-paste-ready wording for every recommendation, the Part A inclusion "
+                       "results, the full sub-limit harmonisation table (old → new), the Section 12 sign-off list "
+                       "and Reviewer notes. Every broadening is flagged for legal/underwriting sign-off.",
         "base": "TMHCC_Media_GapFill_Enhancement_Strategy",
         "accent": "#B88A3C",
         "group": COMPARISON_GROUP,
     },
     {
         "id": "comparison_qa",
-        "title": "QA / Methodology Report",
-        "subtitle": "Method, findings & sign-off",
-        "description": "Documents reviewed, comparison method, key TMHCC strengths and gaps, recommended "
-                       "enhancements, exclusion issues, assumptions, points for legal/underwriting sign-off "
-                       "and the final 10-point report.",
+        "title": "QA / Change Report",
+        "subtitle": "What changed, applied vs parked, sign-off",
+        "description": "Round 8 QA / change report: files produced, document handling (existing tracked changes "
+                       "accepted; fresh discrete tracked changes used), the discrete change log, Part A results, "
+                       "gap/sub-limit summary, the Section 12 sign-off list, a final checklist and Reviewer notes.",
         "base": "TMHCC_Media_Comparison_QA_Methodology",
         "accent": "#C0563F",
         "group": COMPARISON_GROUP,
     },
     {
         "id": "wording_tracked",
-        "title": "Final Wording (0526) — Tracked Changes (Round 7)",
-        "subtitle": "Latest update — shows the changes",
-        "description": "The final TMHCC Media Combined 0526 wording with the Round 7 amendments shown as tracked changes "
-                       "(from a clean accepted baseline): the Admission-of-Liability condition precedent replaced with a "
-                       "prejudice-qualified condition; a new 'Proof of Ownership and Value' claims requirement (Sections 1–11); "
-                       "'Accounts Receivable (Book Debts)' in Section 3; and the Section 15 'CyberGuard™ (Cyber Liability)' title. "
-                       "Section 12 enhancements are held for sign-off and are NOT in the wording.",
+        "title": "Final Wording (0526) — Tracked Changes (Round 8)",
+        "subtitle": "Latest update — 10 discrete changes",
+        "description": "The final TMHCC Media Combined wording with the Round 8 amendments as discrete, individually "
+                       "accept/reject-able tracked changes: new touring/entertainment Money extension (S8); broadened "
+                       "'Employee' definition (S13); and Section 12 (Media Liability) enhancements — Computer System "
+                       "definition aligned to S15, Distributors & Purchasers, optional Worldwide/USA-Canada territory, "
+                       "Representation costs, Journalistic source-protection, Criminal/Regulatory defence cross-reference, "
+                       "King's Counsel determination clause and a pollution negligent-advice write-back. ALL Section 12 "
+                       "items require legal/underwriting sign-off.",
         "base": "TMHCC_Media_Combined_0526_FINAL_TrackedChanges",
         "accent": "#E20033",
         "group": WORDING_GROUP,
     },
     {
         "id": "wording_clean",
-        "title": "Final Wording (0526) — Clean (Round 7)",
+        "title": "Final Wording (0526) — Clean (Round 8)",
         "subtitle": "Latest update — changes accepted",
-        "description": "The same final wording as the tracked-changes version with the Round 7 amendments accepted "
+        "description": "The same final wording as the tracked-changes version with the Round 8 amendments accepted "
                        "(clean copy). This is the current working policy wording.",
         "base": "TMHCC_Media_Combined_0526_FINAL_Clean",
         "accent": "#009CE5",
@@ -149,18 +151,21 @@ DOCUMENTS = [
     {
         "id": "changes",
         "title": "Summary of Changes",
-        "subtitle": "0223C vs 0526 comparison",
-        "description": "A branded, traffic-light comparison of the previous and new wordings, with an "
-                       "exclusions deep-dive, conditions and limits changes, and reviewer notes.",
+        "subtitle": "0223C → final wording",
+        "description": "A branded, traffic-light comparison of the previous (0223C) and final wordings, with an "
+                       "exclusions deep-dive, conditions and limits changes, the Round 8 enhancement change log "
+                       "and reviewer notes.",
         "base": "TMHCC_Media_Combined_Summary_of_Changes_FINAL",
         "accent": "#C79000",
     },
     {
         "id": "cover",
         "title": "Summary of Cover",
-        "subtitle": "Based on the 0526 wording",
-        "description": "A clear, high-level summary of cover across all 15 sections, with key exclusions, "
-                       "conditions, a limits/excess table and the required disclaimer.",
+        "subtitle": "Final wording",
+        "description": "A clear, high-level summary of cover across all 15 sections, updated to the final wording "
+                       "(incl. touring/entertainment Money), with key exclusions, conditions, a limits/excess table "
+                       "and the required disclaimer. No Personal Accident, no Travel; Personal Assault under Money is "
+                       "distinct and retained.",
         "base": "TMHCC_Media_Combined_Summary_of_Cover_FINAL",
         "accent": "#0066CC",
     },

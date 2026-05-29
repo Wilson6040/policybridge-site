@@ -121,7 +121,7 @@ backend:
         -working: "NA"
         -agent: "main"
         -comment: |
-          Added 3 new documents to DOCUMENTS (ids: comparison_full, comparison_gapfill, comparison_qa)
+          Round 7: added 3 comparison documents to DOCUMENTS, served 7 docs total. Original detail:
           with a 'group' field ("Media & Entertainment — market comparison"); existing 4 wording docs
           default to group "Media & Music Combined wording (0526)". GET /api/documents should now return
           7 documents, each with a non-empty 'group' and a 'formats' array containing BOTH docx and pdf
@@ -136,37 +136,66 @@ backend:
         -working: true
         -agent: "testing"
         -comment: |
-          ✅ ALL BACKEND TESTS PASSED (32/32 tests)
+          ✅ ALL BACKEND TESTS PASSED (32/32 tests) — see prior run.
+        -working: "NA"
+        -agent: "main"
+        -comment: |
+          ROUND 8 (EMERGENT DISPATCH v3): regenerated all deliverables and REFRESHED the DOCUMENTS metadata.
+          GET /api/documents should now return 9 documents. Titles/descriptions updated:
+            comparison_full   -> "Full Coverage Comparison (Client / Broker)"
+            comparison_gapfill-> "Full Gap Analysis (Internal)"
+            comparison_qa     -> "QA / Change Report"
+            wording_tracked   -> "Final Wording (0526) — Tracked Changes (Round 8)"
+            wording_clean     -> "Final Wording (0526) — Clean (Round 8)"
+          The underlying files in /app/backend/deliverables were overwritten with the Round-8 versions
+          (same base filenames). Please verify GET /api/documents returns 9 docs, each with a 'formats'
+          array containing BOTH docx and pdf (size_kb > 0), and that GET /api/documents/download/{filename}
+          returns 200 with the correct content-type for these Round-8 base names (docx + pdf):
+            TMHCC_Media_Combined_0526_FINAL_TrackedChanges, TMHCC_Media_Combined_0526_FINAL_Clean,
+            TMHCC_Media_Coverage_Comparison_FULL, TMHCC_Media_GapFill_Enhancement_Strategy,
+            TMHCC_Media_Comparison_QA_Methodology, TMHCC_Media_Combined_Summary_of_Changes_FINAL,
+            TMHCC_Media_Combined_Summary_of_Cover_FINAL. Confirm 404 for a bad filename. Backend only.
+        -working: true
+        -agent: "testing"
+        -comment: |
+          ✅ ALL BACKEND TESTS PASSED (88/88 tests) — Round 8 verification complete.
           
-          GET /api/documents endpoint:
-          - Returns HTTP 200 with correct JSON structure {"documents": [...]}
-          - Returns exactly 7 documents as expected
-          - All 3 NEW documents present with correct IDs and group:
-            * comparison_full → "Media & Entertainment — market comparison"
-            * comparison_gapfill → "Media & Entertainment — market comparison"
-            * comparison_qa → "Media & Entertainment — market comparison"
-          - All 4 existing documents have correct group "Media & Music Combined wording (0526)"
-          - All documents have required fields: id, title, subtitle, description, accent, group, formats
-          - All documents have BOTH docx and pdf formats with size_kb > 0
+          COMPREHENSIVE TEST RESULTS:
           
-          GET /api/documents/download/{filename} endpoint:
-          - All 6 new document files download successfully (HTTP 200):
-            * TMHCC_Media_Coverage_Comparison_FULL.docx (85KB) ✅
-            * TMHCC_Media_Coverage_Comparison_FULL.pdf (158KB) ✅
-            * TMHCC_Media_GapFill_Enhancement_Strategy.docx (76KB) ✅
-            * TMHCC_Media_GapFill_Enhancement_Strategy.pdf (114KB) ✅
-            * TMHCC_Media_Comparison_QA_Methodology.docx (69KB) ✅
-            * TMHCC_Media_Comparison_QA_Methodology.pdf (86KB) ✅
-          - Correct Content-Type headers for all files:
-            * .docx → application/vnd.openxmlformats-officedocument.wordprocessingml.document
-            * .pdf → application/pdf
-          - All files have non-empty bodies
+          1. GET /api/documents endpoint (51 tests passed):
+             ✅ Returns HTTP 200 with correct JSON structure
+             ✅ Returns EXACTLY 9 documents as expected
+             ✅ All 9 expected document IDs present: comparison_full, comparison_gapfill, comparison_qa,
+                wording_tracked, wording_clean, wording, changes, cover, qa
+             ✅ All documents have required fields: id, title, subtitle, description, accent, formats
+             ✅ Round 8 title updates verified:
+                - comparison_full contains "Client / Broker" ✓
+                - comparison_gapfill contains "Gap Analysis (Internal)" ✓
+                - wording_tracked contains "Round 8" ✓
+                - wording_clean contains "Round 8" ✓
+             ✅ All documents have non-empty formats array with BOTH docx and pdf
+             ✅ All format entries have size_kb > 0 (verified for all 18 files)
           
-          Error handling:
-          - Non-existent file (does_not_exist.docx) correctly returns HTTP 404 ✅
-          - Unsupported extension/path traversal (server.py) correctly returns HTTP 404 ✅
+          2. GET /api/documents/download/{filename} endpoint (35 tests passed):
+             ✅ All 14 files (7 base names × 2 formats) download successfully with HTTP 200
+             ✅ Correct Content-Type headers for all files:
+                - .docx files: application/vnd.openxmlformats-officedocument.wordprocessingml.document
+                - .pdf files: application/pdf
+             ✅ All files have non-empty bodies (verified byte counts)
+             ✅ Files tested:
+                - TMHCC_Media_Combined_0526_FINAL_TrackedChanges (.docx, .pdf)
+                - TMHCC_Media_Combined_0526_FINAL_Clean (.docx, .pdf)
+                - TMHCC_Media_Coverage_Comparison_FULL (.docx, .pdf)
+                - TMHCC_Media_GapFill_Enhancement_Strategy (.docx, .pdf)
+                - TMHCC_Media_Comparison_QA_Methodology (.docx, .pdf)
+                - TMHCC_Media_Combined_Summary_of_Changes_FINAL (.docx, .pdf)
+                - TMHCC_Media_Combined_Summary_of_Cover_FINAL (.docx, .pdf)
           
-          Backend implementation is fully functional and meets all requirements.
+          3. Error handling (2 tests passed):
+             ✅ Returns HTTP 404 for non-existent file (does_not_exist.docx)
+             ✅ Returns HTTP 404 for unsupported extension/path traversal (server.py)
+          
+          The Document Centre API backend is fully functional and production-ready for Round 8.
 
 frontend:
   - task: "Document Centre groups documents into two sections and lists the 3 new docs"
@@ -186,7 +215,7 @@ frontend:
 metadata:
   created_by: "main_agent"
   version: "1.0"
-  test_sequence: 2
+  test_sequence: 3
   run_ui: false
 
 test_plan:
@@ -224,3 +253,44 @@ agent_communication:
          - Returns 404 for unsupported extensions/path traversal attempts
       
       The backend implementation is production-ready and meets all specified requirements.
+    -agent: "main"
+    -message: |
+      ROUND 8 (v3): Document Centre metadata refreshed and all deliverable files overwritten with Round-8
+      versions (same base filenames). Please test BACKEND ONLY: GET /api/documents now returns 9 documents,
+      each with a 'formats' array containing BOTH docx and pdf (size_kb > 0). Verify
+      GET /api/documents/download/{filename} returns 200 + correct content-type (docx => wordprocessingml.document,
+      pdf => application/pdf) for the Round-8 base names: TMHCC_Media_Combined_0526_FINAL_TrackedChanges,
+      TMHCC_Media_Combined_0526_FINAL_Clean, TMHCC_Media_Coverage_Comparison_FULL,
+      TMHCC_Media_GapFill_Enhancement_Strategy, TMHCC_Media_Comparison_QA_Methodology,
+      TMHCC_Media_Combined_Summary_of_Changes_FINAL, TMHCC_Media_Combined_Summary_of_Cover_FINAL
+      (both docx and pdf each), and 404 for a non-existent filename. Do not test the frontend.
+    -agent: "testing"
+    -message: |
+      ✅ ROUND 8 BACKEND TESTING COMPLETE - ALL 88 TESTS PASSED
+      
+      Comprehensive backend testing completed for Document Centre API Round 8 update. Zero failures.
+      
+      DETAILED RESULTS:
+      
+      1. GET /api/documents (51 tests):
+         ✅ Returns exactly 9 documents (up from 7 in Round 7)
+         ✅ All 9 expected document IDs present and verified
+         ✅ Round 8 title updates confirmed:
+            • comparison_full: "Client / Broker" ✓
+            • comparison_gapfill: "Gap Analysis (Internal)" ✓
+            • wording_tracked: "Round 8" ✓
+            • wording_clean: "Round 8" ✓
+         ✅ All documents have complete structure (id, title, subtitle, description, accent, formats)
+         ✅ All 9 documents have both docx and pdf formats with size_kb > 0
+      
+      2. GET /api/documents/download/{filename} (35 tests):
+         ✅ All 14 files (7 base names × 2 formats) download successfully
+         ✅ Correct Content-Type headers verified for all files
+         ✅ All files have non-empty bodies with correct byte counts
+         ✅ Tested files: TrackedChanges, Clean, Comparison_FULL, GapFill, QA, Changes, Cover
+      
+      3. Error handling (2 tests):
+         ✅ HTTP 404 for non-existent files
+         ✅ HTTP 404 for unsupported extensions/path traversal
+      
+      The Document Centre API backend is fully functional and production-ready for Round 8.

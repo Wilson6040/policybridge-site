@@ -221,3 +221,38 @@ no restrictions softened.
   GapFill_Enhancement_Strategy, Summary_of_Cover_FINAL, QA_Report. Tracked changes verified to render
   (strikethrough/underline) in PDF (page 17 Admission; 18 Proof of Ownership; 2 contents S15; 37–38 Book Debts).
 - **Status:** COMPLETE. All Section 12 items + PA + Section-2 breakdown narrowing held for legal/UW sign-off.
+
+---
+## Update (round 8) — EMERGENT DISPATCH v3: best-in-market enhancement + granular gap analysis + client/broker comparison
+- **Input:** user re-uploaded the Round-7 Clean wording (byte-identical, MD5 ab33a6…) as the CURRENT FINAL clean
+  baseline (/app/work/r8/source_uploaded.docx). Brief v3 supersedes the earlier v1 dispatch. Sources reused:
+  OLD_0223C.docx, 5 competitor wordings (/app/work/compare/txt + src PDFs), cmpdata.py. New analysis data: r8data.py.
+- **Document handling:** baseline had 0 residual revisions → accept-all = clean baseline; fresh discrete tracked
+  changes applied. Engine /app/work/r8/build_wording.py (lxml ins/del, anchored by unique text). 10 DISCRETE,
+  individually accept/reject-able amendments → 30 w:ins / 2 w:del; Clean = 0/0; paras 4176→4190.
+- **PART A (verify-then-act):** A1 Artists' Equipment (S2, GBP 20k) ALREADY PRESENT — not duplicated. A2 Stock/
+  merchandise ALREADY CATERED (Stock is an Item; def includes 'merchandise'). A3 data recovery PRESERVED in S1+S2
+  (old S4 had NO standalone sub-limit) — nothing reinstated. A4 ADDED touring/entertainment Money extension (S8,
+  schedule-referenced — competitor money is schedule-driven, market figure CANNOT-DETERMINE). A5 broadened the
+  narrow S13 'Employee' def to ≥ Tysers(p9)/Yutree(p88) (general S1-11/S12/S14 already ≥). A6 aligned S12
+  'Computer System' def to the broad S15 definition [SIGN-OFF].
+- **PART B gaps (bridged as discrete tracked changes, all S12 → SIGN-OFF):** Distributors & Purchasers (5x, Tysers
+  8.7); Worldwide/USA-Canada optional (Tysers); Journalistic source-protection (Tysers 8.13); Representation costs
+  GBP25k (Tysers 8.15); Criminal/Regulatory defence cross-ref+contribution; King's Counsel determination (Yutree);
+  Seepage&Pollution negligent-advice write-back (Yutree). PARKED with wording: Patents (deliberate exclusion),
+  Asbestos negligent-advice write-back. EXCLUDED by instruction: Personal Accident & Travel (Personal Assault under
+  Money kept, distinct). ICOW/Book Debts + Computer Breakdown already met.
+- **PART C sub-limits:** HONEST outcome — TMHCC already meets/exceeds every evidenced competitor numeric sub-limit
+  (Virus £500k>Tysers £250k; Reputation/Withdrawal £250k=Yutree) or is schedule-driven. 0 existing limits raised
+  (none lowered, none invented). New covers set to evidenced figures (Representation £25k; Distributors 5x). Full
+  transparent table in the Gap Analysis.
+- **Deliverables (/app/deliverables + /app/backend/deliverables, docx+PDF):** TrackedChanges, Clean,
+  Summary_of_Changes_FINAL (0223C→final, +Round-8 change log), Summary_of_Cover_FINAL (final wording; touring money;
+  no PA/Travel), GapFill_Enhancement_Strategy = SEPARATE internal Gap Analysis (Part A/B/C + S12 sign-off +
+  reviewer notes), Coverage_Comparison_FULL = CLIENT/BROKER-FACING (NO gap/sign-off/sub-limit content; verified by
+  image analysis), Comparison_QA_Methodology = QA/change report. Builders: build_full_r8.py / build_gap_r8.py /
+  build_qa_r8.py (brand2.py) + build_soc_r8.py / build_changes_r8.py (docx_brand.py).
+- **Document Centre:** backend DOCUMENTS titles/descriptions refreshed for Round 8 (client comparison vs internal
+  gap analysis; round-8 wording amendments). 9 docs serve, both formats, verified 200 + correct content-types.
+- **Status:** COMPLETE. ALL Section 12 amendments applied as tracked changes but HELD for legal/underwriting
+  sign-off (A6, B1–B7). A4 touring-money figure + un-evidenced sub-limits flagged CANNOT-DETERMINE.
