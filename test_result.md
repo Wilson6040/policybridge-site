@@ -155,6 +155,13 @@ backend:
             TMHCC_Media_Coverage_Comparison_FULL, TMHCC_Media_GapFill_Enhancement_Strategy,
             TMHCC_Media_Comparison_QA_Methodology, TMHCC_Media_Combined_Summary_of_Changes_FINAL,
             TMHCC_Media_Combined_Summary_of_Cover_FINAL. Confirm 404 for a bad filename. Backend only.
+    -agent: "main"
+    -message: |
+      ROUND 9 (metadata-only backend change): refreshed DOCUMENTS descriptions/titles (comparison_full now
+      "TMHCC vs 6 competitors"; wording_tracked/clean note the two-part Money restructure). Underlying files
+      overwritten with round-9 versions (same base filenames; still 9 docs). Endpoint logic unchanged from the
+      88/88-verified run. Curl-verified after restart: GET /api/documents returns 9 docs; downloads return 200
+      with correct content-types and round-9 file sizes. No re-test required (contract unchanged).
         -working: true
         -agent: "testing"
         -comment: |

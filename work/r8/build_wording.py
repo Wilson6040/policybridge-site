@@ -162,21 +162,55 @@ print("baseline_clean.docx saved")
 doc = Document(OUT_BASE)
 applied = []
 
-# ---- A4: Money – Touring and Entertainment Activities (S8, after Loss of Keys body) ----
+# ---- A4 (round 9): TWO Schedule-referenced money extensions (Premises + Touring/Festivals/Events),
+#       amalgamating the Entertainment Elite event-money section + the 0523 "Venue" enhancement.
+#       Preserves all existing Money covers/exclusions (added after Loss of Keys body). ----
 a = find_p(doc, "the cost of replacement keys or lock mechanisms")
 insert_blocks_after(a, [
- ("Heading3", [("Money \u2013 Touring and Entertainment Activities", False)]),
+ ("Heading3", [("Money \u2013 Premises", False)]),
  ("BodyText", [
    ("This Sub-Section is extended to cover Damage to ", False), ("Money", True),
    (" belonging to the ", False), ("Insured", True),
    (", or for which the ", False), ("Insured", True),
-   (" is responsible, whilst in transit, in temporary storage or at any temporary venue, festival site, box office or other location used in connection with touring, live events, performances, productions or other music or entertainment activities undertaken by the ", False),
+   (" is responsible, whilst at the Premises, up to the sub-limit shown against this Extension in the Schedule. This Extension does not reduce, replace or restrict any cover otherwise provided by this Sub-Section and is subject otherwise to the Definitions, Conditions and Exclusions of this Sub-Section.", False),
+ ]),
+ ("Heading3", [("Money \u2013 Touring, Festivals and Events", False)]),
+ ("BodyText", [
+   ("This Sub-Section is extended to cover Damage to ", False), ("Money", True),
+   (" belonging to the ", False), ("Insured", True),
+   (", or for which the ", False), ("Insured", True),
+   (" is responsible, whilst in transit, in temporary storage, in a locked safe, cash point or container, in the personal custody of the ", False),
    ("Insured", True),
-   (", anywhere within the Geographical Limits stated in the Schedule. The ", False), ("Insurer\u2019s", True),
-   (" liability under this Extension shall not exceed the sum stated in the Schedule against this Extension. This Extension is subject otherwise to the Definitions, Conditions and Exclusions of this Sub-Section.", False),
+   (" or an authorised ", False), ("Employee", True),
+   (", or at any Venue, temporary venue, festival site, box office or other location used in connection with touring, live events, performances, productions, exhibitions, conferences, product launches or other music or entertainment activities undertaken by the ", False),
+   ("Insured", True),
+   (", up to the sub-limit shown against this Extension in the Schedule. This Extension includes:", False),
+ ]),
+ ("BodyText", [
+   ("(a) Damage to any safe, strongroom, cash point, bag, container, money waistcoat or money belt used to carry or hold such ", False),
+   ("Money", True), (";", False),
+ ]),
+ ("BodyText", [
+   ("(b) Damage to clothing, personal effects and personal ", False), ("Money", True),
+   (" belonging to the ", False), ("Insured", True),
+   (" or any partner, director or ", False), ("Employee", True),
+   (" resulting from an assault or violence, or the threat of assault or violence, in an attempt to steal ", False),
+   ("Money", True), ("; and", False),
+ ]),
+ ("BodyText", [
+   ("(c) loss of ", False), ("Money", True),
+   (" belonging to the ", False), ("Insured", True),
+   (", or for which the ", False), ("Insured", True),
+   (" is responsible, occasioned by the dishonesty of any ", False), ("Employee", True),
+   (" of the ", False), ("Insured", True),
+   (", committed during the Period of Insurance and discovered within 12 (twelve) months of the date of the theft, up to the sub-limit shown against this Extension in the Schedule.", False),
+ ]),
+ ("BodyText", [
+   ("This Extension does not reduce, replace or restrict any cover otherwise provided by this Sub-Section and is subject otherwise to the Definitions, Conditions and Exclusions of this Sub-Section.", False),
  ]),
 ])
-applied.append("A4 Touring/Entertainment Money (S8 Money) [schedule-referenced sub-limit]")
+applied.append("A4 Money RESTRUCTURED into two Schedule-referenced extensions: 'Money \u2013 Premises' and "
+               "'Money \u2013 Touring, Festivals and Events' (amalgamates Entertainment Elite event-money + 0523 Venue)")
 
 # ---- A5: broaden S13 Employee definition (replace narrow body) ----
 a = find_p(doc, "alleges they have entered into a contract of service")

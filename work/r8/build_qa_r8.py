@@ -24,7 +24,7 @@ def build():
         meta_lines=[
             "Round 8 (EMERGENT DISPATCH v3). Companion to the tracked-changes wording, clean wording, Summary of Changes, Summary of Cover, Gap Analysis and Coverage Comparison.",
         ],
-        wordings=["FINAL TMHCC clean wording (baseline)", "Five attached competitor wordings (Tysers, Yutree, Liberty, Allianz, AXA XL)", "Original 0223C wording (Summary of Changes baseline)"],
+        wordings=["FINAL TMHCC clean wording (baseline)", "Six attached competitor wordings (Tysers, Yutree, Liberty, Allianz, AXA XL, Entertainment Elite)", "Original 0223C wording (Summary of Changes baseline)"],
     )
 
     doc.add_page_break()

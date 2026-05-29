@@ -43,20 +43,22 @@ PART_A = [
    location="Section 1 and Section 2 \u2013 \u2018Breakdown\u2019 / \u2018Data Carrying Materials\u2019 / basis of settlement.",
    action="No change \u2014 treatment preserved faithfully; nothing to reinstate (no duplicate created).",
    status="Confirmed \u2013 no change"),
- dict(id="A4", title="Touring / music-activity money (Section 8)",
-   finding="GENUINE GAP \u2014 ADDED. Section 8 (Money) had Sub-Section 1 (Money) + Sub-Section 2 (Personal "
-           "Assault) + a Loss of Keys extension only, with no extension for money while touring or during "
-           "music/entertainment activities. A new \u2018Money \u2013 Touring and Entertainment Activities\u2019 extension "
-           "has been added covering money in transit, in temporary storage and at temporary venues/festival "
-           "sites/box offices in connection with touring, live events, performances and other music/entertainment "
-           "activities.",
-   location="Section 8 \u2013 Money, Sub-Section 1, immediately after the \u2018Loss of Keys\u2019 extension.",
-   action="ADDED as a discrete tracked change. Sub-limit set as SCHEDULE-REFERENCED (\u2018the sum stated in "
-          "the Schedule against this Extension\u2019). The attached entertainment competitor wordings (Tysers, "
-          "Yutree) write their Money cover on a SCHEDULE-DRIVEN basis with no fixed \u2018touring money\u2019 figure, "
-          "so a specific market-highest figure CANNOT BE DETERMINED and has not been invented \u2014 underwriting "
-          "to set the figure.",
-   status="ADDED (tracked) \u2013 figure cannot be determined; underwriting to set"),
+ dict(id="A4", title="Touring / event money (Section 8) \u2014 restructured into two Schedule sub-limits",
+   finding="GENUINE GAP \u2014 ADDED & RESTRUCTURED. Section 8 (Money) had Sub-Section 1 (Money) + Sub-Section 2 "
+           "(Personal Assault) + a Loss of Keys extension only, with no money extension for touring or events. "
+           "Two new Schedule-referenced money extensions have been added: (1) \u2018Money \u2013 Premises\u2019 and (2) "
+           "\u2018Money \u2013 Touring, Festivals and Events\u2019. The touring/event extension amalgamates the Entertainment "
+           "Elite event-money section (theft; safes/strongrooms/bags/containers; assault cover for clothing/"
+           "personal effects/personal Money; and employee dishonesty discovered within 12 months) and adopts the "
+           "\u20180523\u2019 (MIB) money enhancement that expressly recognises money \u2018at the Venue\u2019 and in transit to/from "
+           "the Premises/Venue. No existing Money cover, condition or exclusion has been removed.",
+   location="Section 8 \u2013 Money, Sub-Section 1, immediately after the \u2018Loss of Keys\u2019 extension (before the "
+            "Sub-Section Exclusions).",
+   action="ADDED as discrete tracked changes. BOTH sub-limits are SCHEDULE-REFERENCED (\u2018up to the sub-limit shown "
+          "against this Extension in the Schedule\u2019), in line with the other Item coverages \u2014 the figures are chosen "
+          "in the Schedule by underwriting. The attached entertainment competitor wordings (incl. Entertainment "
+          "Elite) write Money on a Schedule/Item-driven basis, so no fixed market figure is invented.",
+   status="ADDED (tracked) \u2013 two Schedule sub-limits (Premises; Touring/Festivals/Events); figures set in Schedule"),
  dict(id="A5", title="Employee definition \u2014 breadth vs Yutree & Tysers",
    finding="Multiple Employee definitions exist. The general \u2018Employee \u2013 applicable to Sections 1\u201311\u2019 "
            "definition is ALREADY at least as wide as Tysers and Yutree (it covers contract-of-service, "
@@ -294,8 +296,12 @@ SUBLIMITS = [
  ("Media Liability \u2013 Loss of Documents", "Per Schedule (Indemnity Limit)", "Per Schedule (no change)",
   "Tysers GBP 1,000,000 (8.10); Yutree = limit. TMHCC schedule-driven (broker-set, can be \u2265).",
   "No \u2014 schedule-driven"),
- ("Section 8 \u2013 Touring/Entertainment Money (NEW)", "\u2014 (new)", "Per Schedule",
-  "Competitor money cover is schedule-driven; no fixed touring figure. Cannot determine \u2014 not invented.",
+ ("Section 8 \u2013 Money \u2013 Premises (NEW)", "\u2014 (new)", "Per Schedule",
+  "Schedule/Item-driven across the market (Entertainment Elite, Liberty, Allianz). Figure set in Schedule.",
+  "Underwriting to set figure"),
+ ("Section 8 \u2013 Money \u2013 Touring, Festivals & Events (NEW)", "\u2014 (new)", "Per Schedule",
+  "Amalgamates Entertainment Elite event-money (assault + employee dishonesty GBP 25k) + 0523 \u2018Venue\u2019; "
+  "Schedule/Item-driven, so no fixed market figure invented.",
   "Underwriting to set figure"),
  ("Section 2 \u2013 Artists\u2019 Equipment", "GBP 20,000", "GBP 20,000 (no change)",
   "No competitor \u2018artists equipment\u2019 figure; Yutree portable electronic GBP 500 / driver\u2019s effects GBP 1,500 "
@@ -317,8 +323,8 @@ SUBLIMITS = [
 # CHANGE LOG — the 10 discrete tracked changes (for QA + Summary of Changes)
 # ---------------------------------------------------------------------------
 CHANGE_LOG = [
- ("A4", "Section 8 \u2013 Money (Sub-Section 1)", "New extension \u2018Money \u2013 Touring and Entertainment Activities\u2019",
-  "(none \u2014 new)", "Schedule-referenced money cover for touring/live-event/music activities", "No"),
+ ("A4", "Section 8 \u2013 Money (Sub-Section 1)", "New \u2013 two Schedule sub-limits: \u2018Money \u2013 Premises\u2019 and \u2018Money \u2013 Touring, Festivals and Events\u2019",
+  "(none \u2014 new)", "Schedule-referenced premises money + touring/festival/event money (amalgamates Entertainment Elite event-money + 0523 \u2018Venue\u2019); no existing cover/exclusion removed", "No"),
  ("A5", "Section 13 \u2013 Commercial Legal Expenses", "Definition amendment \u2013 \u2018Employee\u2019",
   "\u2018A worker who has or alleges they have entered into a contract of service with You.\u2019",
   "Broadened to include labour-only, self-employed, hired/borrowed, voluntary, work-experience, secondee, "
@@ -362,9 +368,16 @@ S12_SIGNOFF = [
 REVIEWER_NOTES = [
  "ALL Section 12 (Media Liability) amendments are applied as discrete tracked changes but REQUIRE legal/"
  "underwriting sign-off before acceptance (A6, B1\u2013B7).",
- "A4 Touring/Entertainment Money: a specific market-highest figure CANNOT BE DETERMINED \u2014 the attached "
- "entertainment competitor wordings write Money cover on a schedule-driven basis. Sub-limit left schedule-"
- "referenced; underwriting to set the figure.",
+ "A4 Money restructure: split into two Schedule-referenced sub-limits \u2014 \u2018Money \u2013 Premises\u2019 and \u2018Money \u2013 "
+ "Touring, Festivals and Events\u2019 \u2014 in line with the other Item coverages (figures chosen in the Schedule). "
+ "The touring/event extension amalgamates the Entertainment Elite event-money section and the 0523 (MIB) "
+ "\u2018Venue\u2019 money enhancement. No existing Money cover, condition or exclusion was removed. A specific "
+ "market-highest figure CANNOT BE DETERMINED (competitor money is Schedule/Item-driven); underwriting sets it.",
+ "Entertainment Elite (v3.2) has been added as a SIXTH competitor across the comparison and is the source of "
+ "the amalgamated event-money cover. Liberty and Allianz uploads were byte-identical to the repo copies and "
+ "were ignored as duplicates.",
+ "From the TMHCC 0523 (MIB) variant only the Money enhancement was harvested (the \u2018Venue\u2019 money situation); "
+ "no other cover was taken from 0523.",
  "PART C sub-limit harmonisation: TMHCC already meets or exceeds every evidenced competitor numeric sub-limit, "
  "or is schedule-driven (broker-set). No existing TMHCC sub-limit was raised because no attached competitor "
  "figure is demonstrably higher for the same benefit; none was invented and none was lowered.",
@@ -375,6 +388,6 @@ REVIEWER_NOTES = [
  "for consideration with proposed wording \u2014 neither applied.",
  "Personal Accident and Travel deliberately NOT added (per instruction). Personal Assault under the Money "
  "section (S8, Sub-Section 2) is distinct and retained unchanged.",
- "\u2018Market-leading\u2019/\u2018highest-in-market\u2019 statements are supported by the five attached competitor wordings. "
+ "\u2018Market-leading\u2019/\u2018highest-in-market\u2019 statements are supported by the six attached competitor wordings. "
  "Items that could not be traced to an attached wording are labelled CANNOT-DETERMINE / UNCONFIRMED above.",
 ]

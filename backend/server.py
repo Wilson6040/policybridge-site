@@ -78,11 +78,11 @@ DOCUMENTS = [
     {
         "id": "comparison_full",
         "title": "Full Coverage Comparison (Client / Broker)",
-        "subtitle": "TMHCC vs 5 competitors — selection tool",
+        "subtitle": "TMHCC vs 6 competitors — selection tool",
         "description": "A client- and broker-facing, section-by-section comparison of the TMHCC Media & Music "
-                       "Combined wording against all five competitor wordings — Tysers (Zurich), "
-                       "Yutree (AXA), Liberty, Allianz and AXA XL. A positive selection tool showing TMHCC's "
-                       "strengths and where TMHCC matches or beats the market. Contains no internal gap "
+                       "Combined wording against six competitor wordings — Tysers (Zurich), Yutree (AXA), "
+                       "Liberty, Allianz, AXA XL and Entertainment Elite. A positive selection tool showing "
+                       "TMHCC's strengths and where TMHCC matches or beats the market. Contains no internal gap "
                        "analysis, sub-limit working or sign-off notes.",
         "base": "TMHCC_Media_Coverage_Comparison_FULL",
         "accent": "#00648B",
@@ -113,24 +113,26 @@ DOCUMENTS = [
     },
     {
         "id": "wording_tracked",
-        "title": "Final Wording (0526) — Tracked Changes (Round 8)",
-        "subtitle": "Latest update — 10 discrete changes",
-        "description": "The final TMHCC Media Combined wording with the Round 8 amendments as discrete, individually "
-                       "accept/reject-able tracked changes: new touring/entertainment Money extension (S8); broadened "
-                       "'Employee' definition (S13); and Section 12 (Media Liability) enhancements — Computer System "
-                       "definition aligned to S15, Distributors & Purchasers, optional Worldwide/USA-Canada territory, "
-                       "Representation costs, Journalistic source-protection, Criminal/Regulatory defence cross-reference, "
-                       "King's Counsel determination clause and a pollution negligent-advice write-back. ALL Section 12 "
-                       "items require legal/underwriting sign-off.",
+        "title": "Final Wording (0526) — Tracked Changes (Latest)",
+        "subtitle": "Discrete, accept/reject-able changes",
+        "description": "The final TMHCC Media Combined wording with all amendments as discrete, individually "
+                       "accept/reject-able tracked changes. Section 8 Money now has TWO Schedule-referenced "
+                       "extensions — 'Money – Premises' and 'Money – Touring, Festivals and Events' (amalgamating the "
+                       "Entertainment Elite event-money section and the 0523 'Venue' enhancement, with no existing "
+                       "cover removed); broadened 'Employee' definition (S13); and Section 12 (Media Liability) "
+                       "enhancements — Computer System definition aligned to S15, Distributors & Purchasers, optional "
+                       "Worldwide/USA-Canada territory, Representation costs, Journalistic source-protection, "
+                       "Criminal/Regulatory defence cross-reference, King's Counsel determination clause and a "
+                       "pollution negligent-advice write-back. ALL Section 12 items require legal/underwriting sign-off.",
         "base": "TMHCC_Media_Combined_0526_FINAL_TrackedChanges",
         "accent": "#E20033",
         "group": WORDING_GROUP,
     },
     {
         "id": "wording_clean",
-        "title": "Final Wording (0526) — Clean (Round 8)",
-        "subtitle": "Latest update — changes accepted",
-        "description": "The same final wording as the tracked-changes version with the Round 8 amendments accepted "
+        "title": "Final Wording (0526) — Clean (Latest)",
+        "subtitle": "Latest — changes accepted",
+        "description": "The same final wording as the tracked-changes version with all amendments accepted "
                        "(clean copy). This is the current working policy wording.",
         "base": "TMHCC_Media_Combined_0526_FINAL_Clean",
         "accent": "#009CE5",

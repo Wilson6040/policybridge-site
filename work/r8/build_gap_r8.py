@@ -10,7 +10,7 @@ sys.path.insert(0, '/app/work/r8')
 from docx import Document
 from docx.shared import Pt
 import brand2 as b
-import cmpdata as d
+import cmpdata9 as d
 import r8data as r8
 
 PRIO = {"High": ("FBE6EA", "A4233B"), "Medium-High": ("FBF1DA", "8A6A1E"),
@@ -44,7 +44,7 @@ def build():
         subtitle="Granular, clause-for-clause and definition-for-definition deficiency / enhancement record for the TMHCC Media & Music Combined wording, with copy-paste-ready wording for every recommendation and a full sub-limit harmonisation table.",
         meta_lines=[
             "INTERNAL / WORKING DOCUMENT. Separate from the client-facing Coverage Comparison. Every broadening of cover and every sub-limit change is flagged for TMHCC legal / underwriting sign-off.",
-            "Grounded in the FINAL TMHCC clean wording and the five attached competitor wordings. Figures that cannot be traced to an attached wording are marked CANNOT-DETERMINE / UNCONFIRMED.",
+            "Grounded in the FINAL TMHCC clean wording and the six attached competitor wordings. Figures that cannot be traced to an attached wording are marked CANNOT-DETERMINE / UNCONFIRMED.",
         ],
         wordings=[f"{w['name']} — {w['full']}" for w in d.WORDINGS],
     )

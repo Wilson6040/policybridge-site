@@ -9,9 +9,9 @@ sys.path.insert(0, '/app/work/r8')
 from docx import Document
 from docx.shared import Pt
 import brand2 as b
-import cmpdata as d
+import cmpdata9 as d
 
-W_HEADERS = ["TMHCC", "Tysers\n(Zurich)", "Yutree\n(AXA)", "Liberty", "Allianz", "AXA XL"]
+W_HEADERS = ["TMHCC", "Tysers\n(Zurich)", "Yutree\n(AXA)", "Liberty", "Allianz", "AXA XL", "Ent.\nElite"]
 
 
 def comment_cell(cell, text):
@@ -22,14 +22,14 @@ def comment_cell(cell, text):
 
 def section_matrix(doc, rows):
     headers = ["Section of cover"] + W_HEADERS + ["What this means for you"]
-    widths = [5.0] + [1.7] * 6 + [10.8]
+    widths = [3.9] + [1.5] * 7 + [9.0]
     t = b.make_table(doc, headers, widths)
     for label, statuses, verdict, comment in rows:
         cells = t.add_row().cells
-        b.text_cell(cells[0], label, size=8.3, bold=True, color=b.TEAL)
+        b.text_cell(cells[0], label, size=8.1, bold=True, color=b.TEAL)
         for j, key in enumerate(statuses):
             b.status_cell(cells[1 + j], key)
-        comment_cell(cells[7], comment)
+        comment_cell(cells[8 + 0], comment)
     b.zebra(t); b.spacer(doc, 6)
     return t
 
@@ -45,7 +45,7 @@ def build():
         doc,
         doc_kicker="Coverage Comparison — Media & Entertainment",
         title="Why TMHCC — Coverage Comparison",
-        subtitle="How the Tokio Marine HCC Media & Music Combined wording compares, section by section, with five other entertainment-market wordings (Tysers/Zurich, Yutree/AXA, Liberty, Allianz and AXA XL).",
+        subtitle="How the Tokio Marine HCC Media & Music Combined wording compares, section by section, with six other entertainment-market wordings (Tysers/Zurich, Yutree/AXA, Liberty, Allianz, AXA XL and Entertainment Elite).",
         meta_lines=[
             "A client- and broker-facing guide to the breadth of the TMHCC wording. Indicative comparison for selection purposes only — always refer to the full policy wordings and the Schedule.",
             "Prepared from the wordings supplied; competitor capacity insurers noted where stated.",
@@ -56,9 +56,9 @@ def build():
     # 1. Why TMHCC
     doc.add_page_break()
     b.h1(doc, "Why TMHCC — in short", num="1")
-    b.para(doc, "The TMHCC Media & Music Combined wording is the broadest in this peer group. It is the only wording that brings all fifteen covers together in a single contract, and the only one to include Loss of Licence, Commercial Legal Expenses, Management Liability and a genuine standalone Cyber-liability section. Three of the five competitors (Liberty, Allianz and AXA XL) are property / business-interruption / liability packages with no media, professional-indemnity, production-indemnity, cyber, legal-expenses or management-liability cover at all.", align='just')
+    b.para(doc, "The TMHCC Media & Music Combined wording is the broadest in this peer group. It is the only wording that brings all fifteen covers together in a single contract, and the only one to include Loss of Licence, Commercial Legal Expenses, Management Liability and a genuine standalone Cyber-liability section. Four of the six competitors (Liberty, Allianz, AXA XL and Entertainment Elite) are property / business-interruption / liability packages with no media, professional-indemnity, production-indemnity, cyber, legal-expenses or management-liability cover at all.", align='just')
     b.bullet(doc, "All fifteen covers in one place — fewer gaps, fewer separate policies to manage.", bold_lead="One-stop wording:  ")
-    b.bullet(doc, "Loss of Licence, Commercial Legal Expenses, Management Liability and standalone CyberGuard™ (Cyber Liability) — not offered by any of the five competitors reviewed.", bold_lead="Four covers no competitor offers:  ")
+    b.bullet(doc, "Loss of Licence, Commercial Legal Expenses, Management Liability and standalone CyberGuard™ (Cyber Liability) — not offered by any of the six competitors reviewed.", bold_lead="Four covers no competitor offers:  ")
     b.bullet(doc, "A broad Media Liability / Professional Indemnity section with reputation management, withdrawal-of-content, data-protection defence costs, virus cover and IP-pursuit costs — plus recently added market-matching enhancements.", bold_lead="Strong media cover:  ")
     b.bullet(doc, "A clean exclusion structure that keeps the cyber/date exclusion away from the liability sections, avoiding the ‘silent-cyber strip’ seen elsewhere.", bold_lead="Clear protection:  ")
 
@@ -119,7 +119,7 @@ def build():
 
     # 7. Summary
     b.h1(doc, "In summary", num="7")
-    b.callout(doc, "The bottom line:", "For a media or entertainment client that wants the widest single-contract protection — including media liability, production indemnity, loss of licence, legal expenses, management liability and standalone cyber — the TMHCC Media & Music Combined wording offers more covers in one place than any of the five competitor wordings reviewed.", bg=b.BANDBG, border=b.TEAL, lead_color=b.TEAL)
+    b.callout(doc, "The bottom line:", "For a media or entertainment client that wants the widest single-contract protection — including media liability, production indemnity, loss of licence, legal expenses, management liability and standalone cyber — the TMHCC Media & Music Combined wording offers more covers in one place than any of the six competitor wordings reviewed.", bg=b.BANDBG, border=b.TEAL, lead_color=b.TEAL)
     b.para(doc, "This document is a selection guide only. Cover is subject in all cases to the policy wording, its terms, conditions, exclusions and limits, and to the Schedule.", italic=True, color=b.GREY, size=8.3)
 
     out = "/app/work/r8/TMHCC_Media_Coverage_Comparison_FULL.docx"

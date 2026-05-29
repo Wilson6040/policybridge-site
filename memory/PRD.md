@@ -256,3 +256,34 @@ no restrictions softened.
   gap analysis; round-8 wording amendments). 9 docs serve, both formats, verified 200 + correct content-types.
 - **Status:** COMPLETE. ALL Section 12 amendments applied as tracked changes but HELD for legal/underwriting
   sign-off (A6, B1–B7). A4 touring-money figure + un-evidenced sub-limits flagged CANNOT-DETERMINE.
+
+---
+## Update (round 9) — new wordings: Entertainment Elite (6th competitor) + money restructure
+- **Inputs:** user uploaded 4 files. Liberty & Allianz were BYTE-IDENTICAL to repo copies (ignored).
+  NEW: Entertainment_Elite_Policy_v3.2 (event/property package — the money amalgamation source) and
+  TMHCC_Media_Combined_MIB_0523_ECE.docx (older 14-section TMHCC variant — harvested MONEY enhancement only).
+  Sources at /app/work/r9/src; EE text archived to /app/work/compare/(src|txt)/EntertainmentElite.*.
+- **User decisions:** (1) from 0523 take only useful money enhancements; (2) restructure money into TWO
+  Schedule-referenced sub-limits: 'Money – Premises' + 'Money – Touring, Festivals and Events', amalgamating
+  the Entertainment Elite event-money section, NOT removing existing covers/exclusions; (3) add Entertainment
+  Elite as a 6th competitor across all docs (fallback to swap-out if layout broke — NOT needed, layout fits);
+  (4) keep 0526 base, track all changes.
+- **Wording (build_wording.py A4 block rewritten):** replaced the round-8 single 'Touring & Entertainment
+  Activities' extension with TWO Schedule-referenced extensions after 'Loss of Keys': 'Money – Premises' and
+  'Money – Touring, Festivals and Events'. The touring/event one amalgamates EE event-money (theft; safes/
+  containers; assault on clothing/personal effects/personal money; employee dishonesty discovered within 12
+  months) and the 0523 'Venue' situation. 10 discrete tracked amendments total → 42 w:ins / 2 w:del; Clean 0/0.
+- **6th competitor:** new /app/work/r8/cmpdata9.py augments cmpdata with Entertainment Elite as the 7th wording
+  column (property/BI/Money/EL/Public&Products/Terrorism; no media/PI/production/cyber/legal/mgmt/loss-of-licence/
+  GIT). Client comparison (build_full_r8) now renders a 9-column matrix (label + 7 insurers + comment) =
+  23.39cm < 26.7cm usable (objectively fits; vision-model 'clipping' was a false positive — PDF text layer shows
+  complete sentences). 'five competitors' comment text auto-corrected to 'six'.
+- **Supporting docs updated:** r8data.py (A4 entry, SUBLIMITS two money rows, CHANGE_LOG, reviewer notes incl. EE
+  6th competitor + 0523 provenance); SoC money features (two extensions); Summary of Changes change log; Gap
+  Analysis + QA wording lists now '6 competitors'.
+- **Document Centre:** server.py descriptions refreshed (comparison_full = 6 competitors; wording_tracked/clean =
+  two-part money restructure). 9 docs serve; curl-verified 200 + correct content-types + round-9 sizes.
+- **Env note:** LibreOffice/poppler were WIPED on the environment reset between rounds; reinstalled via apt to
+  regenerate PDFs (use full reinstall if soffice missing again).
+- **Status:** COMPLETE. Section 12 items still HELD for legal/UW sign-off; money sub-limits are Schedule-set
+  (figures chosen by underwriting).

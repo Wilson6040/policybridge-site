@@ -247,9 +247,11 @@ section(
     "(Sub-Section 2). Personal Assault is distinct from \u2014 and is not \u2014 personal accident cover.",
     [
         "Loss of Keys",
-        "Money \u2013 Touring and Entertainment Activities: money in transit, in temporary storage and at "
-        "temporary venues, festival sites and box offices used in connection with touring, live events, "
-        "performances and other music/entertainment activities (sub-limit as shown in the Schedule)",
+        "Money \u2013 Premises: money at the Premises (sub-limit as shown in the Schedule)",
+        "Money \u2013 Touring, Festivals and Events: money in transit, in temporary storage and at venues, "
+        "festival sites, box offices and other touring/live-event/exhibition/conference locations \u2014 including "
+        "theft of/from safes and containers, assault cover, and employee dishonesty (sub-limit as shown in the "
+        "Schedule)",
         "Personal Assault benefits \u2013 death and disablement",
     ],
     [
