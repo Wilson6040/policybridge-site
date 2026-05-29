@@ -10,7 +10,7 @@ import os
 from typing import Dict, List, Any
 
 # Get backend URL from environment
-BACKEND_URL = os.getenv('REACT_APP_BACKEND_URL', 'https://dispatch-opus-final.preview.emergentagent.com')
+BACKEND_URL = os.getenv('REACT_APP_BACKEND_URL', 'https://emergent-gap-resolve.preview.emergentagent.com')
 BASE_URL = f"{BACKEND_URL}/api"
 
 # Expected document IDs and groups
