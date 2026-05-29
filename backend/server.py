@@ -172,14 +172,21 @@ async def list_documents():
 
 
 @api_router.get("/documents/download/{filename}")
-async def download_document(filename: str):
+async def download_document(filename: str, inline: bool = False):
     safe = os.path.basename(filename)
     fp = DELIVERABLES_DIR / safe
     if not fp.exists() or fp.suffix.lower() not in (".docx", ".pdf"):
         raise HTTPException(status_code=404, detail="Document not found")
-    media = ("application/vnd.openxmlformats-officedocument.wordprocessingml.document"
-             if fp.suffix.lower() == ".docx" else "application/pdf")
-    return FileResponse(path=str(fp), media_type=media, filename=safe)
+    is_pdf = fp.suffix.lower() == ".pdf"
+    media = ("application/pdf" if is_pdf
+             else "application/vnd.openxmlformats-officedocument.wordprocessingml.document")
+    # PDFs can be viewed inline in the browser; .docx must download (browsers can't render it)
+    disposition = "inline" if (inline and is_pdf) else "attachment"
+    return FileResponse(
+        path=str(fp),
+        media_type=media,
+        headers={"Content-Disposition": f'{disposition}; filename="{safe}"'},
+    )
 
 
 # Include the router in the main app

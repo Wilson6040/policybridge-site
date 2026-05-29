@@ -90,19 +90,21 @@ const DocCard = ({ doc }) => {
               <span className="text-[11px] font-normal opacity-80">{f.size_kb} KB</span>
             </button>
           ))}
-          {doc.formats.map((f) => (
-            <a
-              key={`open-${f.ext}`}
-              href={`${API}/documents/download/${encodeURIComponent(f.filename)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid={`open-${doc.id}-${f.ext}`}
-              className="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-xs font-medium text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors"
-              title={`Open ${f.ext.toUpperCase()} in a new tab`}
-            >
-              <ExternalLink size={13} /> open {f.ext}
-            </a>
-          ))}
+          {doc.formats
+            .filter((f) => f.ext === "pdf")
+            .map((f) => (
+              <a
+                key={`open-${f.ext}`}
+                href={`${API}/documents/download/${encodeURIComponent(f.filename)}?inline=true`}
+                target="_blank"
+                rel="noopener noreferrer"
+                data-testid={`open-${doc.id}-${f.ext}`}
+                className="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-xs font-medium text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors"
+                title="View the PDF in a new browser tab"
+              >
+                <ExternalLink size={13} /> view PDF in browser
+              </a>
+            ))}
         </div>
 
         {status && (
