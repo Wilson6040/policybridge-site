@@ -78,11 +78,12 @@ DOCUMENTS = [
     {
         "id": "comparison_full",
         "title": "Full Coverage Comparison",
-        "subtitle": "TMHCC vs 4 competitors",
+        "subtitle": "TMHCC vs 5 competitors",
         "description": "A like-for-like, section-by-section comparison of the TMHCC Media & Music "
-                       "Combined wording against Tysers (Zurich), Yutree (AXA), Liberty and Allianz "
-                       "(fifth competitor pending). Coverage matrix, Media-Liability feature detail, "
-                       "competitor-by-competitor analysis, exclusions / conditions / limits and clause mapping.",
+                       "Combined wording against all five competitor wordings — Tysers (Zurich), "
+                       "Yutree (AXA), Liberty, Allianz and AXA XL (XL Catlin). Coverage matrix, "
+                       "Media-Liability feature detail, competitor-by-competitor analysis, "
+                       "exclusions / conditions / limits and clause mapping.",
         "base": "TMHCC_Media_Coverage_Comparison_FULL",
         "accent": "#00648B",
         "group": COMPARISON_GROUP,

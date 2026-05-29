@@ -144,7 +144,7 @@ const Home = () => {
           <h1 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Document Centre</h1>
           <p className="mt-2 text-slate-300 max-w-2xl text-[15px]">
             Media &amp; Entertainment — download your branded, market-ready documents below: the new
-            coverage comparison &amp; gap-fill strategy (TMHCC vs four competitors), plus the
+            coverage comparison &amp; gap-fill strategy (TMHCC vs five competitors), plus the
             Media &amp; Music Combined (0526) wording set. Word files open and edit directly in
             Microsoft Word; PDFs are ready to share.
           </p>
