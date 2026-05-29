@@ -1,14 +1,23 @@
 import { useEffect, useState } from "react";
 import "@/App.css";
 import axios from "axios";
-import { FileText, Download, FileType, ShieldCheck, Loader2 } from "lucide-react";
+import { FileText, Download, FileType, ShieldCheck, Loader2, ExternalLink } from "lucide-react";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const DocCard = ({ doc }) => {
   const download = (filename) => {
-    window.location.href = `${API}/documents/download/${encodeURIComponent(filename)}`;
+    const url = `${API}/documents/download/${encodeURIComponent(filename)}`;
+    // Robust download that also works when opened in a new browser tab.
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
   };
   return (
     <div
@@ -88,6 +97,25 @@ const Home = () => {
 
       {/* Body */}
       <main className="max-w-5xl mx-auto px-6 py-10">
+        <div
+          data-testid="open-new-tab-banner"
+          className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3"
+        >
+          <p className="text-[13.5px] text-amber-900">
+            <span className="font-semibold">Downloads not working?</span> The preview window inside the
+            chat can block file downloads. Open this page in its own browser tab, then the buttons will
+            download normally.
+          </p>
+          <a
+            href={window.location.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid="open-new-tab-btn"
+            className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-amber-500 px-3.5 py-2 text-sm font-semibold text-white hover:bg-amber-600 transition-colors"
+          >
+            <ExternalLink size={16} /> Open in a new tab
+          </a>
+        </div>
         {loading && (
           <div className="flex items-center gap-2 text-slate-500" data-testid="loading-state">
             <Loader2 className="animate-spin" size={18} /> Loading documents…
