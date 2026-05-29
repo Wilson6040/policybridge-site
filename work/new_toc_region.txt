@@ -1,0 +1,404 @@
+[0|Heading 1] 
+[1|Subtitle] Media and Music Combined Insurance Policy 0526
+[2|Heading 1] 
+[3|Heading 1] 
+[4|Heading 1] 
+[5|Heading 1] 
+[6|Heading 1] 
+[7|Heading 1] 
+[8|Heading 1] 
+[9|Heading 1] 
+[10|Heading 1] 
+[11|Heading 1] 
+[12|Heading 1] 
+[13|Heading 1] 
+[14|Heading 1] 
+[15|Heading 1] 
+[16|Heading 1] 
+[17|Heading 1] 
+[18|Heading 1] 
+[19|Heading 1] 
+[20|Heading 1] 
+[21|Heading 1] 
+[22|Heading 1] 
+[23|Heading 1] Policy Contents
+[24|Normal] Policy Contents  2
+[25|Normal] Introduction  3
+[26|Normal] Notices 4
+[27|Normal] Insuring Agreement  6
+[28|Normal] General PolicyDefinitions 7
+[29|Normal] General Policy Conditions  13
+[30|Normal] Policy Protection and Maintenance Conditions 19
+[31|Normal] Policy Claims Conditions 22
+[32|Normal] Policy Exclusions 26
+[33|Normal] Section 1: Business “All Risks” Section 30
+[34|Normal] Section 2: Property & Equipment “All Risks” Section 38
+[35|Normal] Section 3: Business Interruption “All Risks” Section  47
+[36|Normal] Section 4: Terrorism Section 64
+[37|Normal] Section 5: Employers’ Liability Section  68
+[38|Normal] Section 6: Public Liability Section  71
+[39|Normal] Section 7: Products Liability Section  78
+[40|Normal] Section 8: Money Section  81
+[41|Normal] Sub-Section 1 - Money 81
+[42|Normal] Sub-Section 2 – Personal Assault  82
+[43|Normal] Section 9: Goods in Transit Section 85
+[44|Normal] Section 10: Loss of Licence Section  88
+[45|Normal] Section 11: Production Indemnity & Multimedia “All Risks” Section 90
+[46|Normal] Section 12: Media Liability 95
+[47|Normal] Section 13: Commercial Legal Expenses Section
+[48|Normal] Section 14: Management Liability Insurance Section
+[49|Normal] Section 15: Cyber Liability Section
+[50|Normal] 
+[51|Heading 1] 
+[52|Heading 1] 
+[53|Heading 1] 
+[54|Heading 1] 
+[55|Heading 1] 
+[56|Heading 1] 
+[57|Heading 1] 
+[58|Heading 1] 
+[59|Heading 1] 
+[60|Heading 1] 
+[61|Heading 1] 
+[62|Heading 1] 
+[63|Heading 1] 
+[64|Heading 1] 
+[65|Heading 1] 
+[66|Heading 1] 
+[67|Heading 1] 
+[68|Heading 1] 
+[69|Heading 1] 
+[70|Heading 1] 
+[71|Heading 1] 
+[72|Heading 1] 
+[73|Body Text] 
+[74|Heading 1] Introduction
+[75|Body Text] Welcome to the Commercial Combined & Media Liability Insurance Policy underwritten by Tokio Marine HCC (the Insurer).
+[76|Body Text] Tokio Marine HCC is a trading name of HCC International Insurance Company plc, which is a member of the Tokio Marine HCC Group of Companies. HCC International Insurance Company plc is authorised by the Prudential Regulation Authority (PRA) and regulated by the UK Financial Conduct Authority (FCA) and Prudential Regulation Authority. Registered in England and Wales No. 01575839 with registered office at The St Botolph Building, 138-139 Houndsditch, London, EC3A 7BT.
+[77|Body Text] This can be checked on the Financial Services Register at https://register.fca.org.uk/ or by contacting the FCA on 0800 111 6768 (freephone) or 0300 500 8082.
+[78|Body Text] This Policy is intended to cover the Business and provides the protection that has been requested by the Insured.
+[79|Body Text] As a legal contract between the Insurer and the Insured it is important that this Policy document is checked to ensure that all the details stated in the Quotation (issued prior to the production of this document), Schedule and Schedules (which are attached and form an integral part of this Policy) are correct, and that it reflects the Insured’s understanding of the cover, meets its requirements and is adequate for its needs.  If any aspect is unclear, the Insured should discuss this Policy with its Insurance Adviser or with the Insurer.
+[80|Body Text] The Insured or the Insured’s Insurance Adviser must notify the Insurer as soon as is reasonably practicable if there is a discrepancy, omission, if the Insured’s insurance requirements change, or of any significant changes which may affect the insurance provided by this Policy.
+[81|Body Text] This Policy and the Schedule shall be read together as one document and any word or expression to which a specific meaning has been attached in any part of this Policy or of the Schedule shall bear such specific meaning wherever it may appear.
+[82|Heading 1] Notices
+[83|Heading 3] Understanding this Policy
+[84|Body Text] This Policy must be read in its entirety as Conditions, Exclusions and other limitations apply. The Insured must comply with the terms of this Policy.  Failure to do so may result in refusal or reduction of a claim where that claim has been affected by any failure to comply.
+[85|Body Text] This Policy is made up of different classes of insurance, which are set out in separate Sections of this Policy with specific terms applying to each Section separately in addition to general terms applying to all the Sections.  The cover purchased or not purchased is shown in the Policy Schedule.
+[86|Body Text] Certain Sections of this Policy contain specialist insuring clauses, definitions, conditions, exclusions, claims requirements and limits which apply only to those Sections. Where a Section contains its own specialist wording, that wording shall apply for the purposes of that Section in addition to, or instead of, the General Policy wording to the extent stated in that Section.
+[87|Body Text] The Insured must immediately notify its Insurance Adviser of any mistake in or a change that needs to be made to this Policy.
+[88|Heading 3] Notices
+[89|Body Text] Notice shall be deemed to be duly received in the course of post if sent by pre-paid letter post properly addressed to:
+[90|Body Text] in the case of the Insured, either to the Insured’s last known address or the last known address of the Insured’s broker;
+[91|Body Text] in the case of the Insurer, to HCC International Insurance Company PLC at The St Botolph Building, 138-139 Houndsditch, London, EC3A 7BT.
+[92|Heading 3] Conditions precedent
+[93|Body Text] The Policy contains and specifically identifies conditions precedent to Insurers liability. Conditions precedent to Insurers liability must be fully and strictly complied with and any breach will impact on the Insureds ability to make a claim.
+[94|Heading 3] Complaints
+[95|Body Text] We are dedicated to providing you with a high quality service and we want to ensure that we maintain this at all times If you feel that we have not offered you a first class service please write and tell us and we will do our best to resolve the problem If you have any questions or concerns about your policy or the handling of a claim you should in the first instance contact
+[96|Body Text] Compliance Officer
+[97|Body Text] Tokio Marine HCC 
+[98|Body Text] The St Botolph Building, 138-139 Houndsditch, London, EC3A 7BT
+[99|Body Text] Consumer Important Notice
+[100|Body Text] This Policy is issued as a commercial insurance product and is intended to operate as a non-consumer insurance contract. 
+[101|Body Text] The Policy is designed for an Insured arranging insurance wholly or mainly for the purposes of its trade, business, profession, organisation or commercial activities. It is not designed for, and is not suitable for, a Consumer or for any person arranging insurance wholly or mainly for personal, private, domestic, household or family purposes.
+[102|Body Text] The Insured must tell the Insurer before inception, renewal or variation of this Policy if:
+[103|Heading 3] (a) the Insured is, or may be, a Consumer;
+(b) the Policy is required wholly or mainly for personal, private, domestic, household or family purposes;
+(c) any insured property, liability, activity or interest is not commercial in nature; or
+(d) there is any uncertainty as to whether the Policy is a consumer insurance contract or a non-consumer insurance contract.
+[104|Heading 3] For the purposes of this notice, Consumer means an individual who enters into, or proposes to enter into, an insurance contract wholly or mainly for purposes unrelated to that individual’s trade, business or profession.
+[105|Heading 3] Nothing in this notice excludes or restricts any right or protection which cannot lawfully be excluded or restricted.
+[106|Heading 3] The Financial Ombudsman Service (FOS)
+[107|Body Text] Should you be dissatisfied with the outcome of your complaint, you may have the right to refer your complaint to the Financial Ombudsman Service. The FOS is an independent service in the UK for settling disputes between consumers and businesses providing financial services. Contacting the FOS does not affect your right to take legal action.
+[108|Body Text] The FOS’s contact details are as follows:
+[109|Body Text] Financial Ombudsman Service
+[110|Body Text] Exchange Tower
+[111|Body Text] London E14 9SR
+[112|Body Text] Email: complaint.info@financial-ombudsman.org.uk
+[113|Body Text] Telephone: +44 (0)30 0123 9123 (call charges may apply in the United Kingdom) or 0800 023 4567 (calls are free from ‘fixed lines’ and mobile telephones in the United Kingdom)
+[114|Body Text] Website: www.financial-ombudsman.org.uk
+[115|Heading 3] The European Commission Online Dispute Resolution Platform (ODR)
+[116|Body Text] If you were sold this product online or by other electronic means and within the European Union (EU) you may refer your complaint to the EU Online Dispute Resolution (ODR) platform. Upon receipt of your complaint the ODR will escalate your complaint to your local dispute resolution service – this process is free and conducted entirely online.  You can access the ODR platform on http://ec.europa.eu/odr. This platform will direct insurance complaints to the Financial Ombudsman Service. However, you may contact the FOS directly if you prefer, using the details as shown above.
+[117|Heading 3] Data Protection Notice 
+[118|Body Text] Tokio Marine HCC respects your right to privacy. In our Privacy Notice (available at https://www.tmhcc.com/en/legal/privacy-policy) we explain who we are, how we collect, share and use personal information about you, and how you can exercise your privacy rights.  
+[119|Body Text] If you have any questions or concerns about our use of your personal information, then please contact DPO@tmhcc.com.
+[120|Body Text] We may collect your personal information such as name, email address, postal address, telephone number, gender and date of birth.  We need the personal information to enter into and perform a contract with you.  We retain personal information we collect from you where we have an ongoing legitimate business need to do so.
+[121|Body Text] We may disclose your personal information to:
+[122|Body Text] our group companies;
+[123|Body Text] third party services providers and partners who provide data processing services to us or who otherwise process personal information for purposes that are described in our Privacy Notice or notified to you when we collect your personal information;
+[124|Body Text] any competent law enforcement body, regulatory, government agency, court or other third party where we believe disclosure is necessary;
+[125|Body Text] as a matter of applicable law or regulation, 
+[126|Body Text] to exercise, establish or defend our legal rights, or 
+[127|Body Text] to protect your interests or those of any other person; 
+[128|Body Text] a potential buyer (and its agents and advisers) in connection with any proposed purchase, merger or acquisition of any part of our business, provided that we inform the buyer it must use your personal information only for the purposes disclosed in our Privacy Notice; or
+[129|Body Text] any other person with your consent to the disclosure.
+[130|Body Text] Your personal information may be transferred to, and processed in, countries other than the country in which you are resident.  These countries may have data protection laws that are different to the laws of your country.  We transfer data within the Tokio Marine group of companies by virtue of our Intra Group Data Transfer Agreement, which includes the EU Standard Contractual Clauses.
+[131|Body Text] We use appropriate technical and organisational measures to protect the personal information that we collect and process about you.  The measures we use are designed to provide a level of security appropriate to the risk of processing your personal information.  
+[132|Body Text] You are entitled to know what data is held on you and to make what is referred to as a Data Subject Access Request (‘DSAR’).  You are also entitled to request that your data be corrected in order that we hold accurate records.  In certain circumstances, you have other data protection rights such as that of requesting deletion, objecting to processing, restricting processing and in some cases requesting portability.  Further information on your rights is included in our Privacy Notice.
+[133|Body Text] You can opt-out of marketing communications we send you at any time.  You can exercise this right by clicking on the “unsubscribe” or “opt-out” link in the marketing e-mails we send you.  Similarly, if we have collected and processed your personal information with your consent, then you can withdraw your consent at any time.  Withdrawing your consent will not affect the lawfulness of any processing we conducted prior to your withdrawal, nor will it affect processing of your personal information conducted in reliance on lawful processing grounds other than consent.  You have the right to complain to a data protection authority about our collection and use of your personal information.
+[134|Heading 3] Insurance Premium Tax
+[135|Body Text] The premium payable under this Policy may be subject to compulsory Insurance Premium Tax, as shown in the Schedule and/or on the applicable premium debit note(s) / invoice(s), which shall be payable by the Insured.
+[136|Body Text] If the rate or application of Insurance Premium Tax changes during the Period of Insurance and any premium payable during the Period of Insurance is subject by law to such change or application, then that premium payable by the Insured shall incorporate such change or application.
+[137|Heading 3] Choice of Law and Jurisdiction
+[138|Body Text] The law of England and Wales shall apply to this contract unless:
+[139|Body Text] the parties agree otherwise; or
+[140|Body Text] at the date of this contract the Insured is a resident of, or if a business has its registered office or principal office in, Scotland, Northern Ireland, the Channel Islands, Gibraltar or the Isle of Man, in which case the law of that country will apply, and the courts of that country shall have exclusive jurisdiction.
+[141|Heading 3] Employers’ Liability Tracing Office notice
+[142|Body Text] Certain information relating to the Insureds insurance Policy, namely:
+[143|Body Text] the policy number(s),
+[144|Body Text] employers’ names and addresses (including subsidiaries and any relevant changes of name),
+[145|Body Text] coverage dates, and
+[146|Body Text] (if relevant) the employer’s reference numbers provided by Her Majesty’s Revenue and Customs and Companies House Reference Numbers
+[147|Body Text] will be provided to the Employers’ Liability Tracing Office, (the “ELTO”) and added to the Employers’ Liability Database (ELD).
+[148|Body Text] It is understood by the Insured that the above, named information, provided to the Insurers will be processed by the Insurers, for the purpose of providing the ELD, in compliance with the provisions of the Employers’ Liability Insurance: Disclosure by Insurers Instrument 2010.
+[149|Body Text] The ELTO may provide such information to third parties to assist individuals with claims arising out of their course of employment in the United Kingdom for employers carrying on, or who carried on, business in the United Kingdom, to identify an insurer or insurers that provided Employers’ Liability Insurance.
+[150|Heading 3] Trading Sanctions or Restrictions
+[151|Body Text] The Insurer shall not provide cover and or be liable to pay any claim or provide any benefit hereunder to the extent that the provision of such cover, payment of such claim or provision of such benefit would expose the Insurer to any sanction, prohibition or restriction under United Nations resolutions or the trade or economic sanctions, laws or regulations of the European Union, the United Kingdom or the United States of America or Japan.
+[152|Heading 3] Insuring Agreement
+[153|Body Text] In consideration of payment of the premium the Insurer agrees to indemnify or compensate the Insured or otherwise to pay the benefits and compensation stated to the extent and in the manner specified in this Policy
+[154|Body Text] provided that:
+[155|Body Text] the Insured shall be subject to all the terms Conditions, limitations and Exclusions contained in this Policy;
+[156|Heading 3] In respect of any Section shown in the Schedule as operative, the cover afforded by that Section shall be subject to the Schedule and to the terms, Conditions, Exclusions, definitions, limits, extensions and claims provisions contained in that Section. Where Sections 13, 14, 15 or 16 contain specialist insuring clauses, definitions, conditions, exclusions, claims requirements or other provisions that differ from the General Policy wording, the wording of that Section shall apply for the purposes of that Section.
+[157|Body Text] the Insurer’s liability shall not exceed the Sums Insured or the Limits of Liability or any other limits expressed in this Policy.
+[158|Body Text] Where a Section contains its own definitions, those Section-specific definitions shall apply for the purposes of that Section. In respect of Sections 14 and 15, where a term is used but not defined in the relevant Section, the General Policy Definitions shall apply only to the extent that they are not inconsistent with that Section.
+[159|Heading 1] General Policy Definitions
+[160|Body Text] The following definitions shall apply to the whole of this Policy unless stated otherwise and wherever these words appear within this Policy in bold type they shall bear the same meaning throughout this Policy.
+[161|Heading 3] Average
+[162|Body Text] If at the time of any Damage the Sum Insured (or any part thereof including sub-limits or Extensions) is less than the total value of the relevant property, the Insured shall be their own insurer for the difference and shall bear a proportionate share of any related claim in the ratio that such undervalue bears to the relevant Sum Insured.
+[163|Body Text] Each Sum Insured is separately subject to Average unless stated to the contrary.
+[164|Heading 3] Bodily Injury
+[165|Body Text] Death, injury, disease or illness of any person;
+[166|Body Text] Mental injury, mental anguish or shock, which results in an identifiable psychiatric injury.
+[167|Heading 3] Buildings
+[168|Body Text] The structure of the Premises owned or used by the Insured in connection with the Insured’s Business which unless otherwise declared shall be built mainly of brick, stone, concrete or other non-combustible materials, including:
+[169|Body Text] landlords’ fixtures and fittings, tenant’s improvements;
+[170|Body Text] walls, gates, fences, yards, car parks, outbuildings, annexes, gangways, roads, paved areas, pavements, footpaths and other structures around and relating to the Premises;
+[171|Body Text] telephone, gas, water and electricity meters, pipes, cables and the like including such property which is underground or in adjoining yards or roadways and which partly or wholly serves to supply the Premises, but only to the extent of the Insured’s responsibility; and
+[172|Body Text] security cameras, security lights and intruder alarms or installations, owned or used by the Insured and situate on or around the Premises.
+[173|Heading 3] Business
+[174|Body Text] Only as stated in the Schedule.
+[175|Heading 3] Business Hours
+[176|Body Text] The normal working hours of the Insured’s Business or Employees.
+[177|Heading 3] Cessation of Business
+[178|Body Text] Any of the following involving the Insured:
+[179|Body Text] making a composition or arrangement with creditors; 
+[180|Body Text] having a proposal for a voluntary arrangement for a composition of debts or scheme of arrangement approved in accordance with the Insolvency Act 1986; 
+[181|Body Text] having an application made under the Insolvency Act 1986 to the court for the appointment of an administrator; 
+[182|Body Text] having a winding-up order made or (except for the purposes of amalgamation or reconstruction) a resolution for voluntary winding-up passed or have a provisional liquidator receiver or receiver and manager of the Business or undertaking duly appointed; or
+[183|Body Text] have an administrative receiver as defined in the Insolvency Act 1986 appointed or having possession taken by or on behalf of the holders of any debentures secured by floating charge or of any property comprised in or subject to the floating charge.
+[184|Heading 3] Compensation
+[185|Body Text] Damages imposed by law for which the Insured is legally liable including any interest payable and claimant’s costs and expenses.
+[186|Heading 3] Computer Equipment
+[187|Body Text] All parts of the Electronic Data processing equipment including portable Electronic Data processing including hardware, software and any associated input, output or data storage device, networking equipment or back up facility, interconnecting wiring and fixed discs, Electronic Data processing media, ancillary equipment solely used in conjunction with the Electronic Data processing equipment comprising temperature and environmental control, power supply and voltage regulating equipment, electronic access equipment, and heat, smoke and water detection equipment and protective devices.
+[188|Heading 3] Consequential Loss
+[189|Body Text] pre-agreed damages or penalties payable under contract;
+[190|Body Text] pure economic or financial or in any way related loss not specifically provided for herein; or
+[191|Body Text] liability for 1 or 2 above specifically assumed under contract for loss consequent upon Damage, which would not have attached in the absence of such contract.
+[192|Heading 3] Costs and Expenses
+[193|Body Text] (Applicable only to the Employers’ Liability, Public Liability or Products Liability Sections of this Policy)
+[194|Body Text] All costs and expenses incurred with the written consent of the Insurer in respect of a claim or likely claim against the Insured or representative of the Insured at proceedings in any court arising out of any alleged act or omission resulting in a claim which may be the subject of Compensation or at any Coroner’s Inquest or Fatal Accident Inquiry or in any court, arising out of any alleged breach of statutory duty, which shall form part of and are not in addition to any Limit of Liability (unless otherwise stated).Costs and Expenses includes those costs and expenses of any director, partner or Employee attending court as a witness at the request of the Insurer in connection with a claim which the Insured is entitled to Compensation up to the following rates per person per day on which attendance is required: 
+[195|Body Text] GBP500 (five hundred pounds sterling) any director or partner; and 
+[196|Body Text] GBP200 (two hundred pounds sterling) any Employee
+[197|Heading 3] Criminal Prosecution Defence Costs
+[198|Body Text] Health and Safety at Work Act 1974;
+[199|Body Text] Consumer Protection Act 1987;
+[200|Body Text] Food Safety Act 1990;
+[201|Body Text] Disability Discrimination Act 1995;
+[202|Body Text] Corporate Manslaughter and Corporate Homicide Act 2007; and
+[203|Body Text] A criminal prosecution for manslaughter against an Employee arising out of his employment as part of the Business.
+[204|Heading 3] Damage
+[205|Body Text] Accidental physical loss, destruction or damage.
+[206|Heading 3] Defined Perils
+[207|Body Text] Fire, lightning, explosion, aircraft or other aerial devices or articles dropped therefrom, riot, civil commotion, strikers, locked-out workers, persons taking part in labour disturbances, malicious persons, earthquake, storm, tempest, flood, escape of water from water tanks, apparatus or pipes, sprinkler leakage, or impact by any road vehicle or animal.
+[208|Heading 3] Documents – applicable to Section 12 
+[209|Body Text] means digitised data, information recorded or stored in a format for use with a computer, microcode, deeds, wills, agreements, maps, plans, records, written or printed books, letters, certificates, written or printed documents or forms of any nature whatsoever (excluding any bearer bonds or coupons, bank or currency notes, share certificates, stamps or other negotiable paper).
+[210|Heading 3] Electronic Data
+[211|Body Text] Facts, concepts and information converted to a form useable for communications, interpretation or processing by electronic and electro-mechanical data processing or electronically controlled equipment and includes programs, software or other coded instructions for the processing and manipulation of data or direction and manipulation of such equipment.
+[212|Heading 3] Employee - applicable to Sections 1-11
+[213|Body Text] Any of the following whilst working for and under the control and supervision of the Insured in connection with its Business:
+[214|Body Text] any person under a contract of service or apprenticeship with:
+[215|Body Text] the Insured;
+[216|Body Text] any other party who is supplied or hired to the Insured;
+[217|Body Text] any labour master or labour only sub-contractor or any person supplied by them under a contract for service;
+[218|Body Text] any self-employed person working for the Insured providing labour only, under a contract for service;
+[219|Body Text] any person supplied to the Insured under a contract or agreement stipulating that such person will be deemed to be in the employment of the Insured for the period of such contract or agreement;
+[220|Body Text] any person participating in any government or otherwise authorised work experience, training, study, exchange or similar scheme;
+[221|Body Text] any unpaid person whilst temporarily working for the Insured; and
+[222|Body Text] drivers and/or operators of plant hired to the Insured.
+[223|Heading 3] Excess – applicable to Sections 1 - 11
+[224|Body Text] The first amount or time period (stated in the Schedule as the sum or time period applicable to each Section or Extension) for which the Insured is responsible, which must be exceeded for each and every claim before that claim is payable by the Insurer. The Insurer will only pay that part of the loss that exceeds the Excess, up to the appropriate Limit of Liability or Sum Insured stated in the Schedule to that Section.
+[225|Heading 3] Excess – applicable to Section 12 
+[226|Body Text] The first amount paid in respect of each claim as stated in the Schedule and is not payable in respect of Defence Costs and Expenses. The Indemnity limit is additional to the Excess.
+[227|Heading 3] Extension
+[228|Body Text] The additional cover to any Section (if specified in the Schedule as purchased and in force) which shall always be subject to the General Policy Conditions and all terms Conditions, limitations and Exclusions specified in that Section, and to any specified Limit of Liability or Sum Insured stated in the Schedule to that Section.
+[229|Heading 3] Hacking
+[230|Body Text] Unauthorised access to any computer or other equipment or component or system or item which processes, stores, transmits or receives of any sort whatever, including without limitation tangible or intangible data, and any programs or software, bandwidth, cryptographic keys, databases, documents, domain names or network addresses or anything similar, files, interfaces, metadata, platforms, processing capability, storage media, transaction gateways, user credentials, websites, or any information whatever.
+[231|Heading 3] Incident
+[232|Body Text] Damage to the property insured or property used by the Insured at the Premises for the purpose of the as insured under the Business “All Risks” Section or Production Property “All Risks” Section; 
+[233|Body Text] Damage to Computer Equipment used by the Insured, at the Premises for the purpose of the Business, as insured under the Information Technology Section in respect of Increase in Cost of Working or Additional Increase in Cost of Working;
+[234|Body Text] Explosion of any boiler or economiser on the Premises.
+[235|Heading 3] Insured 
+[236|Body Text] The person or corporate body named in the Schedule, excluding any North American Domiciled Companies or any Subsidiary or associated company that is domiciled in the United States of America, its territories or possessions, or Canada including
+[237|Body Text] any of their subsidiary companies that are in existence at the inception of this Policy and have been declared to the Insurers;
+[238|Body Text] the current or previous partners, directors, principals, members or Employees of any firm or company stated in the Schedule; and
+[239|Body Text] any other person who becomes a partner, director, principal, member or Employee of any firm or company stated in the Schedule.
+[240|Heading 3] Insurer
+[241|Body Text] HCC International Insurance Company PLC.
+[242|Heading 3] Intruder Alarm Installation
+[243|Body Text] All the component parts detailed in the manufacturers’ or installers’ alarm specification for the alarm installation used by the Insured, including the devices used to transmit or receive signals.
+[244|Heading 3] Jurisdiction
+[245|Body Text] means the jurisdiction stated in the Schedule. Where no jurisdiction is stated in the Schedule then the Jurisdiction shall be Worldwide but excluding the United States of America (including its territories and /or possessions) and Canada.
+[246|Heading 3] Keyholder
+[247|Body Text] The Insured or any person or key-holding company authorised by the Insured who:
+[248|Body Text] is available at all times to:
+[249|Body Text] accept notification of faults or alarm signals relating to the Intruder Alarm Installation; and
+[250|Body Text] attend and allow access to the Premises; and
+[251|Body Text] has been fully trained in the activation, operation or deactivation of the Intruder Alarm Installation.
+[252|Heading 3] Limit of Liability – applicable to Sections 1-11
+[253|Body Text] The amount stated in the Schedule as the limit of the Insurer’s liability applicable to each claim or series of related claims, including as appropriate the lesser of the Sum Insured (or Percentage of the Sum Insured), Inner Limit, Limit of Liability, Limit, Amount, Total Sum Insured, and in the aggregate, or the Benefit Level, and including any Costs and Expenses. The amount recoverable for any Item or Extension within a Section shall not exceed the amount stated in the Schedule for that Item or Extension, and the Extensions shall not increase the Insurer’s liability for the Section as stated within the Schedule to that Section. 
+[254|Heading 3] Media Business Services – applicable to Section 12
+[255|Body Text] those services as stated in the Schedule under the heading “Media Business Services” or “business description”
+[256|Heading 3] Money
+[257|Body Text] Physical cash, bank and currency notes, cheques and  (other than blank or partly completed cheques and ), travellers cheques, bankers drafts and giro drafts, postal orders, money orders, national savings certificates and premium bonds, current postage and revenue stamps, unexpired units in franking machines, trading stamps, national insurance stamps (whether affixed to cards or otherwise), national savings and holiday with pay stamps, gift tokens and bills of exchange, consumer credit vouchers, luncheon vouchers and VAT purchase invoices, travel tickets, travel warrants, phone cards, credit charge cards, oyster cards and top-up cards for employee restaurants, all belonging to the Insured or for which the Insured has accepted responsibility.
+[258|Heading 3] Period of Insurance
+[259|Body Text] The period of cover as stated in the Schedule.
+[260|Heading 3] Phishing
+[261|Body Text] Any access or attempted access to data of any sort whatever, including without limitation tangible or intangible data, and any programs or software, bandwidth, cryptographic keys, databases, documents, domain names or network addresses or anything similar, files, interfaces, metadata, platforms, processing capability, storage media, transaction gateways, user credentials, websites, or any information whatever, by means of misrepresentation or deception.
+[262|Heading 3] Policy
+[263|Body Text] This Policy wording, the Quotation, the Schedule, the Schedule and any subsequent variation or endorsement agreed by the Insurer.
+[264|Heading 3] Pollution
+[265|Body Text] Discharge, dispersal, seepage, migration, release or escape of smoke, vapours, soot, fumes, acids, alkalis, toxic chemicals, liquids or gases, waste materials or other irritants, contaminants or pollutants into or upon the atmosphere, air, land (including buildings or other structures thereon) or any water course, surface water, ground water or body of water.
+[266|Heading 3] Premises
+[267|Body Text] The premises as stated in the Schedule.
+[268|Heading 3] Product
+[269|Body Text] Any commodity, article, goods or item manufactured, sold, supplied, hired out, repaired, serviced, altered, upgraded, installed, erected, processed, tested, treated, stored or transported by the Insured and no longer in the custody or under the control of the Insured or any Employee but excluding food and/or drink supplied for consumption whilst on the Premises.
+[270|Heading 3] Quotation
+[271|Body Text] The quotation form provided by the Insurer which forms part of this Policy.
+[272|Heading 3] Responsible Person
+[273|Body Text] The person authorised and appointed by the Insured to be responsible for the security of the Premises.
+[274|Heading 3] Schedule
+[275|Body Text] The Schedule (or any replacement) specifying the coverage and limits insured.
+[276|Heading 3] Section
+[277|Body Text] Each part of this Policy that details the insurance cover provided (which shall be operative only if specified in the Schedule as purchased and in force).  Each Section of cover shall always be subject to the General Policy Conditions and all Conditions, limitations, Exclusions and terms specified in that Section, and to any specified sub-limit or Limit of Liability or Sum Insured.  The Insurer’s liability for any Section shall never exceed that stated in the Schedule to that Section.
+[278|Heading 3] Subsidiary
+[279|Body Text] Any company as defined in section 1159 of the Companies Act 2006.
+[280|Heading 3] Sum Insured
+[281|Body Text] The sum specified as the sum insured in the Schedule.
+[282|Heading 3] Terrorism
+[283|Body Text] An act, or threat of an act, by any person or group of persons, whether acting alone or on behalf or in connection with any organisation or government that:
+[284|Body Text] is committed for political, religious, ideological or similar purposes; and
+[285|Body Text] is intended to influence any government or to put the public or any section of the public in fear; and
+[286|Body Text] 
+[287|Body Text] involves violence against one or more persons, or
+[288|Body Text] involved Damage to property; or
+[289|Body Text] endangers life other than that of the person committing the action; or
+[290|Body Text] creates a risk to health or safety of the public or a section of the public; or
+[291|Body Text] is designed to interfere with or to disrupt an electronic system.
+[292|Heading 3] Unattended Vehicle or Trailer
+[293|Body Text] Any vehicle or trailer that is not under observation, such that attempts to interfere with it may not be observed with reasonable prospects of preventing any unauthorised interference.
+[294|Heading 3] United Kingdom
+[295|Body Text] England, Scotland, Wales, Northern Ireland, the Channel Islands, Gibraltar and the Isle of Man.
+[296|Heading 3] Unoccupied
+[297|Body Text] (when referring to Buildings or part of any Buildings)
+[298|Body Text] Empty or not in use by the Insured or any tenant of the Insured or in which the Insured does not nor intends to have authorised persons present during Business Hours.
+[299|Body Text] Further, throughout this Policy: 
+[300|Body Text] Words with capitalised first letters are defined in, applicable to and bear the same meaning throughout this Policy or the Section in which they appear, or the Schedule or Schedule, or as the context requires;
+[301|Body Text] The singular includes the plural and vice versa, and the masculine includes the feminine and gender neutral;
+[302|Body Text] “Including” and “includes” mean without limitation; 
+[303|Body Text] Any obligation or payment owed by the Insurer shall in every case be subject to the Limits of Liability or Sums Insured specified in the Schedule;
+[304|Body Text] Any reference to legislation includes any similar or related law, ordinance or regulation, any amendments, and any rules or regulations or executive orders issued thereunder, or by agencies or similar bodies thereof;
+[305|Body Text] Any reference to a regulatory or investigative or other state or local governmental body includes any similar or related agency or body;
+[306|Heading 1] 
+[307|Body Text] 
+[308|Body Text] 
+[309|Heading 1] General Policy Conditions
+[310|Heading 1] The following General Policy Conditions apply to this Policy except where a Section contains its own specific conditions or other provisions dealing with the same subject matter. In respect of Sections 15 and 16, any Section-specific conditions, claims provisions, notice requirements, cooperation obligations, other insurance provisions, change of control provisions, cancellation provisions or similar specialist provisions shall prevail to the extent of any inconsistency.
+[311|Body Text] The descriptions in the headings and subheadings of this Policy are solely for convenience and form no part of the terms and Conditions of coverage; 
+[312|Body Text] All or part of any provision of this Policy which is or becomes void or illegal, invalid or unenforceable by a court or other competent body under the law of any applicable jurisdiction shall be deleted.  The parties shall use their best efforts to agree a replacement for the provision deleted which achieves as far as possible the same effect as would have been achieved by the deleted provision had it remained enforceable.
+[313|Heading 1] General Application of Policy Conditions
+[314|Body Text] Each Section and Extension of cover (if specified as operative in the Schedule) shall always be subject to the General Policy Conditions and all terms Conditions, limitations and Exclusions specified in that Section [as applicable], and to any specified Limit of Liability or Sum Insured.  No Section or Extension will increase the Insurer’s liability over that stated in the Schedule applicable to that Section or Extension.
+[315|Heading 3] Adjustment
+[316|Body Text] If any part of the premium is shown in the Schedule as being adjustable, the Insured shall within 1 (one) month of the expiry of the Period of Insurance or such further period as the Insurer may allow provide such details as the Insurer may reasonably require and the premium for such period shall be adjusted accordingly, subject to any minimum premium that may be required.
+[317|Body Text] If any part of the premium is calculated on estimates provided by the Insured, the Insured shall keep accurate records containing all relevant particulars and shall permit the Insurer or its representatives to inspect such records at any time on reasonable notice.
+[318|Heading 3] Assignment
+[319|Body Text] This Policy (including any benefits it provides) is not assignable to any third party without the express approval of the Insurer confirmed in writing by the Insurer.
+[320|Heading 3] Average
+[321|Body Text] Each Sum Insured is separately subject to Average.
+[322|Heading 3] Cancellation
+[323|Body Text] by the Insured
+[324|Body Text] The Insured can cancel this Policy during the Period of Insurance by giving notice to their Insurance Adviser.
+[325|Body Text] If the Insured gives such notice of cancellation, the amount of return premium that the Insurers will return to the Insured will depend on:
+[326|Body Text] how long this Policy has been in force, and
+[327|Body Text] whether a claim has been made under this Policy or there is a known potential claim or accident, incident or circumstance likely to give rise to a claim under this Policy.
+[328|Body Text] If the Insured cancels this Policy and a claim has not been made under this Policy and there is no known potential claim or accident, incident or circumstances likely to give rise to a claim under this Policy, the Insurers will return a share of the premium paid which shall be calculated as follows:
+[329|Body Text] where this Policy has been in force for a period up to but not exceeding 55 (fifty-five) days from the start date as shown in the Period of Insurance, the Insurers shall retain 15% (fifteen percent) of the Premium paid (including the applicable Insurance Premium Tax);
+[330|Body Text] where this Policy has been in force for a period greater than 55 (fifty-five) days but less than 311 (three hundred and eleven) days from the start date as shown in the Period of Insurance, the Insurers shall retain that proportion of the Premium paid (including the applicable Insurance Premium Tax) that relates to the period this Policy has been in force; or
+[331|Body Text] where this Policy has been in force for a period of 311 (three hundred and eleven) days from the start date as shown in the Period of Insurance, there shall be no return of Premium payable.
+[332|Body Text] However, there will be no refund of Premium if:
+[333|Body Text] a claim has been made under this Policy or there is a known potential claim or accident, incident or circumstance likely to give rise to a claim, or
+[334|Body Text] this Policy is subject to a minimum and deposit premium as shown in the Schedule.
+[335|Body Text] by the Insurers 
+[336|Body Text] the Insurers may cancel this Policy if:
+[337|Body Text] the Insured provides any information that proves to be inaccurate or incomplete (see Fair Presentation of Risk Condition in this Policy), or
+[338|Body Text] there is a change or variation in the risk which means:
+[339|Body Text] the Insurers can no longer provide the insurance cover under this Policy and the Insurers will cancel this Policy by giving You thirty (30) days’ written notice via Your Insurance Broker. The cancellation will take effect thirty (30) days after the day the Insured is notified of the cancellation and the Insurers shall return the Premium paid for the unused Period of Insurance; or 
+[340|Body Text] the extent of the change or variation makes the risk unacceptable to the Insurers and the Insurers cannot continue to insure the Insured for any further  the Insurers will cancel this Policy by giving the Insured immediate notice via their Insurance Broker. The cancellation will take effect on the day the Insured is notified of the cancellation and the Insurers shall return the Premium paid for the unused Period of Insurance.
+[341|Body Text] In accordance with the Fair Presentation of Risk Condition, the Insurers may not pay any claim where the claim arises from or relates to or is contributed to by a change or variation in risk.
+[342|Body Text] However, if the Insured makes a fraudulent claim under this Policy by recklessly or deliberately providing false information then the Insurers shall cancel this Policy with immediate effect from the date the fraud was committed, and the cancellation shall be in writing to the Insured via their insurance broker.
+[343|Heading 3] Criminal Prosecution Defence Costs
+[344|Body Text] In respect of any Criminal Prosecution Defence Costs:
+[345|Body Text] the Insurer at its sole discretion may require the opinion of Counsel as to whether or not such legal fees and expenses should extend or continue to extend to support such defence;
+[346|Body Text] the Insurer shall not be responsible for any legal fees or expenses incurred following receipt of a Counsel’s opinion advising that there is no reasonable defence to the prosecution;
+[347|Body Text] the choice of Counsel is at the Insurer’s sole discretion;
+[348|Body Text] the Insurer’s liability shall operate over and above any more specific insurance held by the Insured;
+[349|Body Text] in the event that 2 (two) or more Sections of this Policy may respond to a prosecution brought under any of the specified Acts, only one limit (as specified in (h) below) will apply to any one prosecution for each Act that is defended; 
+[350|Body Text] no sum shall be payable in respect of any liability for any fines, penalties, pre-agreed damages, punitive damages or exemplary damages or prosecution costs awarded against the Insured; 
+[351|Body Text] in the event of any wilful concealment by the Insured at any time of any fact or matter in any way that is detrimental to the defence of a claim insured under this Extension, then this Extension shall not apply and the Insurer may recover from the Insured all fees and expenses that it has paid to the Insured in respect of Criminal Prosecution Defence Costs; and
+[352|Body Text] in respect of the Acts set out in 1-4 of Criminal Prosecution Defence Costs the Limit of Liability shall be GBP250,000 (two hundred and fifty thousand pounds sterling) and in respect of 5 and 6 of Criminal Prosecution Defence Costs (involving manslaughter) shall be GBP5,000,000 (five million pounds sterling), any one prosecution and in the aggregate in the Period of Insurance.
+[353|Heading 3] Duties of the Insured – applicable to Sections 1-11
+[354|Body Text] The Insured shall:
+[355|Body Text] observe and comply with all laws, obligations and requirements (whether statutory, local, common law or otherwise);
+[356|Body Text] maintain the Buildings, machinery and equipment and everything used in connection with and concerning the Business in efficient and safe working order;
+[357|Body Text] as soon as possible after discovery to make good or remedy any defect or danger and take such additional precautions to prevent loss, Damage or liability or further loss, Damage or liability as the circumstances may require;
+[358|Body Text] take all reasonable precautions:
+[359|Body Text] to prevent any event which may give rise to liability under this Policy; and
+[360|Body Text] in the selection and supervision of Employees and external contractors.
+[361|Heading 3] Fair Presentation of Risk 
+[362|Body Text] The Insured must take care to give accurate and complete information relating to the insurance provided by this Policy and is required to make a fair presentation of the risks that are or would be insured under this Policy.
+[363|Body Text] A fair presentation of the risks means that, in addition to answering any questions asked, the Insured must: 
+[364|Body Text] disclose to the Insurer every material fact or circumstance which the Insured know or ought to know or, failing that, sufficient information to alert the Insurer of the need to make further enquiries; 
+[365|Body Text] make such disclosure in a reasonably clear and accessible manner; and
+[366|Body Text] ensure that, in such disclosure, any material representation as to a matter of fact is substantially correct, and a matter of expectation or belief is made in good faith. 
+[367|Body Text] A circumstance is material if it would influence the Insurer’s judgement (as a prudent underwriter) in determining whether to take the risk and, if so, on what terms.  If the Insured is in any doubt as to whether a circumstance is material, then the Insured should disclose it.
+[368|Body Text] If the Insured becomes aware that the information the Insured has given to the Insurer is inaccurate or incomplete or the Insured has any particular concerns about any of the information the Insured have provided or should provide, before or after the start date of this insurance as shown in the Period of Insurance, then the Insured must advise the Insured’s Insurance Adviser.
+[369|Body Text] If the information the Insured has given the Insurer in relation to this insurance proves to be inaccurate or incomplete, then the Insurer may:
+[370|Body Text] amend the terms of this Policy, which may be applied as if they were already in place prior to any claim where the validity of that claim was impacted by the inaccurate or incomplete information, or
+[371|Body Text] reduce the amount the Insurer pay on a claim in the proportion the premium paid bears to the premium that the Insurer would have charged the Insured had the information not been inaccurate or incomplete, or
+[372|Body Text] treat this Policy as if it never existed, which means no claims will be paid and the Premium paid under it will be returned.  This will only be done if this insurance would not have been provided if the information given had not been inaccurate or incomplete.
+[373|Body Text] If the Insurer establishes that the Insured deliberately or recklessly provided false or misleading information in relation to the insurance provided under this Policy, the Insurer will treat this insurance as if it never existed for the Period of Insurance, which means no claims will be paid and the Insurer will not return the Premium.  If this happens the Insurer will advise the Insured in writing to the Insured’s address shown in the Schedule. 
+[374|Body Text] If the Insured becomes aware that any information it has provided is inaccurate, or if its insurance requirements change, the Insured must inform its Insurance Adviser as soon as practicable.
+[375|Body Text] If:
+[376|Body Text] the information the Insured has given the Insurer in relation to this insurance changes, or
+[377|Body Text] there is any significant change in or variance of the risk,
+[378|Body Text] before or during the Period of Insurance, then the Insured must notify the Insurer in writing as soon as practicable as it may result in:
+[379|Body Text] the Insurer applying different terms; and/or
+[380|Body Text] a claim not being paid (in whole or in part); and/or
+[381|Body Text] it being determined that this Policy is no longer suitable to meet the Insured’s needs. 
+[382|Body Text] The Insured must make a fair presentation of the risks to the Insurer if there is any significant change in or variance of the risk before or after the start date of this insurance.
+[383|Body Text] The decision to impose additional terms will be at the absolute discretion of the Insurer and will be based upon what the Insurer would have done had a fair presentation of risk been made and will be notified in writing to the Insured’s Insurance Adviser.
+[384|Body Text] In the event that any loss relates to Property Insured by the Business “All Risks” Section or the Information Technology Section and the Insurer charges an additional premium then it is at the Insurer’s discretion whether to pay to the Insured the value of the Property Insured at the time of any Damage or at the Insurer’s option reinstate or replace such Property Insured or any part of the Property Insured.
+[385|Heading 3] Fraud 
+[386|Body Text] If the Insured dishonestly or recklessly makes any claim, the Insurer shall not be liable to pay that claim and the Insured shall repay to the Insurer any sums already paid by the Insurer in respect of that claim.  The Insurer may cancel this insurance from the date of the fraudulent act on written notice to the Insured and will not be liable for any claims after the fraudulent act, and will not return any premium.
+[387|Heading 3] International Sanctions
+[388|Body Text] The Insurer will not provide cover, be liable to pay any claim or provide any benefit if to do so would expose the Insurer (or any parent company, direct or indirect holding company of the Insurer) to any penalty or restriction (including extraterritorial penalties or restrictions so far as such do not contradict laws applicable to the Insurer), arising out of any trade and economic sanctions laws or regulations which are applicable to it.
+[389|Heading 3] Limit of Liability – applicable to Sections 1-11
+[390|Body Text] The liability of the Insurer for Compensation payable under any one Section (or Item or Sub-Section therein) or Extension for any one claimant or number of claimants in respect of or arising out of any one occurrence or series of claims arising out of any one occurrence or all occurrences of a series consequent on or attributable to one source or original cause shall not exceed the appropriate Limit of Liability stated in the Schedule to the relevant Section. 
+[391|Heading 3] Non-Invalidation Applicable to Sections 1-11
+[392|Body Text] The insurance provided by this Policy shall not be prejudiced by any act or omission unknown to or beyond the control of the Insured whereby the risk of Damage to property or Bodily Injury is increased, provided that the Insured upon becoming aware of such act or omission shall as soon as practicable give notice in writing to the Insurer and pay an additional premium if required and comply with any additional requirements imposed by the Insurer.
+[393|Body Text] This Condition shall not apply to:
+[394|Body Text] any breach by the Insured of its duty of disclosure (including its duty to make a fair presentation of the risk); or
+[395|Body Text] any breach by the Insured of a condition under this Policy which is not a Policy Protection and Maintenance Condition (as set out below).
+[396|Heading 3] Other Parties
+[397|Body Text] The Insured and the Insurer are the only parties to this contract and no other person has any rights to enforce any term of this Policy.
+[398|Heading 3] Policy Construction and Disputes
+[399|Body Text] Any phrase or word in this Policy and the Schedule will be interpreted in accordance with the laws of England and Wales. This Policy and the Schedule shall be read together as one contract and any word or expression to which a specific meaning has been attached in any part of this Policy or the Schedule shall bear such specific meaning wherever it may appear.
+[400|Body Text] In respect of Section 12 only any dispute concerning the interpretation of the terms, conditions or exclusions contained herein is understood and agreed by both the Insured and the Insurer to be subject to the laws of England and Wales. Each party agrees to refer any such dispute to a mediator to be agreed between the Insured and the Insurer within 14 (fourteen) working days of any dispute arising under this Policy. If a mediator is not agreed then either party may apply to the Centre for Effective Dispute Resolution (‘CEDR’) for the appointment of a mediator. The parties agree to share equally the costs of CEDR and of the mediator and that the reference of the dispute to mediation will be conducted in confidence.

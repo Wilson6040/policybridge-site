@@ -1,0 +1,221 @@
+[18] <Heading 3> 
+[19] <Heading 1> Introduction
+[27] <Heading 1> 
+[28] <Heading 1> 
+[29] <Heading 1> 
+[30] <Heading 1> 
+[31] <Heading 1> 
+[32] <Heading 1> 
+[33] <Heading 1> 
+[34] <Heading 1> 
+[36] <Heading 1> Notices
+[37] <Heading 2> Understanding this Policy
+[38] <Heading 2> This Policy must be read in its entirety as Conditions, Exclusions and other limitations apply. The Insured must comply with the terms of this Policy.  Failure to do so may result in refusal or reduction of a claim where that claim has been affected by any failure to comply.
+[41] <Heading 2> Notices
+[45] <Heading 2> Conditions precedent
+[47] <Heading 2> Complaints
+[61] <Heading 2> Data Protection Notice
+[62] <Heading 2> Tokio Marine HCC respects your right to privacy. In our Privacy Notice (available at https://www.tmhcc.com/en/legal/privacy-policy) we explain who we are, how we collect, share and use personal information about you, and how you can exercise your privacy rights.
+[78] <Heading 2> Insurance Premium Tax
+[79] <Heading 2> The premium payable under this Policy may be subject to compulsory Insurance Premium Tax, as shown in the Schedule and/or on the applicable premium debit note(s) / invoice(s), which shall be payable by the Insured.
+[81] <Heading 2> Choice of Law and Jurisdiction
+[85] <Heading 2> Employers’ Liability Tracing Office notice
+[96] <Heading 1> 
+[97] <Heading 1> 
+[98] <Heading 1> 
+[99] <Heading 1> 
+[100] <Heading 1> 
+[101] <Heading 1> 
+[102] <Heading 1> 
+[103] <Heading 1> 
+[105] <Heading 1> Insuring Agreement
+[110] <Heading 1> General Policy Definitions
+[259] <Heading 2> 
+[260] <Heading 1> General Policy Conditions
+[262] <Heading 2> General Application of Policy Conditions
+[264] <Heading 2> Adjustment
+[267] <Heading 2> Assignment
+[269] <Heading 2> Average
+[271] <Heading 2> Cancellation
+[297] <Heading 2> Criminal Prosecution Defence Costs
+[307] <Heading 2> Duties of the Insured – applicable to Sections 1-12
+[315] <Heading 2> Fair Presentation of Risk
+[339] <Heading 2> Fraud
+[341] <Heading 2> International Sanctions
+[342] <Heading 2> The Insurer will not provide cover, be liable to pay any claim or provide any benefit if to do so would expose the Insurer (or any parent company, direct or indirect holding company of the Insurer) to any penalty or restriction (including extraterritorial penalties or restrictions so far as such do not contradict laws applicable to the Insurer), arising out of any trade and economic sanctions laws or regulations which are applicable to it.
+[343] <Heading 2> Limit of Liability – applicable to Sections 1-12
+[345] <Heading 2> Non-Invalidation Applicable to Sections 1-12
+[350] <Heading 2> Other Parties
+[351] <Heading 2> The Insured and the Insurer are the only parties to this contract and no other person has any rights to enforce any term of this Policy.
+[352] <Heading 2> Policy Construction and Disputes
+[353] <Heading 2> Any phrase or word in this Policy and the Schedule will be interpreted in accordance with the laws of England and Wales. This Policy and the Schedule shall be read together as one contract and any word or expression to which a specific meaning has been attached in any part of this Policy or the Schedule or Specification shall bear such specific meaning wherever it may appear.
+[358] <Heading 2> Pollution
+[367] <Heading 2> Premium
+[369] <Heading 2> Rights of Third Parties
+[371] <Heading 2> Subrogation Waiver
+[377] <Heading 2> Subscribing Insurers
+[379] <Heading 2> Premium Instalments via a Finance Provider
+[404] <Heading 1> Policy Protection and Maintenance Conditions - (Applicable to Sections 1-12)
+[406] <Heading 2> Firebreak Doors and Shutters
+[408] <Heading 2> Fire Protections and Detection Installations and Equipment
+[426] <Heading 2> Minimum Security Requirements Condition
+[428] <Heading 2> Specification
+[449] <Heading 2> Security Devices
+[468] <Heading 2> Unoccupancy Condition
+[478] <Heading 2> Works by External Contractors
+[482] <Heading 1> Policy Claims Conditions
+[483] <Heading 1> (Applicable to Sections 1-12)
+[485] <Heading 2> Admission of Liability
+[487] <Heading 2> Arbitration
+[497] <Heading 2> Claims – Rights of the Insurer
+[502] <Heading 2> 
+[503] <Heading 2> Discharge of Liability
+[506] <Heading 2> Mitigation
+[508] <Heading 2> Notification of a Claim – applicable to Sections 1 to 12 inclusive
+[526] <Heading 2> Notification to the Police
+[528] <Heading 2> Terms of Settlement
+[530] <Heading 2> Notification and Claims Conditions – applicable to Sections 13
+[531] <Heading 2> Claim/Circumstance Notification
+[543] <Heading 2> Notifications
+[544] <Heading 2> Any and all notifications of Circumstances and claims for an indemnity pursuant to this Policy shall be notified to HCC International Insurance Company PLC by either (a) email (b) telephone or (c) first class post.
+[551] <Heading 2> Conduct of Claims
+[566] <Heading 1> Policy Exclusions
+[567] <Heading 1> (Applicable to Sections 1-12 or as otherwise stated)
+[568] <Heading 2> Communicable Disease
+[579] <Heading 2> Contribution
+[580] <Heading 2> The Insurer will not pay any claim if any Damage or liability covered under this Policy is also covered under any other insurance, to the extent of that other coverage.
+[581] <Heading 2> Coronavirus and Covid-19 Exclusion
+[584] <Heading 2> Date Recognition
+[595] <Heading 2> Excess
+[597] <Heading 2> Fines and Penalties
+[601] <Heading 2> Northern Ireland
+[604] <Heading 2> Nuclear
+[611] <Heading 2> Pollution
+[616] <Heading 2> in respect of the Production Property "All Risks" Section of this Policy 1 and 2 above do not apply subject to a maximum Insurer’s liability of GBP 500,000 (five hundred thousand pounds sterling)
+[618] <Heading 2> Property Cyber and Data Endorsement
+[641] <Heading 2> Sonic Bang
+[644] <Heading 2> Terrorism
+[651] <Heading 2> War & Kindred Risks
+[655] <Heading 1> Section 1: Business “All Risks” Section
+[656] <Heading 3> (Premises Risk only)
+[657] <Heading 3> Definitions
+[676] <Heading 2> The Cover
+[678] <Heading 2> Basis of Settlement
+[679] <Heading 2> Indemnity Basis
+[681] <Heading 2> Reinstatement Basis
+[697] <Heading 3> Extensions
+[799] <Heading 3> Exclusions
+[859] <Heading 3> Conditions
+[870] <Heading 1> 
+[871] <Heading 1> Section 2: Production Property “All Risks” Section
+[872] <Heading 3> Definitions
+[894] <Heading 3> 
+[895] <Heading 3> 
+[896] <Heading 3> 
+[900] <Heading 3> 
+[901] <Heading 3> The Cover
+[926] <Heading 3> 
+[927] <Heading 3> Extensions
+[988] <Heading 3> Optional Extensions
+[1018] <Heading 3> Optional Conditions
+[1033] <Heading 3> 
+[1034] <Heading 3> 
+[1035] <Heading 3> 
+[1036] <Heading 3> 
+[1037] <Heading 3> 
+[1038] <Heading 3> 
+[1039] <Heading 3> 
+[1040] <Heading 3> 
+[1042] <Heading 3> Conditions
+[1061] <Heading 3> Exclusions
+[1120] <Heading 1> Section 3: Business Interruption “All Risks” Section
+[1121] <Heading 3> Definitions
+[1149] <Heading 3> The Cover
+[1154] <Heading 3> Basis of Settlement
+[1248] <Heading 3> 
+[1249] <Heading 3> Extensions
+[1314] <Heading 2> Optional Extensions
+[1362] <Heading 3> Conditions
+[1396] <Heading 1> Section 4: Information Technology Section
+[1397] <Heading 3> Definitions
+[1412] <Heading 3> The Cover
+[1414] <Heading 3> Basis of Settlement
+[1430] <Heading 3> Extensions
+[1468] <Heading 2> Transit Extension
+[1471] <Heading 3> Exclusions
+[1506] <Heading 3> Condition
+[1511] <Heading 1> 
+[1512] <Heading 1> Section 5: Terrorism Section
+[1513] <Heading 3> Definitions
+[1549] <Heading 3> The Cover
+[1568] <Heading 2> Exclusions
+[1591] <Heading 3> Conditions
+[1607] <Heading 1> Section 6: Employers’ Liability Section
+[1608] <Heading 3> Definitions
+[1613] <Heading 3> The Cover
+[1620] <Heading 3> Extensions
+[1652] <Heading 3> Exclusions
+[1660] <Heading 3> Conditions
+[1666] <Heading 1> Section 7: Public Liability Section
+[1667] <Heading 3> Definition
+[1670] <Heading 3> The Cover
+[1678] <Heading 3> Extensions
+[1686] <Heading 2> At the Insured’s request this Extension covers the Insured and any Employee or director of the Insured against the legal fees and expenses incurred with the Insurer’s prior written approval in defending any of them in respect of a prosecution within the definition of Criminal Prosecution Defence Costs and subject to the specified sub-limits, for an offence alleged to be first committed during the Period of Insurance in connection with the Business in respect of a liability that may form the subject of Compensation under this Section.
+[1756] <Heading 3> Exclusions
+[1803] <Heading 3> Conditions
+[1805] <Heading 2> The liability of the Insurer for all Compensation and Costs and Expenses arising out of Terrorism within the United Kingdom shall not exceed the limit stated in the Specification to this Section.
+[1832] <Heading 1> Section 8: Products Liability Section
+[1833] <Heading 3> The Cover
+[1839] <Heading 3> Extensions
+[1848] <Heading 3> 
+[1849] <Heading 3> 
+[1850] <Heading 3> 
+[1851] <Heading 3> 
+[1852] <Heading 3> 
+[1853] <Heading 3> 
+[1854] <Heading 3> 
+[1855] <Heading 3> 
+[1856] <Heading 3> Exclusions
+[1884] <Heading 3> 
+[1885] <Heading 3> 
+[1887] <Heading 3> Condition
+[1892] <Heading 1> 
+[1893] <Heading 1> Section 9: Money Section
+[1894] <Heading 3> Sub-Section 1 - Money
+[1895] <Heading 3> Definitions
+[1905] <Heading 3> The Cover
+[1915] <Heading 3> Extension
+[1918] <Heading 3> Exclusions
+[1930] <Heading 3> Conditions
+[1942] <Heading 3> Sub-Section 2 – Personal Assault
+[1943] <Heading 3> Definitions
+[1960] <Heading 3> The Cover
+[1964] <Heading 3> Conditions
+[1971] <Heading 3> Claims Conditions
+[1976] <Heading 1> Section 10: Goods in Transit Section
+[1977] <Heading 3> Definitions
+[1986] <Heading 3> The Cover
+[1988] <Heading 3> Basis of Claims Settlement
+[1990] <Heading 3> Extensions
+[2001] <Heading 2> 
+[2002] <Heading 3> Condition
+[2008] <Heading 3> Exclusions
+[2045] <Heading 1> Section 11: Loss of Licence Section
+[2046] <Heading 3> Definitions
+[2055] <Heading 3> The Cover
+[2062] <Heading 3> Exclusions
+[2077] <Heading 3> Conditions
+[2096] <Heading 1> Section 12: Production Indemnity “All Risks” Section
+[2097] <Heading 3> Definitions
+[2112] <Heading 3> The Cover
+[2127] <Heading 3> Extensions
+[2137] <Heading 3> Exclusions
+[2150] <Heading 3> Exclusions
+[2179] <Heading 3> Conditions
+[2205] <Heading 1> Section 13: Media Liability Section
+[2206] <Heading 3> Definitions
+[2234] <Heading 3> Insuring Clauses
+[2288] <Heading 3> Extensions
+[2304] <Heading 3> Conditions
+[2325] <Heading 3> Exclusions
+[2328] <Heading 2> Any claim arising out of or relating directly or in any way from any failure of the Insured to adhere to its own legal advice with regard to clearances of any data, text, sounds, images or similar content that is intended to be, or has been, disseminated;

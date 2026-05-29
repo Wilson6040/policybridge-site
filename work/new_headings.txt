@@ -1,0 +1,773 @@
+[0] <Heading 1> 
+[1] <Subtitle> Media and Music Combined Insurance Policy 0526
+[2] <Heading 1> 
+[3] <Heading 1> 
+[4] <Heading 1> 
+[5] <Heading 1> 
+[6] <Heading 1> 
+[7] <Heading 1> 
+[8] <Heading 1> 
+[9] <Heading 1> 
+[10] <Heading 1> 
+[11] <Heading 1> 
+[12] <Heading 1> 
+[13] <Heading 1> 
+[14] <Heading 1> 
+[15] <Heading 1> 
+[16] <Heading 1> 
+[17] <Heading 1> 
+[18] <Heading 1> 
+[19] <Heading 1> 
+[20] <Heading 1> 
+[21] <Heading 1> 
+[22] <Heading 1> 
+[23] <Heading 1> Policy Contents
+[51] <Heading 1> 
+[52] <Heading 1> 
+[53] <Heading 1> 
+[54] <Heading 1> 
+[55] <Heading 1> 
+[56] <Heading 1> 
+[57] <Heading 1> 
+[58] <Heading 1> 
+[59] <Heading 1> 
+[60] <Heading 1> 
+[61] <Heading 1> 
+[62] <Heading 1> 
+[63] <Heading 1> 
+[64] <Heading 1> 
+[65] <Heading 1> 
+[66] <Heading 1> 
+[67] <Heading 1> 
+[68] <Heading 1> 
+[69] <Heading 1> 
+[70] <Heading 1> 
+[71] <Heading 1> 
+[72] <Heading 1> 
+[74] <Heading 1> Introduction
+[82] <Heading 1> Notices
+[83] <Heading 3> Understanding this Policy
+[88] <Heading 3> Notices
+[92] <Heading 3> Conditions precedent
+[94] <Heading 3> Complaints
+[103] <Heading 3> (a) the Insured is, or may be, a Consumer;
+(b) the Policy is required wholly or mainly for personal, private, domestic, household or family purposes;
+(c) any insured property, liability, activity or interest is not commercial in nature; or
+(d) there is any uncertainty as to whether the Policy is a consumer insurance contract or a non-consumer insurance contract.
+[104] <Heading 3> For the purposes of this notice, Consumer means an individual who enters into, or proposes to enter into, an insurance contract wholly or mainly for purposes unrelated to that individual’s trade, business or profession.
+[105] <Heading 3> Nothing in this notice excludes or restricts any right or protection which cannot lawfully be excluded or restricted.
+[106] <Heading 3> The Financial Ombudsman Service (FOS)
+[115] <Heading 3> The European Commission Online Dispute Resolution Platform (ODR)
+[117] <Heading 3> Data Protection Notice
+[134] <Heading 3> Insurance Premium Tax
+[137] <Heading 3> Choice of Law and Jurisdiction
+[141] <Heading 3> Employers’ Liability Tracing Office notice
+[150] <Heading 3> Trading Sanctions or Restrictions
+[152] <Heading 3> Insuring Agreement
+[156] <Heading 3> In respect of any Section shown in the Schedule as operative, the cover afforded by that Section shall be subject to the Schedule and to the terms, Conditions, Exclusions, definitions, limits, extensions and claims provisions contained in that Section. Where Sections 13, 14, 15 or 16 contain specialist insuring clauses, definitions, conditions, exclusions, claims requirements or other provisions that differ from the General Policy wording, the wording of that Section shall apply for the purposes of that Section.
+[159] <Heading 1> General Policy Definitions
+[161] <Heading 3> Average
+[164] <Heading 3> Bodily Injury
+[167] <Heading 3> Buildings
+[173] <Heading 3> Business
+[175] <Heading 3> Business Hours
+[177] <Heading 3> Cessation of Business
+[184] <Heading 3> Compensation
+[186] <Heading 3> Computer Equipment
+[188] <Heading 3> Consequential Loss
+[192] <Heading 3> Costs and Expenses
+[197] <Heading 3> Criminal Prosecution Defence Costs
+[204] <Heading 3> Damage
+[206] <Heading 3> Defined Perils
+[208] <Heading 3> Documents – applicable to Section 12
+[210] <Heading 3> Electronic Data
+[212] <Heading 3> Employee - applicable to Sections 1-11
+[223] <Heading 3> Excess – applicable to Sections 1 - 11
+[225] <Heading 3> Excess – applicable to Section 12
+[227] <Heading 3> Extension
+[229] <Heading 3> Hacking
+[231] <Heading 3> Incident
+[235] <Heading 3> Insured
+[240] <Heading 3> Insurer
+[242] <Heading 3> Intruder Alarm Installation
+[244] <Heading 3> Jurisdiction
+[246] <Heading 3> Keyholder
+[252] <Heading 3> Limit of Liability – applicable to Sections 1-11
+[254] <Heading 3> Media Business Services – applicable to Section 12
+[256] <Heading 3> Money
+[258] <Heading 3> Period of Insurance
+[260] <Heading 3> Phishing
+[262] <Heading 3> Policy
+[264] <Heading 3> Pollution
+[266] <Heading 3> Premises
+[268] <Heading 3> Product
+[270] <Heading 3> Quotation
+[272] <Heading 3> Responsible Person
+[274] <Heading 3> Schedule
+[276] <Heading 3> Section
+[278] <Heading 3> Subsidiary
+[280] <Heading 3> Sum Insured
+[282] <Heading 3> Terrorism
+[292] <Heading 3> Unattended Vehicle or Trailer
+[294] <Heading 3> United Kingdom
+[296] <Heading 3> Unoccupied
+[306] <Heading 1> 
+[309] <Heading 1> General Policy Conditions
+[310] <Heading 1> The following General Policy Conditions apply to this Policy except where a Section contains its own specific conditions or other provisions dealing with the same subject matter. In respect of Sections 15 and 16, any Section-specific conditions, claims provisions, notice requirements, cooperation obligations, other insurance provisions, change of control provisions, cancellation provisions or similar specialist provisions shall prevail to the extent of any inconsistency.
+[313] <Heading 1> General Application of Policy Conditions
+[315] <Heading 3> Adjustment
+[318] <Heading 3> Assignment
+[320] <Heading 3> Average
+[322] <Heading 3> Cancellation
+[343] <Heading 3> Criminal Prosecution Defence Costs
+[353] <Heading 3> Duties of the Insured – applicable to Sections 1-11
+[361] <Heading 3> Fair Presentation of Risk
+[385] <Heading 3> Fraud
+[387] <Heading 3> International Sanctions
+[389] <Heading 3> Limit of Liability – applicable to Sections 1-11
+[391] <Heading 3> Non-Invalidation Applicable to Sections 1-11
+[396] <Heading 3> Other Parties
+[398] <Heading 3> Policy Construction and Disputes
+[404] <Heading 3> Pollution
+[413] <Heading 3> Premium
+[415] <Heading 3> Rights of Third Parties
+[417] <Heading 3> Subrogation Waiver
+[423] <Heading 3> Subscribing Insurers
+[425] <Heading 1> Premium Instalments via a Finance Provider
+[427] <Heading 3> FP
+[429] <Heading 3> Instalment Credit Agreement
+[431] <Heading 3> Amended Premium Payment Terms and Conditions
+[450] <Heading 1> Policy Protection and Maintenance Conditions - (Applicable to Sections 1-11)
+[452] <Heading 3> Firebreak Doors and Shutters
+[454] <Heading 3> Fire Protections and Detection Installations and Equipment
+[472] <Heading 3> Minimum Security Requirements Condition
+[474] <Heading 3> Schedule
+[495] <Heading 3> Security Devices
+[514] <Heading 3> Unoccupancy Condition
+[524] <Heading 3> Policy Claims Conditions (Applicable to Sections 1-11 and to Sections 12-15 only where expressly stated or not inconsistent)
+[529] <Heading 1> Policy Claims Conditions (Applicable to Sections 1-11)
+[531] <Heading 3> Admission of Liability
+[533] <Heading 3> Arbitration
+[543] <Heading 3> Claims – Rights of the Insurer
+[548] <Heading 3> Discharge of Liability
+[551] <Heading 3> Mitigation
+[553] <Heading 3> Notification of a Claim – applicable to Sections 1 to 11 inclusive
+[570] <Heading 3> Notification to the Police
+[572] <Heading 3> Terms of Settlement
+[574] <Heading 1> Notification and Claims Conditions – applicable to Sections 13
+[575] <Heading 3> Claim/Circumstance Notification
+[590] <Heading 3> Notifications
+[597] <Heading 3> Conduct of Claims
+[610] <Heading 1> Policy Exclusions (Applicable to Sections 1-11 or as otherwise stated)
+[612] <Heading 3> Communicable Disease
+[623] <Heading 3> Contribution
+[625] <Heading 3> Coronavirus and Covid-19 Exclusion
+[628] <Heading 3> Date Recognition
+[639] <Heading 3> Excess
+[641] <Heading 3> Fines and Penalties
+[645] <Heading 3> Northern Ireland
+[648] <Heading 3> Nuclear
+[655] <Heading 3> Pollution
+[661] <Heading 3> Property Cyber and Data Endorsement
+[669] <Heading 1> Definitions
+[670] <Heading 3> Cyber Loss
+[672] <Heading 3> Cyber Act
+[674] <Heading 3> Cyber Incident
+[678] <Heading 3> Computer System
+[680] <Heading 3> Data
+[682] <Heading 3> Data Processing Media
+[684] <Heading 3> Sonic Bang
+[687] <Heading 3> Terrorism
+[694] <Heading 3> War & Kindred Risks
+[698] <Subtitle> Section 1: Business “All Risks” Section
+[699] <Subtitle> (Premises Risk only)
+[700] <Heading 1> Definitions
+[701] <Heading 3> All Other Contents
+[719] <Heading 3> Contents
+[724] <Heading 3> Contract Price
+[734] <Heading 3> Provided that the Insurer’s approval of such costs has first been obtained in writing
+[735] <Heading 3> Exhibition Property
+[746] <Heading 3> Inland
+[761] <Heading 3> Rent
+[763] <Heading 3> Stock
+[765] <Heading 3> Transit
+[767] <Heading 3> The Cover
+[770] <Heading 1> Basis of Settlement
+[771] <Heading 3> Indemnity Basis
+[787] <Heading 1> Extensions
+[788] <Heading 3> Architects’, Surveyors’, Engineers’ Legal Fees
+[794] <Heading 3> Capital Additions or Acquisitions
+[804] <Heading 3> Contract Price
+[806] <Heading 3> Customers’ Goods
+[809] <Heading 3> Day One Uplift
+[813] <Heading 3> Definition
+[823] <Heading 3> Designation
+[825] <Heading 3> Drain Clearance
+[827] <Heading 3> European Union and Public Authorities
+[841] <Heading 3> Exhibitions
+[846] <Heading 3> Fire Extinguishing Expenses
+[853] <Heading 3> Garden and Ornamental Features Expenses
+[855] <Heading 3> Inadvertent Omission to Insure
+[860] <Heading 3> Leased and Rented Premises
+[862] <Heading 3> Metered Water
+[869] <Heading 3> Removal of Debris
+[881] <Heading 3> Replacement of Locks
+[883] <Heading 3> Seventy-Two Hours
+[886] <Heading 3> Temporary Removal
+[893] <Heading 3> Theft Damage to Buildings
+[895] <Heading 3> Trace and Access
+[897] <Heading 3> Transfer of Interest
+[899] <Heading 1> Exclusions
+[900] <Heading 3> Excluded Causes
+[946] <Heading 3> Excluded Property
+[960] <Heading 1> Conditions
+[961] <Heading 3> Cessation of Cover
+[968] <Heading 3> Stock Premium Adjustment Condition
+[976] <Heading 1> 
+[977] <Subtitle> 
+[978] <Subtitle> Section 2: Property & Equipment “All Risks” Section
+[979] <Heading 1> Definitions
+[980] <Heading 3> Geographical Limits
+[982] <Heading 3> General Average Contributions
+[984] <Heading 3> Location
+[986] <Heading 3> Property Insured
+[988] <Heading 3> Props, Sets and Wardrobe
+[990] <Heading 3> Specified Articles
+[992] <Heading 3> Salvage Charges
+[994] <Heading 3> Technical Equipment
+[995] <Heading 3> Technical Equipment means property of the types described below, used in connection with the Insured’s business, any musical performance, production, conference, exhibition, event, festival or product launch, and which is owned by the Insured, held by the Insured in trust, hired, leased or borrowed by the Insured, or for which the Insured is legally responsible:
+[996] <Heading 3> (a) musical instruments and associated cases, accessories   and ancillary equipment;
+(b) microphones, sound, amplification and public address equipment;
+(c) lighting, staging, projection and visual effects equipment;
+(d) computer equipment, laptops, tablets, peripherals and business machines;
+(e) mixing, editing, recording, sound production and post-production equipment;
+(f) audio-visual, video, filming, streaming and broadcast equipment;
+(g) stock, merchandise, promotional goods and display materials;
+(h) props, scenery, sets, costumes and wardrobe;
+() equipment, materials and other property used in connection with conferences, exhibitions, events, festivals and product launches; and
+(j) any other similar property agreed by the Insurer in writing.
+[998] <Heading 3> The Cover
+[1000] <Heading 1> Basis of Settlement
+[1002] <Heading 3> Agreed Value Basis
+[1007] <Heading 3> Indemnity Basis
+[1009] <Heading 3> Reinstatement Basis
+[1023] <Heading 1> Extensions
+[1024] <Heading 3> Alternative Hire
+[1030] <Heading 3> Artists Equipment
+[1032] <Heading 3> Automatic Reinstatement
+[1035] <Heading 3> Brands and Labels
+[1043] <Heading 3> Capital Additions or Acquisitions
+[1046] <Heading 3> Customs Duty
+[1048] <Heading 3> Consequential Loss Following Declaration of General Average
+[1050] <Heading 3> Exhibition Extension
+[1057] <Heading 3> Fine Arts
+[1064] <Heading 3> Involuntary Betterment
+[1081] <Heading 3> Loan Property Insured
+[1083] <Heading 3> Marine General Average
+[1085] <Heading 3> Transit Extension
+[1088] <Heading 1> Optional Extensions
+[1090] <Heading 3> Hired-in Property
+[1097] <Heading 3> Hired-out Property
+[1102] <Heading 3> Mechanical and Electrical Breakdown
+[1112] <Heading 3> Sub-Limit Restriction
+[1117] <Heading 1> Optional Conditions
+[1118] <Heading 3> Fraudulent Hire – Vetting Requirements
+[1125] <Heading 3> Amended Property in Unattended Vehicle Condition
+[1132] <Heading 1> Conditions
+[1133] <Heading 3> Average
+[1135] <Heading 3> Property in Unattended Vehicle Condition
+[1142] <Heading 3> Technical Equipment Hired Out
+[1147] <Heading 3> Technical Equipment Hired In
+[1151] <Heading 1> Exclusions
+[1152] <Heading 3> Exclusions applicable to Technical Equipment
+[1170] <Heading 3> Exclusions applicable to Props, Sets and Wardrobes
+[1190] <Heading 3> Exclusions applicable to Specified Articles
+[1204] <Subtitle> 
+[1205] <Subtitle> Section 3: Business Interruption “All Risks” Section
+[1206] <Heading 1> Definitions
+[1207] <Heading 3> Accounts Receivable
+[1209] <Heading 3> Estimated Gross Profit
+[1211] <Heading 3> Estimated Gross Revenue
+[1213] <Heading 3> Exhibition Property
+[1215] <Heading 3> Gross Profit
+[1218] <Heading 3> Gross Revenue
+[1220] <Heading 3> Indemnity Period
+[1222] <Heading 3> Maximum Indemnity Period
+[1224] <Heading 3> Rent Receivable
+[1226] <Heading 3> Specified Illness
+[1228] <Heading 3> Trends and Variations
+[1244] <Heading 3> Turnover
+[1246] <Heading 3> Uninsured Working Expenses
+[1248] <Heading 3> The Cover
+[1253] <Heading 1> Basis of Settlement
+[1255] <Heading 3> Accounts Receivable
+[1260] <Heading 3> Additional Increase in Cost of Working
+[1262] <Heading 3> Declaration Linked
+[1268] <Heading 3> Gross Profit
+[1274] <Heading 3> Gross Revenue
+[1280] <Heading 3> Increase in Cost of Working
+[1286] <Heading 3> Increase in Cost of Working (Computers)
+[1291] <Heading 1> Definitions applicable to this Basis of Settlement only
+[1292] <Heading 3> Approved Maintenance Agreement
+[1294] <Heading 3> Breakdown
+[1296] <Heading 3> Computer Equipment
+[1298] <Heading 3> Computer Media
+[1300] <Heading 3> Electronic Office Equipment
+[1302] <Heading 3> Incident
+[1308] <Heading 1> Exclusions
+[1328] <Heading 1> Extension
+[1329] <Heading 3> Accountants Fees
+[1331] <Heading 1> Special Condition
+[1332] <Heading 3> Duplicate Records
+[1337] <Heading 3> Rent Receivable
+[1345] <Heading 1> Extensions
+[1346] <Heading 3> Alternative Trading
+[1348] <Heading 3> Automatic Reinstatement
+[1350] <Heading 3> Customers and Suppliers
+[1352] <Heading 3> Denial of Access
+[1356] <Heading 3> Departmental
+[1358] <Heading 3> Specified Illness and Miscellaneous Contingencies
+[1378] <Heading 3> Exhibition Loss of Expenses
+[1384] <Heading 3> Exhibition Sites
+[1386] <Heading 3> Payments on Account
+[1388] <Heading 3> Professional Accountants
+[1391] <Heading 3> Public Utilities
+[1406] <Heading 1> Optional Extensions
+[1408] <Heading 3> Contract Sites
+[1410] <Heading 3> Denial of Access (Non-Damage)
+[1423] <Heading 3> Goods In Transit
+[1425] <Heading 3> Public Utilities – Terminal Ends
+[1442] <Heading 3> Business interruption Limit
+[1482] <Subtitle> 
+[1501] <Heading 1> 
+[1502] <Heading 3> 
+[1508] <Heading 3> 
+[1511] <Heading 1> 
+[1512] <Heading 3> 
+[1514] <Heading 3> 
+[1516] <Heading 3> 
+[1519] <Heading 1> 
+[1520] <Subtitle> Section 4: Terrorism Section
+[1521] <Heading 1> Definitions
+[1522] <Heading 3> Computer Systems
+[1524] <Heading 3> Data
+[1526] <Heading 3> Denial of Service Attack
+[1529] <Heading 3> Event
+[1531] <Heading 3> Nuclear Installation
+[1536] <Heading 3> Nuclear Reactor
+[1538] <Heading 3> Private Individual
+[1543] <Heading 3> Property Insured
+[1545] <Heading 3> Residential Property
+[1549] <Heading 3> Territorial Limits
+[1551] <Heading 3> Terrorism
+[1553] <Heading 3> Virus or Similar Mechanism
+[1556] <Heading 3> The Cover
+[1574] <Heading 1> Exclusions
+[1596] <Heading 1> Conditions
+[1597] <Heading 3> Adjustable Premiums
+[1599] <Heading 3> Automatic Reinstatement
+[1601] <Heading 3> Burden of Proof
+[1603] <Heading 3> Further Claims Procedure
+[1606] <Heading 3> Long Term Agreement
+[1608] <Heading 3> Period of Insurance
+[1612] <Subtitle> Section 5: Employers’ Liability Section
+[1613] <Heading 1> Definitions
+[1614] <Heading 3> Geographical Limits
+[1616] <Heading 3> Offshore
+[1618] <Heading 3> The Cover
+[1625] <Heading 1> Extensions
+[1626] <Heading 3> Additional Insured Parties
+[1632] <Heading 3> Criminal Prosecution Defence Costs
+[1634] <Heading 3> Data Protection Act
+[1648] <Heading 3> Indemnity to Principals
+[1651] <Heading 3> Unsatisfied Court Judgments
+[1656] <Heading 1> Exclusions
+[1658] <Heading 3> Motor Insurance
+[1660] <Heading 3> Offshore
+[1662] <Heading 3> Workers’ Compensation
+[1664] <Heading 1> Conditions
+[1665] <Heading 3> Asbestos
+[1667] <Heading 3> Terrorism
+[1670] <Subtitle> 
+[1671] <Subtitle> Section 6: Public Liability Section
+[1672] <Heading 1> Definition
+[1673] <Heading 3> Geographical Limits
+[1675] <Heading 3> The Cover
+[1683] <Heading 1> Extensions
+[1684] <Heading 3> Additional Insured Parties
+[1690] <Heading 3> Criminal Prosecution Defence Costs
+[1692] <Heading 3> Cross Liabilities
+[1697] <Heading 3> Custody or Control
+[1703] <Heading 3> Data Protection Act
+[1716] <Heading 3> Defective Premises Act 1972
+[1721] <Heading 3> Indemnity to Principals
+[1724] <Heading 3> Legionella Liability
+[1732] <Heading 3> Motor Vehicle Contingent Liability
+[1737] <Heading 3> Overseas Personal Liability
+[1751] <Heading 1> Optional Extension
+[1777] <Heading 1> Exclusions
+[1779] <Heading 3> Abuse
+[1781] <Heading 3> Advice and Professional Negligence
+[1783] <Heading 3> Asbestos
+[1786] <Heading 3> Contractual Liability
+[1788] <Heading 3> Defective Workmanship
+[1790] <Heading 3> Employees
+[1792] <Heading 3> Medical Malpractice
+[1807] <Heading 3> Pollution
+[1809] <Heading 3> Products
+[1811] <Heading 3> Terrorism
+[1813] <Heading 3> Vehicles, Vessels or Craft
+[1822] <Heading 1> Conditions
+[1823] <Heading 3> Terrorism
+[1825] <Heading 3> Worldwide Jurisdiction
+[1828] <Heading 3> Hazardous Activities
+[1830] <Heading 3> Heat Work Condition
+[1845] <Subtitle> 
+[1846] <Subtitle> Section 7: Products Liability Section
+[1847] <Heading 3> The Cover
+[1853] <Heading 1> Extensions
+[1854] <Heading 3> Criminal Prosecution Defence Costs
+[1856] <Heading 3> Cross Liabilities
+[1862] <Heading 1> Optional Extension
+[1879] <Heading 1> Exclusions
+[1881] <Heading 3> Advice and Professional Negligence
+[1883] <Heading 3> Aircraft/Watercraft Products
+[1887] <Heading 3> Asbestos
+[1890] <Heading 3> Contractual Liability
+[1892] <Heading 3> Damage to Products Supplied
+[1897] <Heading 3> Defective Workmanship
+[1899] <Heading 3> Employees
+[1901] <Heading 3> Food and Drink
+[1903] <Heading 3> North American Exports
+[1905] <Heading 3> Pollution
+[1907] <Heading 1> Condition
+[1908] <Heading 3> Worldwide Jurisdiction
+[1912] <Heading 1> 
+[1913] <Subtitle> 
+[1914] <Subtitle> Section 8: Money Section
+[1915] <Heading 1> Sub-Section 1 - Money
+[1916] <Heading 1> Definitions
+[1917] <Heading 3> Non-Negotiable Money
+[1919] <Heading 3> Situation(s)
+[1926] <Heading 3> The Cover
+[1935] <Heading 1> Extension
+[1936] <Heading 3> Loss of Keys
+[1938] <Heading 1> Exclusions
+[1950] <Heading 1> Conditions
+[1951] <Heading 3> Carryings Condition
+[1958] <Heading 3> Contract with a Security Company
+[1960] <Heading 3> Records
+[1962] <Heading 1> Sub-Section 2 – Personal Assault
+[1963] <Heading 1> Definitions
+[1964] <Heading 3> Insured Person
+[1969] <Heading 3> Medical Expenses
+[1971] <Heading 3> Permanent
+[1973] <Heading 3> Permanent Total Disablement
+[1975] <Heading 3> Temporary Partial Disablement
+[1977] <Heading 3> Temporary Total Disablement
+[1979] <Heading 3> The Cover
+[1983] <Heading 1> Conditions
+[1990] <Heading 1> Claims Conditions
+[1995] <Subtitle> Section 9: Goods in Transit Section
+[1996] <Heading 1> Definitions
+[1997] <Heading 3> Geographical Limits
+[1999] <Heading 3> In Transit
+[2001] <Heading 3> Property Insured
+[2003] <Heading 3> Temporary Storage
+[2005] <Heading 3> The Cover
+[2007] <Heading 1> Basis of Claims Settlement
+[2009] <Heading 1> Extensions
+[2010] <Heading 3> Clothing and Personal Effects
+[2012] <Heading 3> Debris Removal, Trans-shipment and Recovery Charges and Costs
+[2016] <Heading 3> Tarpaulins, Sheets and Ropes
+[2018] <Heading 3> Tools and Samples
+[2020] <Heading 1> Condition
+[2021] <Heading 3> Precautions
+[2026] <Heading 1> Exclusions
+[2041] <Heading 3> Excluded Property
+[2063] <Subtitle> Section 10: Loss of Licence Section
+[2064] <Heading 1> Definitions
+[2065] <Heading 3> Designated Premises Supervisor
+[2067] <Heading 3> Licence
+[2069] <Heading 3> Licensing Authorities
+[2071] <Heading 3> Operating Schedule
+[2073] <Heading 3> The Cover
+[2080] <Heading 1> Exclusions
+[2095] <Heading 1> Conditions
+[2096] <Heading 3> Claims Condition
+[2103] <Heading 3> Notification to the Insurer
+[2111] <Heading 3> Replacement of Licensee
+[2114] <Subtitle> 
+[2115] <Subtitle> Section 11: Production Indemnity “All Risks” Section
+[2116] <Heading 1> Definitions
+[2117] <Heading 3> Gross Production Cost
+[2125] <Heading 3> Principal Persons
+[2127] <Heading 3> Production
+[2129] <Heading 3> Property Insured
+[2131] <Heading 3> The Cover
+[2143] <Heading 3> Amount Payable
+[2146] <Heading 1> Extensions
+[2147] <Heading 3> Agency and Talent Costs
+[2150] <Heading 3> Archive Material
+[2152] <Heading 3> Automatic Reinstatement
+[2154] <Heading 3> Storage
+[2156] <Heading 1> Exclusions
+[2169] <Heading 1> Exclusions
+[2198] <Heading 1> Conditions
+[2199] <Heading 3> Production Planning
+[2203] <Heading 3> Duplicates
+[2205] <Heading 3> Rushes
+[2207] <Heading 3> Pre-Filming Testing
+[2209] <Heading 3> Full Value Declaration
+[2211] <Heading 3> Short Period only
+[2213] <Heading 3> Premium Adjustment
+[2216] <Heading 3> Processing
+[2218] <Heading 3> Geographical Limit
+[2222] <Subtitle> Section 12: Media Liability Section
+[2223] <Heading 1> Definitions
+[2224] <Heading 3> Advertising
+[2226] <Heading 3> Circumstance
+[2228] <Heading 3> Computer System
+[2230] <Heading 3> Damages
+[2232] <Heading 3> Defence Costs and Expenses
+[2234] <Heading 3> Employee
+[2239] <Heading 3> Financially Associated Person or Entity
+[2244] <Heading 3> Indemnity Limit
+[2249] <Heading 3> Virus
+[2251] <Heading 1> Insuring Clauses
+[2253] <Heading 3> Indemnity
+[2268] <Heading 3> Legal Defence Costs and Expenses
+[2272] <Heading 3> Rectification
+[2279] <Heading 3> Irrecoverable fees
+[2281] <Heading 3> Commitment to Media Space or Print Time
+[2283] <Heading 3> Data Protection Defence Costs
+[2288] <Heading 3> Reputation Management
+[2290] <Heading 3> Withdrawal of Content
+[2296] <Heading 3> Compensation for Court Attendance
+[2300] <Heading 3> Costs for Prosecuting Infringement of the Insured’s Intellectual Property Rights
+[2305] <Heading 1> Extensions
+[2307] <Heading 3> Joint ventures
+[2309] <Heading 3> Indemnity to Principals
+[2311] <Heading 3> Mergers and Acquisitions
+[2321] <Heading 1> Conditions
+[2322] <Heading 3> Change of Control
+[2325] <Heading 3> Premium Payment Clause
+[2330] <Heading 3> Reasonable Steps to Avoid Loss
+[2340] <Heading 3> Dishonest or Fraudulent Act or Omission
+[2342] <Heading 1> Exclusions
+[2344] <Heading 3> Adherence to Legal Advice
+[2346] <Heading 3> Asbestos
+[2348] <Heading 3> Bodily Injury/Property Damage
+[2350] <Heading 3> Claims by Employees
+[2352] <Heading 3> Claims by Financially Associated Persons or Entities
+[2354] <Heading 3> Claims or Circumstances Known at Inception
+[2356] <Heading 3> Collection of Private Data Without Consent
+[2358] <Heading 3> Collusion and Conspiracy
+[2360] <Heading 3> Commercial Disputes
+[2364] <Heading 3> Contractual Liability
+[2366] <Heading 3> Costs and Expenses Incurred Without Prior Consent
+[2368] <Heading 3> Credit Card
+[2370] <Heading 3> Deliberate Acts
+[2372] <Heading 3> Dishonesty
+[2374] <Heading 3> Employee Benefit Schemes / Stocks and Shares
+[2376] <Heading 3> Employers’ Liability
+[2378] <Heading 3> False Advertising
+[2380] <Heading 3> Financial Advice
+[2382] <Heading 3> Fines and Penalties
+[2385] <Heading 3> Geographical Limits
+[2387] <Heading 3> Insolvency/Bankruptcy of Insured
+[2390] <Heading 3> Land, Buildings etc
+[2392] <Heading 3> Legal Action
+[2397] <Heading 3> Legislation and Regulation
+[2405] <Heading 3> License Payments
+[2407] <Heading 3> Loss, Damage or Destruction of Bearer Bonds or Coupons
+[2409] <Heading 3> Negatives, Film, Prints and Electrical Media
+[2411] <Heading 3> Obscenity
+[2413] <Heading 3> Official Action or Investigation
+[2415] <Heading 3> Other Appointments
+[2419] <Heading 3> Other Insurance
+[2421] <Heading 3> Ownership and Rights
+[2423] <Heading 3> Patents
+[2425] <Heading 3> Products
+[2438] <Heading 3> Products Harmful to Health
+[2440] <Heading 3> Results of Competitions
+[2442] <Heading 3> Restricted Recovery Rights
+[2444] <Heading 3> Retroactive Date
+[2446] <Heading 3> Seepage and Pollution
+[2448] <Heading 3> Stunts
+[2450] <Heading 3> Takeover or Merger
+[2452] <Heading 3> Terrorism
+[2455] <Heading 3> Trading Losses
+[2460] <Heading 3> Utility Provider
+[2462] <Heading 3> Virus
+[2466] <Subtitle> Section 13 – Commercial Legal Expenses Section
+[2472] <Heading 1> Definitions
+[2474] <Heading 3> Appointed Advisor
+[2477] <Heading 3> Business
+[2479] <Heading 3> Collective Conditional Fee Agreement
+[2483] <Heading 3> Conditional Fee Agreement
+[2487] <Heading 3> Employee
+[2489] <Heading 3> Insured
+[2492] <Heading 3> Insurer
+[2494] <Heading 3> Legal Costs & Expenses
+[2502] <Heading 3> Reasonable Prospects of Success
+[2509] <Heading 3> Territorial Limit
+[2512] <Heading 3> We/Us/Our
+[2514] <Heading 3> You/Your
+[2516] <Heading 3> The Cover
+[2533] <Heading 1> Insured Events
+[2534] <Heading 3> Employment
+[2542] <Heading 3> What is not covered under Employment
+[2548] <Heading 3> Employment Compensation Awards
+[2555] <Heading 3> What is not covered under Employment Compensation Awards
+[2560] <Heading 3> Employment Restrictive Covenants
+[2567] <Heading 3> Tax Disputes
+[2574] <Heading 3> What is not covered under Tax Disputes
+[2581] <Heading 3> Property
+[2586] <Heading 3> What is not covered under Property
+[2591] <Heading 3> Legal Defence
+[2597] <Heading 3> What is not covered under Legal Defence
+[2599] <Heading 3> Compliance & Regulation
+[2611] <Heading 3> What is not covered under Compliance & Regulation
+[2617] <Heading 3> Statutory Licence Appeals
+[2619] <Heading 3> Loss of Earnings
+[2621] <Heading 3> What is not covered under Loss of Earnings
+[2623] <Heading 3> Personal Injury
+[2625] <Heading 3> What is not covered under Personal Injury
+[2627] <Heading 3> Executive Suite
+[2634] <Heading 3> What is not covered under Executive Suite
+[2643] <Heading 3> Contract & Debt Recovery
+[2645] <Heading 3> What is not covered under Contract & Debt Recovery
+[2658] <Heading 3> Crisis Communication
+[2666] <Heading 3> What is not covered under Crisis Communication
+[2671] <Heading 1> Exclusions
+[2692] <Heading 1> Conditions
+[2694] <Heading 3> The Insured’s Responsibilities
+[2700] <Heading 3> Freedom to Choose an Appointed Advisor
+[2710] <Heading 3> Consent
+[2713] <Heading 3> Settlement
+[2717] <Heading 3> Barrister’s Opinion
+[2719] <Heading 3> Arbitration
+[2723] <Heading 3> Other Insurance
+[2725] <Heading 3> Fraudulent Claims and Claims Tainted by Dishonesty
+[2731] <Heading 3> Acts of Parliament
+[2733] <Heading 1> Helplines
+[2735] <Heading 3> Legal and Tax Advice - 0344 571 7978
+[2737] <Heading 3> Redundancy Assistance - 0330 303 1955
+[2739] <Heading 3> Executive Suite – Identity Theft Resolution - 0333 000 2083
+[2741] <Heading 3> Crisis Communication - 0344 571 7964
+[2745] <Heading 3> Counselling Assistance - 0333 000 2082
+[2747] <Heading 3> Business Legal Services Website
+[2749] <Heading 1> How to Claim
+[2750] <Heading 3> Telling Us About Your Claim
+[2757] <Heading 3> What Happens Next?
+[2764] <Heading 1> Privacy Statement
+[2766] <Heading 3> Collecting Personal Information
+[2768] <Heading 3> Using Personal or Sensitive Information
+[2770] <Heading 3> Keeping Personal Information
+[2772] <Heading 3> Your Rights
+[2775] <Heading 1> How to Complain
+[2784] <Heading 1> Section 14 - Management Liability Insurance
+[2785] <Heading 1> Insuring clauses applicable to this Management Liability Section
+[2786] <Heading 1> In respect of the following Insuring Clauses, the Insurer shall pay up to up to the Limit of liability stated in the Schedule for each Insuring Clause purchased in respect of any one Single Claim. For the avoidance of doubt, If the Schedule states that an Insuring Clause is “Not Applicable” then there is no coverage in respect of that Insuring Clause.
+[2787] <Heading 2> DIRECTORS’ AND OFFICERS LIABILITY
+[2789] <Heading 2> B.  COMPANY REIMBURSEMENT
+[2791] <Heading 2> C.  CORPORATE LIABILITY
+[2793] <Heading 2> D.  COMPANY EMPLOYMENT PRACTICE LIABILITY
+[2795] <Heading 1> Definitions applicable to this Management Liability Section
+[2797] <Heading 2> Change in Control means,
+[2804] <Heading 2> Claim means,
+[2809] <Heading 2> Company means,
+[2812] <Heading 2> Defence Costs means,
+[2816] <Heading 2> Discovery Period means,
+[2819] <Heading 2> Employee means,
+[2825] <Heading 2> Employment Practice Claim means,
+[2827] <Heading 2> Insured means,
+[2830] <Heading 2> Insured Person means,
+[2840] <Heading 2> Insurer means,
+[2842] <Heading 2> Investigation means,
+[2849] <Heading 2> Investigation Costs means,
+[2851] <Heading 2> Jurisdiction means,
+[2854] <Heading 2> Limit of liability means,
+[2856] <Heading 2> Loss means,
+[2876] <Heading 2> Named Company means,
+[2878] <Heading 2> Non-Executive Director means,
+[2880] <Heading 2> Non-Executive Director Extra Limit means,
+[2882] <Heading 2> Non-Indemnifiable Loss means,
+[2884] <Heading 2> Outside Director means,
+[2886] <Heading 2> Outside Entity means,
+[2893] <Heading 2> Period of insurance means,
+[2895] <Heading 2> Pollutants means,
+[2897] <Heading 2> Pollution means,
+[2899] <Heading 2> Proposal means,
+[2901] <Heading 2> Retaliation means,
+[2903] <Heading 2> Retired Director means,
+[2905] <Heading 2> Securities means,
+[2909] <Heading 2> Single Claim means,
+[2911] <Heading 2> Subsidiary means,
+[2918] <Heading 2> Whistleblowing means,
+[2920] <Heading 2> Wrongful Act means,
+[2928] <Heading 2> Wrongful Employment Practice means,
+[2941] <Heading 1> Exclusions applicable to all Insuring clauses of this Management Liability Section
+[2943] <Heading 2> Unlawful conduct
+[2948] <Heading 2> Bodily injury / Property damage
+[2951] <Heading 2> Pollution
+[2955] <Heading 2> Trustee Liability
+[2957] <Heading 2> USA Insured v Insured
+[2966] <Heading 2> Prior notice
+[2968] <Heading 2> Prior or pending litigation
+[2970] <Heading 2> Professional Liability
+[2975] <Heading 2> Offerings
+[2977] <Heading 2> Legal action
+[2982] <Heading 2> Geographical Limits
+[2986] <Heading 1> Exclusions applicable only to Insuring Clause B, Corporate Liability, and to Insuring Clause C, Company Employment Practice Liability of this Management Liability Section:
+[2988] <Heading 2> Contractual Liability
+[2990] <Heading 1> Exclusions applicable only to Insuring Clause B, Corporate Liability of this Management Liability Section.
+[2991] <Heading 2> Products Liability
+[2993] <Heading 2> Infringement of Patent and Copyright
+[2995] <Heading 2> Trading Losses
+[2997] <Heading 2> Anti-trust
+[2999] <Heading 2> Employment related Liability
+[3001] <Heading 2> Documents or Data
+[3003] <Heading 2> Information Technology
+[3007] <Heading 1> Exclusions applicable only to Insuring Clause C, Company Employment Practice Liability of this Management Liability Section:
+[3009] <Heading 2> Wage and Hour
+[3011] <Heading 2> Specific facts
+[3019] <Heading 1> Extensions applicable to this Management Liability Section
+[3021] <Heading 1> Extensions applicable to all Insuring Clauses of this Management Liability Section
+[3022] <Heading 2> Discovery Period
+[3032] <Heading 2> New Subsidiaries
+[3043] <Heading 2> Emergency costs
+[3045] <Heading 1> Extensions applicable only to Insuring Clause A1, Directors and Officers Liability of this Management Liability Section.
+[3046] <Heading 2> Non-Executive Directors cover
+[3051] <Heading 2> Management Buy-Out
+[3053] <Heading 1> Extensions applicable only to Insuring Clause A, Directors and Officers Liability and Company Reimbursement of this Management Liability Section
+[3054] <Heading 2> Civil Fines and
+[3056] <Heading 2> Health and Safety Defence
+[3058] <Heading 2> Estate, heirs and legal representatives
+[3060] <Heading 2> Spouses and domestic partners
+[3062] <Heading 1> Extensions applicable only to Insuring Clause A, Directors and Officers Liability and Company Reimbursement, and Insuring Clause B, Corporate Liability of this Management Liability Section:
+[3063] <Heading 2> Investigations costs
+[3065] <Heading 1> Extensions applicable only to Insuring Clause B, Corporate Liability of this Management Liability Section
+[3066] <Heading 2> Corporate manslaughter
+[3068] <Heading 2> Corporate bribery
+[3070] <Heading 1> Notification and Claims Conditions applicable to this Management Liability Section
+[3071] <Heading 2> Notice
+[3077] <Heading 2> Defence and settlement of claims and consent
+[3083] <Heading 2> Allocation
+[3087] <Heading 2> Priority of payments
+[3092] <Heading 2> Subrogation and recoveries
+[3096] <Heading 1> General Conditions applicable to this Management Liability Section
+[3097] <Heading 2> Change in control and automatic run-off
+[3099] <Heading 2> Limit of liability and retention
+[3112] <Heading 2> Other insurance and indemnification
+[3118] <Heading 2> Representations and severability
+[3126] <Heading 2> Payment of premium
+[3129] <Heading 2> Notices and Authority
+[3132] <Heading 2> Interpretation
+[3140] <Heading 1> Policy construction and disputes applicable to this Management Liability Section
+[3144] <Heading 2> Assignment
+[3146] <Heading 2> Entire Agreement
+[3148] <Heading 2> Territory
+[3152] <Heading 2> Contracts (Rights of Third Parties) Act 1999
+[4037] <Subtitle> 

@@ -1,0 +1,245 @@
+[0|Title] Summary of Cover 
+[1|Subtitle] Commercial Combined & Media Liability
+[2|Subtitle] 15 Sections of Cover – Property, Liability, Production & Media
+[3|Subtitle] Including new Management Liability and Cyber sections
+[4|Body Text] 
+[5|Normal] 
+[6|Heading 1] WORDING: TMHCC Media Combined 0526
+[7|Heading 2] SUMMARY OF COVER
+[8|Body Text] This is a guide to the cover given by the policy. It does not cover every provision of the policy wording, but your broker will be happy to discuss it with you in more detail. You should read the policy and the additional clauses for full details of the terms and conditions.  This Policy is a commercial insurance product designed for business customers and is not suitable for consumers.
+[9|Heading 1] SECTION 1 – BUSINESS “ALL RISKS”
+[10|Body Text] Accidental physical loss of or damage to buildings, contents, stock and all other business property at the Premises, on an “all risks” basis. Information Technology equipment and Breakdown cover (previously a standalone section) is now incorporated here.
+[11|Heading 2] Key features of the cover
+[12|List Bullet] Day One Uplift and Capital Additions / Acquisitions
+[13|List Bullet] Customers’ Goods
+[14|List Bullet] Removal of Debris and Fire Extinguishing Expenses
+[15|List Bullet] Trace and Access; Drain Clearance
+[16|List Bullet] Temporary Removal and Transit
+[17|List Bullet] Exhibitions
+[18|List Bullet] Replacement of Locks; Theft Damage to Buildings
+[19|List Bullet] Leased and Rented Premises
+[20|List Bullet] Architects’, Surveyors’ and Engineers’ Legal Fees
+[21|List Bullet] Inadvertent Omission to Insure
+[22|List Bullet] European Union and Public Authorities
+[23|List Bullet] Information Technology equipment Breakdown (incorporated)
+[24|Heading 2] Main exclusions
+[25|List Bullet] Excluded Causes and Excluded Property
+[26|List Bullet] Wear, tear and gradual deterioration
+[27|List Bullet] Cessation of cover where premises unoccupied
+[28|Body Text] 
+[29|Heading 1] SECTION 2 – PROPERTY & EQUIPMENT “ALL RISKS”
+[30|Body Text] “All risks” cover for technical equipment, props, sets and wardrobe, fine arts and specified articles within the Geographical Limits. This section has been renamed and expanded (formerly “Production Property”) to absorb production property and technical / IT equipment.
+[31|Heading 2] Key features of the cover
+[32|List Bullet] Technical Equipment and Artists’ Equipment
+[33|List Bullet] Fine Arts
+[34|List Bullet] Transit and Exhibition Extensions
+[35|List Bullet] Automatic Reinstatement
+[36|List Bullet] Loan Property Insured
+[37|List Bullet] Marine and Declared General Average
+[38|List Bullet] Brands and Labels; Involuntary Betterment
+[39|List Bullet] Customs Duty
+[40|Heading 2] Optional cover
+[41|List Bullet] Hired-in Property; Hired-out Property
+[42|List Bullet] Technical Equipment Hired In / Hired Out
+[43|List Bullet] Mechanical and Electrical Breakdown
+[44|Heading 2] Main exclusions
+[45|List Bullet] Exclusions applicable to Technical Equipment
+[46|List Bullet] Exclusions applicable to Props, Sets and Wardrobe
+[47|List Bullet] Exclusions applicable to Specified Articles
+[48|List Bullet] Property left in an unattended vehicle (subject to conditions)
+[49|Body Text] 
+[50|Heading 1] SECTION 3 – BUSINESS INTERRUPTION “ALL RISKS”
+[51|Body Text] Loss of gross profit, gross revenue, rent receivable and increased cost of working following interruption of the Business by an insured Incident.
+[52|Heading 2] Key features of the cover
+[53|List Bullet] Denial of Access
+[54|List Bullet] Customers and Suppliers
+[55|List Bullet] Public Utilities
+[56|List Bullet] Specified Illness and Miscellaneous Contingencies
+[57|List Bullet] Alternative Trading; Automatic Reinstatement
+[58|List Bullet] Exhibition Loss of Expenses and Exhibition Sites
+[59|List Bullet] Professional Accountants
+[60|List Bullet] Payments on Account
+[61|Heading 2] Optional cover
+[62|List Bullet] Contract Sites
+[63|List Bullet] Denial of Access (Non-Damage)
+[64|List Bullet] Goods in Transit
+[65|List Bullet] Public Utilities – Terminal Ends
+[66|List Bullet] Flexible Business Interruption Limit
+[67|Heading 2] Main exclusions
+[68|List Bullet] Loss not resulting from an insured Incident
+[69|List Bullet] Trends and circumstances adjustments
+[70|Body Text] 
+[71|Heading 1] SECTION 4 – TERRORISM
+[72|Body Text] Loss of or damage to Property Insured, and resulting Business Interruption, caused by an act of Terrorism within the Territorial Limits.
+[73|Heading 2] Key features of the cover
+[74|List Bullet] Aligns with the Property and Business Interruption sections
+[75|List Bullet] Automatic Reinstatement
+[76|Heading 2] Main exclusions
+[77|List Bullet] Nuclear installations and reactors
+[78|List Bullet] Cyber / Virus and Denial of Service attack
+[79|List Bullet] War and related perils
+[80|List Bullet] Burden of proof on the Insured where excluded
+[81|Body Text] 
+[82|Heading 1] SECTION 5 – EMPLOYERS’ LIABILITY
+[83|Body Text] The Insured’s legal liability for bodily injury or disease sustained by Employees arising out of and in the course of the Business (limit of indemnity as required under the Employers’ Liability (Compulsory Insurance) Act).
+[84|Heading 2] Key features of the cover
+[85|List Bullet] Indemnity to Principals
+[86|List Bullet] Additional Insured Parties
+[87|List Bullet] Criminal Prosecution Defence Costs
+[88|List Bullet] Data Protection Act
+[89|List Bullet] Unsatisfied Court Judgments
+[90|Heading 2] Main exclusions
+[91|List Bullet] Motor Insurance (where compulsory motor insurance applies)
+[92|List Bullet] Offshore work
+[93|List Bullet] Workers’ Compensation
+[94|List Bullet] Asbestos
+[95|List Bullet] Terrorism
+[96|Body Text] 
+[97|Heading 1] SECTION 6 – PUBLIC LIABILITY
+[98|Body Text] The Insured’s legal liability to pay Compensation for accidental bodily injury to third parties and accidental loss of or damage to third-party property arising from the Business.
+[99|Heading 2] Key features of the cover
+[100|List Bullet] Indemnity to Principals; Additional Insured Parties
+[101|List Bullet] Cross Liabilities
+[102|List Bullet] Defective Premises Act 1972
+[103|List Bullet] Legionella Liability
+[104|List Bullet] Custody or Control
+[105|List Bullet] Data Protection Act
+[106|List Bullet] Overseas Personal Liability
+[107|List Bullet] Motor Vehicle Contingent Liability
+[108|List Bullet] Criminal Prosecution Defence Costs
+[109|Heading 2] Main exclusions
+[110|List Bullet] Abuse
+[111|List Bullet] Advice and Professional Negligence
+[112|List Bullet] Asbestos; Pollution
+[113|List Bullet] Products
+[114|List Bullet] Contractual Liability
+[115|List Bullet] Defective Workmanship
+[116|List Bullet] Medical Malpractice
+[117|List Bullet] Vehicles, Vessels or Craft
+[118|List Bullet] Hazardous Activities
+[119|List Bullet] Worldwide Jurisdiction (unless agreed)
+[120|Body Text] 
+[121|Heading 1] SECTION 7 – PRODUCTS LIABILITY
+[122|Body Text] The Insured’s legal liability to pay Compensation for accidental bodily injury or property damage caused by products sold, supplied or distributed in the course of the Business.
+[123|Heading 2] Key features of the cover
+[124|List Bullet] Criminal Prosecution Defence Costs
+[125|List Bullet] Cross Liabilities
+[126|Heading 2] Main exclusions
+[127|List Bullet] Damage to Products Supplied
+[128|List Bullet] Defective Workmanship
+[129|List Bullet] North American Exports
+[130|List Bullet] Asbestos; Pollution
+[131|List Bullet] Aircraft / Watercraft Products
+[132|List Bullet] Food and Drink
+[133|List Bullet] Advice and Professional Negligence
+[134|List Bullet] Contractual Liability
+[135|List Bullet] Worldwide Jurisdiction (unless agreed)
+[136|Body Text] 
+[137|Heading 1] SECTION 8 – MONEY
+[138|Body Text] Loss of money in transit, on the premises and in safes or strongrooms (Sub-Section 1), together with Personal Assault benefits for insured persons following robbery or attempted robbery (Sub-Section 2).
+[139|Heading 2] Key features of the cover
+[140|List Bullet] Loss of Keys
+[141|List Bullet] Personal Assault benefits – death and disablement
+[142|Heading 2] Main exclusions
+[143|List Bullet] Shortage due to error or omission
+[144|List Bullet] Breach of carryings / security conditions
+[145|List Bullet] Failure to keep required records
+[146|Body Text] 
+[147|Heading 1] SECTION 9 – GOODS IN TRANSIT
+[148|Body Text] Damage to the Property Insured whilst in transit by any insured method of conveyance within the Geographical Limits.
+[149|Heading 2] Key features of the cover
+[150|List Bullet] Tools and Samples
+[151|List Bullet] Clothing and Personal Effects
+[152|List Bullet] Tarpaulins, Sheets and Ropes
+[153|List Bullet] Debris Removal, Trans-shipment and Recovery Charges
+[154|Heading 2] Main exclusions
+[155|List Bullet] Excluded Property
+[156|List Bullet] Failure to take reasonable precautions
+[157|Body Text] 
+[158|Heading 1] SECTION 10 – LOSS OF LICENCE
+[159|Body Text] Loss in trade value or net profit following the forfeiture, suspension or refusal of renewal of the Insured’s premises licence, other than for reasons within the Insured’s control.
+[160|Heading 2] Key features of the cover
+[161|List Bullet] Cover triggered on forfeiture, suspension or non-renewal of the Licence
+[162|Heading 2] Main exclusions
+[163|List Bullet] Failure to comply with claims conditions
+[164|List Bullet] Loss arising from replacement of the licensee
+[165|Body Text] 
+[166|Heading 1] SECTION 11 – PRODUCTION INDEMNITY & MULTIMEDIA “ALL RISKS”
+[167|Body Text] Additional expenditure and loss incurred as a result of the interruption, postponement, cancellation or abandonment of an insured Production.
+[168|Heading 2] Key features of the cover
+[169|List Bullet] Agency and Talent Costs
+[170|List Bullet] Archive Material
+[171|List Bullet] Automatic Reinstatement
+[172|List Bullet] Storage
+[173|Heading 2] Main exclusions
+[174|List Bullet] Rushes and Duplicates
+[175|List Bullet] Pre-Filming Testing and Processing
+[176|List Bullet] Production Planning
+[177|List Bullet] Geographical Limit restrictions
+[178|Body Text] 
+[179|Heading 1] SECTION 12 – MEDIA LIABILITY
+[180|Body Text] Civil liability arising from the Insured’s Media Business Services – including defamation, infringement of intellectual property and breach of confidentiality – written on a claims-made basis. Insuring clauses include Indemnity, Legal Defence Costs, Rectification, Irrecoverable Fees, Data Protection Defence Costs, Reputation Management, Withdrawal of Content and IP-prosecution costs.
+[181|Heading 2] Key features of the cover
+[182|List Bullet] Joint Ventures
+[183|List Bullet] Indemnity to Principals
+[184|List Bullet] Mergers and Acquisitions
+[185|List Bullet] Change of Control provisions
+[186|List Bullet] Reputation Management and Withdrawal of Content
+[187|List Bullet] Compensation for Court Attendance
+[188|Heading 2] Main exclusions
+[189|List Bullet] Claims or circumstances known at inception
+[190|List Bullet] Collection of private data without consent
+[191|List Bullet] Bodily injury / property damage
+[192|List Bullet] Dishonesty and deliberate acts
+[193|List Bullet] Contractual liability
+[194|List Bullet] Patents
+[195|List Bullet] Insolvency / bankruptcy of the Insured
+[196|List Bullet] Fines and penalties
+[197|List Bullet] Asbestos
+[198|List Bullet] Employers’ liability and claims by Employees
+[199|Body Text] 
+[200|Heading 1] SECTION 13 – COMMERCIAL LEGAL EXPENSES
+[201|Body Text] Legal Costs and Expenses (including appeals and certain compensation awards) following an Insured Event – covering employment disputes, contract, property, tax and related matters – up to the limit stated in the Schedule, with access to legal, tax, redundancy and counselling helplines.
+[202|Heading 2] Key features of the cover
+[203|List Bullet] Freedom to choose an Appointed Advisor (once proceedings are issued)
+[204|List Bullet] Legal and Tax advice helpline
+[205|List Bullet] Redundancy Assistance helpline
+[206|List Bullet] Identity Theft Resolution
+[207|List Bullet] Counselling Assistance
+[208|Heading 2] Main exclusions
+[209|List Bullet] Matters without reasonable prospects of success
+[210|List Bullet] Matters arising before cover incepted
+[211|List Bullet] Fraudulent claims or claims tainted by dishonesty
+[212|List Bullet] Costs incurred without consent
+[213|Body Text] 
+[214|Heading 1] SECTION 14 – MANAGEMENT LIABILITY INSURANCE (NEW)
+[215|Body Text] Directors’, officers’ and corporate management liability, written on a claims-made basis. Insuring clauses: A. Directors’ and Officers’ Liability; B. Company Reimbursement; C. Corporate Liability; and D. Company Employment Practice Liability.
+[216|Heading 2] Key features of the cover
+[217|List Bullet] Defence Costs and Investigation Costs
+[218|List Bullet] Discovery Period
+[219|List Bullet] Cover for Outside Directorships
+[220|List Bullet] Change in Control provisions
+[221|List Bullet] Employment Practice Liability cover
+[222|Heading 2] Main exclusions
+[223|List Bullet] Prior and pending claims / known circumstances
+[224|List Bullet] Dishonest, fraudulent or criminal conduct (once established)
+[225|List Bullet] Bodily injury and property damage
+[226|List Bullet] Insured v Insured claims (subject to carve-backs)
+[227|List Bullet] Pollution
+[228|Body Text] 
+[229|Heading 1] SECTION 15 – CYBERGUARD™ (CYBER LIABILITY) (NEW)
+[230|Body Text] Comprehensive first-party cyber and third-party cyber liability cover, written on a claims-made basis. Third-party insuring clauses: Multimedia Liability; Security and Privacy Liability; Privacy Regulatory Defence and Penalties; PCI DSS Liability; and Bodily Injury and Property Damage Liability.
+[231|Heading 2] Key features of the cover
+[232|List Bullet] First-party: Breach Event Costs and BrandGuard
+[233|List Bullet] First-party: System Failure and Data Recovery
+[234|List Bullet] First-party: Non-Physical Business Interruption
+[235|List Bullet] First-party: Cyber Extortion and Cyber Crime
+[236|List Bullet] First-party: Financial Fraud, Phishing Fraud, Telecommunications and Utilities Fraud
+[237|List Bullet] First-party: Bricking Loss; Reward Expenses; Court Attendance Costs
+[238|Heading 2] Main exclusions
+[239|List Bullet] War and failure of core infrastructure
+[240|List Bullet] Bodily injury and property damage (save where written back)
+[241|List Bullet] Prior known incidents or circumstances
+[242|List Bullet] Betterment / upgrade costs
+[243|Body Text] 
+[244|List Bullet] 
