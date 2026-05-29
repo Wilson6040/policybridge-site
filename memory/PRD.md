@@ -287,3 +287,29 @@ no restrictions softened.
   regenerate PDFs (use full reinstall if soffice missing again).
 - **Status:** COMPLETE. Section 12 items still HELD for legal/UW sign-off; money sub-limits are Schedule-set
   (figures chosen by underwriting).
+
+---
+## Update (round 10) — EMERGENT DISPATCH: full 0223C→final redline reset + six-insurer legal review + PolicyBridge blueprint
+- **Brief:** the prior tracked-changes were not holistic (showed only recent enhancements). Regenerate a TRUE full
+  0223C→final redline; reset the six-insurer legal review (the abuse/Tysers miss); rebuild the coverage comparison
+  cleanly; update gap-fill; produce a PolicyBridge workflow playbook + an audit/rebuild prompt. 8 phases, separate
+  /app/outputs/phase-XX folders + final-pack, each with a completion note.
+- **Baseline = /app/work/source/OLD_0223C.docx (2713 paras, 13 sections, IT = old S4). Final = /app/deliverables/
+  TMHCC_Media_Combined_0526_FINAL_Clean.docx (3805 paras, 15 sections) = commit 58b8340 working-tree state.**
+- **Phase 01 redline ENGINE (new): /app/work/r10/redline_engine.py** — extracts ordered paragraph text from both
+  docx (incl. tables), difflib SequenceMatcher + word-level inline diffs, emits GENUINE Word tracked changes
+  (2,161 w:ins / 1,105 w:del; 200pp PDF). TWO authors: "TMHCC Base Redline (0223C→Final)" and "UW Review
+  Enhancement" (14 rounds-7–9 items, yellow-highlighted + annotated, kept UNACCEPTED). Anchors derived from
+  r8/build_wording.py. Stats in r10/redline_stats.json.
+- **Abuse finding (grounded in compare/txt):** TMHCC PL EXCLUDES abuse (Sexual Offences Act 2003); Yutree & AXA XL
+  also exclude; Tysers/Liberty/Allianz/Entertainment Elite SILENT → TMHCC narrower on abuse (the missed issue).
+  Caveat: silence≠cover. Optional sub-limited abuse write-back w/ safeguarding CPs proposed.
+- **Builders (all in /app/work/r10, reuse compare/brand2.py + r8/cmpdata9.py + compare/cmpdata.py):** build_phase00..07
+  + build_phase01_support + build_final_pack. Coverage comparison verified one-page main matrix (render QA).
+- **Deliverables (/app/outputs/*, docx+PDF):** Source Inventory; Full Redline + Clean + UW Enhancement Register (14);
+  Change Summary (renumber map + client-migration); Six-Insurer Legal Review Reset (abuse section); Coverage
+  Comparison (1-page + appendix); Gap-Fill Strategy (15 items, copy-paste wording + exact locations); PolicyBridge
+  Workflow Playbook (8 stages + app spec); PolicyBridge Audit/Rebuild Prompt; Final QA Report (14 points). 20 docx + 20 PDF.
+- **Note:** current PolicyBridge app = Document Centre only (serves static docs); Phase 07 prompt reflects that.
+- **Env:** python-docx/lxml/PyMuPDF + LibreOffice/poppler were WIPED on reset; reinstalled (pip + apt) this round.
+- **Status:** COMPLETE. All enhancements remain subject to TMHCC underwriting/legal sign-off.

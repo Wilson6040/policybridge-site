@@ -10,7 +10,7 @@ import os
 from typing import Dict, List, Any
 
 # Get backend URL from environment
-BACKEND_URL = os.getenv('REACT_APP_BACKEND_URL', 'https://emergent-gap-resolve.preview.emergentagent.com')
+BACKEND_URL = os.getenv('REACT_APP_BACKEND_URL', 'https://policy-workflow-1.preview.emergentagent.com')
 BASE_URL = f"{BACKEND_URL}/api"
 
 # Expected 9 document IDs for Round 8
