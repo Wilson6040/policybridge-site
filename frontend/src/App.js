@@ -143,8 +143,10 @@ const Home = () => {
           </div>
           <h1 className="mt-3 text-3xl sm:text-4xl font-bold tracking-tight">Document Centre</h1>
           <p className="mt-2 text-slate-300 max-w-2xl text-[15px]">
-            Media &amp; Music Combined (0526) — download your branded, market-ready documents below.
-            Word files open and edit directly in Microsoft Word; PDFs are ready to share.
+            Media &amp; Entertainment — download your branded, market-ready documents below: the new
+            coverage comparison &amp; gap-fill strategy (TMHCC vs four competitors), plus the
+            Media &amp; Music Combined (0526) wording set. Word files open and edit directly in
+            Microsoft Word; PDFs are ready to share.
           </p>
         </div>
       </header>
@@ -181,9 +183,21 @@ const Home = () => {
           </div>
         )}
         {!loading && !error && (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5" data-testid="documents-grid">
-            {docs.map((d) => (
-              <DocCard key={d.id} doc={d} />
+          <div className="space-y-10" data-testid="documents-grid">
+            {Array.from(new Set(docs.map((d) => d.group || "Documents"))).map((group) => (
+              <section key={group} data-testid={`doc-group-${group}`}>
+                <h2 className="text-[13px] font-bold uppercase tracking-wider text-[#00648B] mb-1">
+                  {group}
+                </h2>
+                <div className="h-px w-full bg-gradient-to-r from-[#00648B]/40 to-transparent mb-5" />
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                  {docs
+                    .filter((d) => (d.group || "Documents") === group)
+                    .map((d) => (
+                      <DocCard key={d.id} doc={d} />
+                    ))}
+                </div>
+              </section>
             ))}
           </div>
         )}

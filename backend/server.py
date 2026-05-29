@@ -71,7 +71,45 @@ async def get_status_checks():
 # ---- Document deliverables (download centre) ----
 DELIVERABLES_DIR = ROOT_DIR / 'deliverables'
 
+COMPARISON_GROUP = "Media & Entertainment — market comparison"
+WORDING_GROUP = "Media & Music Combined wording (0526)"
+
 DOCUMENTS = [
+    {
+        "id": "comparison_full",
+        "title": "Full Coverage Comparison",
+        "subtitle": "TMHCC vs 4 competitors",
+        "description": "A like-for-like, section-by-section comparison of the TMHCC Media & Music "
+                       "Combined wording against Tysers (Zurich), Yutree (AXA), Liberty and Allianz "
+                       "(fifth competitor pending). Coverage matrix, Media-Liability feature detail, "
+                       "competitor-by-competitor analysis, exclusions / conditions / limits and clause mapping.",
+        "base": "TMHCC_Media_Coverage_Comparison_FULL",
+        "accent": "#00648B",
+        "group": COMPARISON_GROUP,
+    },
+    {
+        "id": "comparison_gapfill",
+        "title": "Gap-Fill / Wording Enhancement Strategy",
+        "subtitle": "Strategic recommendations",
+        "description": "Evidence-based recommendations to make the TMHCC base wording more holistic and "
+                       "demonstrably market-leading — coverage gaps to fill, exclusion write-backs, "
+                       "definitions/conditions to clarify, an underwriting risk assessment and an "
+                       "implementation roadmap. Each item is supported by at least one competitor wording.",
+        "base": "TMHCC_Media_GapFill_Enhancement_Strategy",
+        "accent": "#B88A3C",
+        "group": COMPARISON_GROUP,
+    },
+    {
+        "id": "comparison_qa",
+        "title": "QA / Methodology Report",
+        "subtitle": "Method, findings & sign-off",
+        "description": "Documents reviewed, comparison method, key TMHCC strengths and gaps, recommended "
+                       "enhancements, exclusion issues, assumptions, points for legal/underwriting sign-off "
+                       "and the final 10-point report.",
+        "base": "TMHCC_Media_Comparison_QA_Methodology",
+        "accent": "#C0563F",
+        "group": COMPARISON_GROUP,
+    },
     {
         "id": "wording",
         "title": "Final New Wording (0526)",
@@ -125,7 +163,10 @@ async def list_documents():
                     "filename": fp.name,
                     "size_kb": round(fp.stat().st_size / 1024),
                 })
-        items.append({k: v for k, v in d.items() if k != "base"} | {"formats": formats})
+        item = {k: v for k, v in d.items() if k != "base"}
+        item.setdefault("group", WORDING_GROUP)
+        item["formats"] = formats
+        items.append(item)
     return {"documents": items}
 
 
