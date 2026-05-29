@@ -121,3 +121,23 @@ no restrictions softened.
   build_full.py / build_gap.py / build_qa.py; source extracts in /app/work/compare/txt.
 - **Status:** COMPLETE for 4 competitors. Re-run once the 5th competitor (Wording E) is supplied.
 - All recommendations are evidence-based and market-ready SUBJECT TO TMHCC legal/underwriting sign-off.
+
+---
+## Update (round 5) — fifth competitor (AXA XL) incorporated
+- Added the 5th wording: **AXA XL** — XL Catlin Insurance Company UK Ltd, "Crisis Management &
+  Special Risks: Media & Entertainment Combined Corporate" (June 2021), parsed in full (pdftotext).
+- AXA XL is a LEAN property/BI/liability package: only Material Damage (incl. Technical Equipment +
+  a Money specification), Business Interruption, and Liability (7A Public / 7B Product / 7C EL).
+  NO media/PI, production indemnity, cyber section, legal expenses, management liability, loss of
+  licence, goods in transit or personal accident. Terrorism EXCLUDED absolutely (3.4, ex-EL);
+  punitive/fines EXCLUDED absolutely (3.2); broad cyber exclusion (3.7, only a DP-Act-2018 carve-out
+  in Public Liability); broad communicable-disease exclusion (3.8). Reinforces TMHCC's breadth.
+- cmpdata.py rewritten: the 6th "pending" column replaced with real AXA XL values across the section
+  matrix, media-feature matrix, general/PI exclusions; AXA XL added to conditions, sub-limits,
+  competitor profiles and clause-mapping; narrative across all three builders updated to "all five
+  competitors mapped".
+- Fixed a table-layout bug: make_table/_set_col_widths now pin tables to a fixed twip total width
+  (was pct 100%, which let the widest 7-col table spill past the landscape right margin).
+- Regenerated all three deliverables (docx+PDF) — Full Comparison 17pp, Gap-Fill 16pp, QA 6pp —
+  in /app/deliverables and /app/backend/deliverables (same filenames; Document Centre auto-serves).
+- Status: COMPLETE — all five competitors analysed; layout verified by render.

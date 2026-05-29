@@ -1,15 +1,17 @@
 # -*- coding: utf-8 -*-
 """
 Analysed comparison data for the TMHCC Media & Entertainment deliverables.
-All entries are grounded in the six wordings reviewed:
+All entries are grounded in the SIX wordings reviewed:
   TMHCC  = Tokio Marine HCC — Media & Music Combined (0526), MASTER wording, 15 sections
   TYSERS = Tysers "Focus" Combined 'All Risks' Media policy (capacity: Zurich Insurance plc), 9 sections
   YUTREE = Media & Entertainment by Yutree (capacity: AXA Insurance UK plc), 12 cover sections
   LIBERTY= Liberty Entertainment Combined Policy, 6 cover sections
   ALLIANZ= Allianz Entertainment "Complete" Policy, 8 cover sections (+Terrorism)
-  E      = Fifth competitor — PENDING (to be supplied in a later instruction)
-Column order everywhere: TMHCC, Tysers, Yutree, Liberty, Allianz, Wording E (pending)
-Status keys: yes | partial | no | review | na | pending
+  AXA XL = AXA XL (XL Catlin Insurance Company UK Ltd) Crisis Management & Special Risks —
+           Media & Entertainment Combined Corporate (June 2021): 3 operative sections
+           (Material Damage incl. Technical Equipment + Money; Business Interruption; Liability A/B/C)
+Column order everywhere: TMHCC, Tysers, Yutree, Liberty, Allianz, AXA XL
+Status keys: yes | partial | no | review | na
 """
 
 WORDINGS = [
@@ -28,217 +30,218 @@ WORDINGS = [
     dict(key="allianz",name="Allianz",          full="Allianz Entertainment \u2018Complete\u2019 Policy",
          insurer="Allianz", sections="8 cover sections (+ Terrorism)",
          ref="Entertainment Complete (Allianz)"),
-    dict(key="pending",name="Wording E",        full="Fifth competitor \u2014 PENDING",
-         insurer="\u2014", sections="To be assessed", ref="Awaiting upload (later instruction)"),
+    dict(key="axaxl", name="AXA XL",            full="AXA XL Media & Entertainment Combined Corporate (Crisis Management & Special Risks)",
+         insurer="XL Catlin Insurance Company UK Ltd (AXA XL)", sections="3 operative sections (MD / BI / Liability)",
+         ref="axa_xl_wording (June 2021)"),
 ]
 
-COMPETITOR_KEYS = ["tysers", "yutree", "liberty", "allianz", "pending"]
+COMPETITOR_KEYS = ["tysers", "yutree", "liberty", "allianz", "axaxl"]
 
 # ---------------------------------------------------------------------------
 # 1. SECTION-LEVEL MATRIX  (15 TMHCC sections + Personal Accident row)
-#    tuple: (label, [tmhcc, tysers, yutree, liberty, allianz, pending], verdict, comment)
+#    tuple: (label, [tmhcc, tysers, yutree, liberty, allianz, axaxl], verdict, comment)
 #    verdict: tmhcc | comp | equal | review
 # ---------------------------------------------------------------------------
 SECTION_ROWS = [
     ("S1 \u00b7 Business \u201cAll Risks\u201d (premises buildings & contents)",
-     ["yes","yes","yes","yes","yes","pending"], "equal",
-     "All five offer premises/contents material damage on an all-risks basis. Allianz and Liberty are property-led packages with very granular MD extensions; TMHCC consolidates IT/premises cover here."),
+     ["yes","yes","yes","yes","yes","yes"], "equal",
+     "All six offer premises/contents material damage on an all-risks basis. Allianz, Liberty and AXA XL are property-led packages with granular MD specifications; TMHCC consolidates IT/premises cover here."),
     ("S2 \u00b7 Property & Equipment \u201cAll Risks\u201d (production/entertainment equipment)",
-     ["yes","yes","yes","partial","yes","pending"], "equal",
-     "Owned and hired-in production/entertainment equipment. Tysers (S1 Production Property), Yutree (Production property), Allianz (S6 Specified All Risks). Liberty covers entertainment equipment via specified Schedule items rather than a dedicated all-risks section."),
+     ["yes","yes","yes","partial","yes","yes"], "equal",
+     "Owned and hired-in production/entertainment equipment. Tysers (Production Property), Yutree (Production property), Allianz (Specified All Risks), AXA XL (\u2018Technical Equipment\u2019 within Material Damage). Liberty covers entertainment equipment via specified Schedule items."),
     ("S3 \u00b7 Business Interruption \u201cAll Risks\u201d",
-     ["yes","yes","yes","yes","yes","pending"], "comp",
-     "All offer BI. Allianz is structurally broader \u2014 it splits Increased Cost of Working (S2a) and Book Debts (S3) into discrete sections. Confirm TMHCC S3 expressly covers ICOW/AICOW and book debts."),
+     ["yes","yes","yes","yes","yes","yes"], "comp",
+     "All offer BI. Allianz is structurally broader (splits Increased Cost of Working and Book Debts into discrete sections). AXA XL has a full BI section (incl. Rent Receivable / Turnover). Confirm TMHCC S3 expressly covers ICOW/AICOW and book debts."),
     ("S4 \u00b7 Terrorism",
-     ["yes","no","yes","yes","yes","pending"], "tmhcc",
-     "TMHCC, Yutree, Liberty and Allianz provide terrorism cover. Tysers EXCLUDES terrorism (General Exclusion 6 applies to Sections 1,2,3,5) with no buy-back section \u2014 client would need standalone Pool Re."),
+     ["yes","no","yes","yes","yes","no"], "tmhcc",
+     "TMHCC, Yutree, Liberty and Allianz provide terrorism cover. Tysers EXCLUDES terrorism (no buy-back). AXA XL EXCLUDES terrorism absolutely (Policy Exclusion 3.4, ex-Employers\u2019 Liability) \u2014 client would need standalone Pool Re."),
     ("S5 \u00b7 Employers\u2019 Liability",
-     ["yes","yes","yes","yes","yes","pending"], "equal",
-     "Statutory EL provided by all five (typically GBP 10m). Broadly equivalent."),
+     ["yes","yes","yes","yes","yes","yes"], "equal",
+     "Statutory EL provided by all six (typically GBP 10m). Broadly equivalent. AXA XL = sub-section 7C."),
     ("S6 \u00b7 Public Liability",
-     ["yes","yes","yes","yes","yes","pending"], "equal",
-     "Provided by all. Competitors combine Public & Products into a single section; TMHCC splits Public (S6) and Products (S7)."),
+     ["yes","yes","yes","yes","yes","yes"], "equal",
+     "Provided by all. Competitors combine Public & Products; TMHCC splits Public (S6) and Products (S7). AXA XL = sub-section 7A."),
     ("S7 \u00b7 Products Liability",
-     ["yes","yes","yes","yes","yes","pending"], "equal",
-     "Provided by all (combined with Public Liability in the four competitor wordings)."),
+     ["yes","yes","yes","yes","yes","yes"], "equal",
+     "Provided by all (combined with Public in the competitor wordings). AXA XL = sub-section 7B."),
     ("S8 \u00b7 Money",
-     ["yes","yes","yes","yes","yes","pending"], "equal",
-     "Money cover provided by all five. Yutree combines Money with personal-accident assault."),
+     ["yes","yes","yes","yes","yes","partial"], "equal",
+     "Money cover provided by all. AXA XL provides Money as a sub-limited \u2018Money\u2019 specification WITHIN the Material Damage section (schedule-driven) rather than a standalone section."),
     ("S9 \u00b7 Goods in Transit",
-     ["yes","no","yes","no","yes","pending"], "tmhcc",
-     "TMHCC, Yutree (GIT section) and Allianz (S5 Own Goods in Transit) provide GIT. Tysers and Liberty provide Money only \u2014 no dedicated GIT section identified."),
+     ["yes","no","yes","no","yes","no"], "tmhcc",
+     "TMHCC, Yutree (GIT section) and Allianz (Own Goods in Transit) provide GIT. Tysers, Liberty and AXA XL do NOT have a dedicated GIT section."),
     ("S10 \u00b7 Loss of Licence",
-     ["yes","no","no","no","no","pending"], "tmhcc",
-     "UNIQUE to TMHCC. Premises-licence loss cover under the Licensing Act 2003 \u2014 not offered by any competitor wording reviewed. Highly relevant for venues/festivals."),
+     ["yes","no","no","no","no","no"], "tmhcc",
+     "UNIQUE to TMHCC across all five competitors. Premises-licence loss cover under the Licensing Act 2003 \u2014 highly relevant for venues/festivals."),
     ("S11 \u00b7 Production Indemnity \u201cAll Risks\u201d",
-     ["yes","yes","yes","no","no","pending"], "tmhcc",
-     "TMHCC, Tysers (S5 Multimedia & Producers Indemnity) and Yutree (Production Indemnity) cover production costs / cast / negatives. Liberty and Allianz do NOT offer production indemnity."),
+     ["yes","yes","yes","no","no","no"], "tmhcc",
+     "TMHCC, Tysers (Multimedia & Producers Indemnity) and Yutree (Production Indemnity) cover production costs / cast / negatives. Liberty, Allianz and AXA XL do NOT offer production indemnity."),
     ("S12 \u00b7 Media Liability / Professional Indemnity (E&O)",
-     ["yes","yes","yes","no","no","pending"], "equal",
-     "The heart of a media wording. TMHCC (S12), Tysers (S8 PI/E&O) and Yutree (PI-Media + PI-Events) all provide it \u2014 see detailed feature matrix. Liberty and Allianz provide NO media/PI/E&O cover."),
+     ["yes","yes","yes","no","no","no"], "equal",
+     "The heart of a media wording. TMHCC (S12), Tysers (PI/E&O) and Yutree (PI-Media + PI-Events) provide it. Liberty, Allianz and AXA XL provide NO media/PI/E&O cover \u2014 despite AXA XL\u2019s \u2018Media & Entertainment\u2019 branding."),
     ("S13 \u00b7 Commercial Legal Expenses",
-     ["yes","no","no","no","no","pending"], "tmhcc",
+     ["yes","no","no","no","no","no"], "tmhcc",
      "UNIQUE to TMHCC (ARAG-style legal expenses). No competitor wording includes a legal-expenses section."),
     ("S14 \u00b7 Management Liability (D&O / EPL etc.)",
-     ["yes","no","no","no","no","pending"], "tmhcc",
+     ["yes","no","no","no","no","no"], "tmhcc",
      "UNIQUE to TMHCC. No competitor wording includes management-liability cover."),
     ("S15 \u00b7 Cyber Liability (standalone)",
-     ["yes","no","partial","no","no","pending"], "tmhcc",
-     "UNIQUE \u2014 TMHCC \u2018CyberGuard\u2019 is a genuine standalone cyber policy (multimedia, security & privacy, privacy-regulatory, PCI DSS). Yutree offers a Computer Breakdown section only (first-party breakdown, not cyber liability). Others: none."),
+     ["yes","no","partial","no","no","no"], "tmhcc",
+     "UNIQUE \u2014 TMHCC \u2018CyberGuard\u2019 is a genuine standalone cyber policy. Yutree offers Computer Breakdown only. AXA XL has NO cyber section and a broad cyber EXCLUSION (only a Data Protection Act 2018 carve-out within Public Liability). Others: none."),
     ("(+) Personal Accident & Business Travel",
-     ["no","yes","partial","no","review","pending"], "comp",
-     "GAP for TMHCC: no standalone PA/business-travel section in the 15-section structure. Tysers (S9 PA & Business Travel) is extensive; Yutree covers personal-accident assault within its Money/PA section. Allianz references a \u2018Personal Accident\u2019 section in its exclusions but it is not in the provided cover list (requires review)."),
+     ["no","yes","partial","no","review","no"], "comp",
+     "GAP for TMHCC: no standalone PA/business-travel section. Tysers (PA & Business Travel) is extensive; Yutree covers PA assault. Allianz references a \u2018Personal Accident\u2019 section in its exclusions (not in the cover list \u2013 review). AXA XL has NO personal-accident cover."),
 ]
 
 # ---------------------------------------------------------------------------
 # 2. MEDIA LIABILITY / PI FEATURE MATRIX (Section 12 deep dive)
-#    Liberty & Allianz have NO media/PI -> 'no'
+#    Liberty, Allianz & AXA XL have NO media/PI -> 'no'
 # ---------------------------------------------------------------------------
 MEDIA_FEATURES = [
     ("Defamation / libel / slander / malicious falsehood",
-     ["yes","yes","yes","no","no","pending"], "equal",
-     "TMHCC and Yutree cover \u2018unintentional\u2019 defamation; Tysers covers unless the statement was known/ought-to-have-been-known to be defamatory. Broadly equivalent."),
+     ["yes","yes","yes","no","no","no"], "equal",
+     "TMHCC and Yutree cover \u2018unintentional\u2019 defamation; Tysers covers unless the statement was known/ought-to-have-been-known to be defamatory. Broadly equivalent. Liberty/Allianz/AXA XL: no PI."),
     ("IP infringement \u2013 copyright / trademark / passing off",
-     ["yes","yes","yes","no","no","pending"], "equal",
+     ["yes","yes","yes","no","no","no"], "equal",
      "All three media wordings cover unintentional IP infringement incl. passing-off."),
     ("Patent infringement",
-     ["no","yes","no","no","no","pending"], "comp",
+     ["no","yes","no","no","no","no"], "comp",
      "Tysers (clause 8.9) expressly includes PATENT infringement within IP cover. TMHCC and Yutree EXCLUDE patents. TMHCC is sensibly more restrictive (patents are hard to underwrite)."),
     ("Breach of confidence / invasion of privacy",
-     ["yes","yes","yes","no","no","pending"], "equal",
-     "Covered by all three (TMHCC/Yutree on an \u2018unintentional\u2019 basis; Tysers clauses 8.11/8.12)."),
+     ["yes","yes","yes","no","no","no"], "equal",
+     "Covered by all three media wordings (TMHCC/Yutree on an \u2018unintentional\u2019 basis; Tysers clauses 8.11/8.12)."),
     ("Breach of professional duty / negligence / E&O",
-     ["yes","yes","yes","no","no","pending"], "equal",
+     ["yes","yes","yes","no","no","no"], "equal",
      "Core E&O. Covered by all three media wordings."),
     ("Dishonesty / fraud of employees (write-back)",
-     ["yes","partial","yes","no","no","pending"], "equal",
-     "TMHCC (Insuring Clause 1.l) and Yutree (Dishonesty & fraud cover) grant an express write-back for employee dishonesty; Tysers handles via its Criminal/Malicious Acts exclusion with an employee carve-out."),
+     ["yes","partial","yes","no","no","no"], "equal",
+     "TMHCC (Insuring Clause 1.l) and Yutree (Dishonesty & fraud cover) grant an express write-back for employee dishonesty; Tysers via its Criminal/Malicious Acts exclusion with an employee carve-out."),
     ("Defence costs payable IN ADDITION to the limit",
-     ["yes","yes","yes","no","no","pending"], "equal",
+     ["yes","yes","yes","no","no","no"], "equal",
      "All three pay defence costs in addition, with proportionate reduction once the limit is exceeded."),
     ("Territorial / jurisdiction scope",
-     ["partial","yes","partial","no","no","pending"], "comp",
-     "Tysers PI is WORLDWIDE. TMHCC limits cover to the Schedule Geographical Limits and EXCLUDES actions brought outside the stated Jurisdiction (default worldwide ex-US/Canada). Yutree is schedule-driven and restricts US/Canada exposure. Competitor (Tysers) broader."),
+     ["partial","yes","partial","no","no","no"], "comp",
+     "Tysers PI is WORLDWIDE. TMHCC limits cover to the Schedule Geographical Limits and EXCLUDES actions brought outside the stated Jurisdiction (default worldwide ex-US/Canada). Yutree restricts US/Canada. Competitor (Tysers) broader."),
     ("Data-protection defence costs",
-     ["yes","partial","no","no","no","pending"], "tmhcc",
-     "TMHCC grants Data Protection Defence Costs (GBP 250k). Yutree EXCLUDES breach of data-protection law in its PI section; Tysers has statutory-defence costs but not DP-specific. TMHCC clearer/broader here."),
+     ["yes","partial","no","no","no","partial"], "tmhcc",
+     "TMHCC grants Data Protection Defence Costs (GBP 250k). Yutree EXCLUDES breach of data-protection law in PI. AXA XL provides only a DP Act 2018 defence-costs extension within Public Liability (not a media/PI grant). TMHCC clearer/broader."),
     ("Criminal / statutory prosecution defence costs",
-     ["partial","yes","yes","no","no","pending"], "comp",
-     "Tysers pays statutory defence costs (Bribery Act, Corporate Manslaughter, H&S at Work, CDM Regs \u2014 GBP 1m). Yutree pays Criminal Prosecution Defence Costs (GBP 250k). TMHCC S12 grants only Data-Protection defence costs (broader criminal cover sits in S13/S14)."),
+     ["partial","yes","yes","no","no","no"], "comp",
+     "Tysers pays statutory defence costs (Bribery/Corporate Manslaughter/H&S/CDM \u2014 GBP 1m). Yutree pays Criminal Prosecution Defence Costs (GBP 250k). TMHCC S12 grants only Data-Protection defence costs (broader criminal cover sits in S13/S14)."),
     ("Reputation management / crisis-PR costs",
-     ["yes","no","yes","no","no","pending"], "equal",
+     ["yes","no","yes","no","no","no"], "equal",
      "TMHCC and Yutree both grant Reputation Management costs (GBP 250k). Not identified in Tysers S8."),
     ("Withdrawal / alteration of content (incl. ASA/OFCOM)",
-     ["yes","no","yes","no","no","pending"], "equal",
+     ["yes","no","yes","no","no","no"], "equal",
      "TMHCC and Yutree both grant Withdrawal of Content (GBP 250k) including ASA/OFCOM complaints. Not identified in Tysers."),
     ("Rectification / mitigation costs",
-     ["yes","yes","yes","no","no","pending"], "equal",
-     "All three pay rectification/mitigation costs that avert a larger claim (TMHCC Rectification; Tysers 8.14; Yutree Mitigation costs)."),
+     ["yes","yes","yes","no","no","no"], "equal",
+     "All three pay rectification/mitigation costs that avert a larger claim (TMHCC Rectification; Tysers 8.14; Yutree Mitigation)."),
     ("Costs to PROSECUTE infringement of the insured\u2019s own IP",
-     ["yes","no","yes","no","no","pending"], "equal",
-     "TMHCC (GBP 25k) and Yutree (IP-rights prosecution) fund pursuit of the insured\u2019s own IP; subject to a supporting legal opinion. Not identified in Tysers."),
+     ["yes","no","yes","no","no","no"], "equal",
+     "TMHCC (GBP 25k) and Yutree (IP-rights prosecution) fund pursuit of the insured\u2019s own IP, subject to a supporting legal opinion. Not identified in Tysers."),
     ("Distributors & purchasers extension",
-     ["no","yes","no","no","no","pending"], "comp",
+     ["no","yes","no","no","no","no"], "comp",
      "Tysers (clause 8.7) extends indemnity to purchasers/co-producers/distributors of the insured\u2019s media material (up to 5x the limit). Not provided by TMHCC or Yutree."),
     ("Journalistic source-protection / challenge to subpoena",
-     ["no","yes","no","no","no","pending"], "comp",
+     ["no","yes","no","no","no","no"], "comp",
      "Tysers (clause 8.13) funds legal costs to challenge a subpoena requiring disclosure of a source. Not provided by TMHCC or Yutree \u2014 broker-sensitive for editorial/news clients."),
     ("Representation costs at investigations / inquiries",
-     ["partial","yes","partial","no","no","pending"], "comp",
+     ["partial","yes","partial","no","no","no"], "comp",
      "Tysers (8.15, GBP 25k) covers representation at official examinations/inquiries. TMHCC provides this only via Data-Protection defence; Yutree via Criminal-Prosecution defence."),
     ("Loss of documents",
-     ["yes","yes","yes","no","no","pending"], "equal",
-     "Covered by all three (TMHCC Insuring Clause; Tysers 8.10 GBP 1m; Yutree Loss of Documents, GBP 500 excess)."),
+     ["yes","yes","yes","no","no","no"], "equal",
+     "Covered by all three media wordings (TMHCC Insuring Clause; Tysers 8.10 GBP 1m; Yutree Loss of Documents, GBP 500 excess)."),
     ("Unintentional virus transmission",
-     ["yes","yes","partial","no","no","pending"], "equal",
-     "TMHCC (GBP 500k sub-limit, with targeted-virus write-back) and Tysers (8.16, GBP 250k) cover unintentional virus transmission to third parties. Yutree treats virus within its broader cyber exclusion."),
+     ["yes","yes","partial","no","no","no"], "equal",
+     "TMHCC (GBP 500k sub-limit, targeted-virus write-back) and Tysers (8.16, GBP 250k) cover unintentional virus transmission. Yutree treats virus within its broader cyber exclusion."),
     ("Mergers & acquisitions / subsidiary auto-acquisition",
-     ["yes","review","yes","no","no","pending"], "equal",
+     ["yes","review","yes","no","no","no"], "equal",
      "TMHCC and Yutree both auto-include newly created/acquired entities below a 20% turnover threshold, with notification above. Tysers position requires review."),
     ("Pollution write-back (negligent advice)",
-     ["no","no","partial","no","no","pending"], "comp",
+     ["no","no","partial","no","no","no"], "comp",
      "Yutree grants a limited pollution write-back where the cause is a specific act/error/omission of the insured. TMHCC and Tysers exclude pollution from PI."),
     ("Cyber/data general exclusion impact on PI cover",
-     ["yes","yes","no","no","no","pending"], "tmhcc",
-     "TMHCC\u2019s general cyber/date exclusion applies to Sections 1\u201311 ONLY, leaving S12 with bespoke virus/unauthorised-access cover; Tysers\u2019 Electronic-Risk exclusion is dis-applied to S8. Yutree\u2019s PI carries a BROAD cyber & data-protection exclusion that strips cyber-related PI."),
+     ["yes","yes","no","no","no","no"], "tmhcc",
+     "TMHCC\u2019s general cyber/date exclusion applies to Sections 1\u201311 ONLY, leaving S12 with bespoke virus/unauthorised-access cover; Tysers\u2019 Electronic-Risk exclusion is dis-applied to S8. Yutree\u2019s PI carries a BROAD cyber & data-protection exclusion."),
     ("Senior-counsel (KC) dispute-resolution clause",
-     ["partial","review","yes","no","no","pending"], "comp",
+     ["partial","review","yes","no","no","no"], "comp",
      "Yutree includes a clear King\u2019s Counsel arbitration clause for defence/settlement disputes. TMHCC relies on a general mediation/dispute condition; Tysers requires review."),
 ]
 
 # ---------------------------------------------------------------------------
-# 3. GENERAL EXCLUSIONS COMPARISON
-#    tuple:(exclusion, [statuses x6 meaning 'excluded?'], note)  using yes=excluded
+# 3. GENERAL EXCLUSIONS COMPARISON  (yes = exclusion APPLIES)
 # ---------------------------------------------------------------------------
 GENERAL_EXCL = [
     ("War / nuclear / radioactive contamination",
-     ["yes","yes","yes","yes","yes","pending"],
-     "Standard market exclusion present in all wordings. Broadly equivalent."),
+     ["yes","yes","yes","yes","yes","yes"],
+     "Standard market exclusion present in all six wordings (AXA XL 3.3/3.5, incl. weapons of mass destruction). Broadly equivalent."),
     ("Terrorism (property/BI)",
-     ["partial","yes","partial","partial","partial","pending"],
-     "TMHCC, Yutree, Liberty, Allianz write terrorism back via a dedicated Terrorism section; Tysers excludes terrorism outright (Sections 1,2,3,5) with no buy-back."),
+     ["partial","yes","partial","partial","partial","yes"],
+     "TMHCC, Yutree, Liberty, Allianz write terrorism back via a dedicated section. Tysers and AXA XL (3.4) EXCLUDE terrorism outright with no buy-back."),
     ("Pollution / contamination",
-     ["yes","yes","yes","yes","yes","pending"],
-     "Excluded by all with the usual sudden/accidental & defined-peril write-backs. Equivalent."),
+     ["yes","yes","yes","yes","yes","yes"],
+     "Excluded by all with the usual sudden/accidental & defined-peril write-backs (AXA XL: MD exclusion (p) and Liability pollution exclusion). Equivalent."),
     ("Asbestos",
-     ["yes","partial","yes","yes","yes","pending"],
-     "Tysers PI (S8) has a professional-duty WRITE-BACK (cover where asbestos liability arises from negligent advice, GBP 1m, ex-bodily-injury). TMHCC and Yutree exclude asbestos more strictly in PI."),
+     ["yes","partial","yes","yes","yes","yes"],
+     "Tysers PI has a professional-duty WRITE-BACK (cover where liability arises from negligent advice, GBP 1m, ex-BI). TMHCC, Yutree and AXA XL (3.1, ex-EL) exclude asbestos more strictly."),
     ("Cyber / electronic risk (first-party damage & BI)",
-     ["yes","yes","yes","yes","yes","pending"],
-     "All exclude cyber-caused physical damage/BI. KEY DIFFERENCE: TMHCC dis-applies its cyber/date exclusion to Sections 12\u201315; Tysers dis-applies Electronic Risk to S8 PI. Yutree\u2019s PI carries a broad cyber/data exclusion."),
+     ["yes","yes","yes","yes","yes","yes"],
+     "All exclude cyber-caused damage/BI. KEY DIFFERENCE: TMHCC dis-applies its cyber/date exclusion to Sections 12\u201315; Tysers dis-applies Electronic Risk to S8 PI. AXA XL\u2019s cyber exclusion (3.7) is broad with only a DP Act 2018 carve-out; Yutree\u2019s PI carries a broad cyber/data exclusion."),
     ("Date recognition / data-processing failure",
-     ["yes","yes","yes","yes","yes","pending"],
-     "Standard \u2018millennium/date\u2019-style exclusion. Tysers dis-applies it to S8/S9. Equivalent in substance."),
+     ["yes","yes","yes","yes","yes","partial"],
+     "Standard \u2018millennium/date\u2019-style exclusion in the property packages. AXA XL has no separate date clause \u2014 subsumed within its broad cyber/electronic-data exclusion. Equivalent in substance."),
     ("Communicable disease / pandemic",
-     ["yes","no","review","review","review","pending"],
-     "TMHCC carries a BROAD communicable-disease exclusion (applies notwithstanding all other terms). Not identified in Tysers general exclusions; Yutree/Liberty/Allianz require confirmation. TMHCC is more protected here (a deliberate restriction)."),
+     ["yes","no","review","review","review","yes"],
+     "TMHCC and AXA XL (3.8) both carry a BROAD communicable-disease exclusion (applies notwithstanding all other terms). Not identified in Tysers; Yutree/Liberty/Allianz require confirmation. TMHCC is well-protected here (a deliberate restriction)."),
     ("Sanctions / trade restrictions",
-     ["yes","yes","yes","yes","yes","pending"],
-     "All carry a sanctions clause. TMHCC has both a Trading-Sanctions and an International-Sanctions clause. Equivalent."),
+     ["yes","yes","yes","yes","yes","yes"],
+     "All carry a sanctions clause (AXA XL 4.4). TMHCC has both a Trading-Sanctions and an International-Sanctions clause. Equivalent."),
     ("Northern Ireland (civil commotion) / sonic bangs",
-     ["review","yes","review","yes","yes","pending"],
-     "Standard UK property-package carve-outs present in Tysers/Liberty/Allianz; TMHCC treatment within property sections requires confirmation."),
+     ["review","yes","review","yes","yes","review"],
+     "Standard UK property-package carve-outs present in Tysers/Liberty/Allianz; TMHCC and AXA XL treatment within property sections requires confirmation."),
 ]
 
 # ---------------------------------------------------------------------------
 # 4. PI-SPECIFIC EXCLUSIONS COMPARISON (Media/PI sections only)
-#    columns: TMHCC, Tysers, Yutree (others n/a)
+#    Liberty/Allianz/AXA XL = 'na' (no PI section)
 # ---------------------------------------------------------------------------
 PI_EXCL = [
     ("Contractual / assumed liability",
-     ["yes","yes","yes","na","na","pending"],
-     "Excluded by all, with the standard write-back for liability that would exist absent the contract. TMHCC: duty \u2018more onerous than common law/statute\u2019. Equivalent."),
+     ["yes","yes","yes","na","na","na"],
+     "Excluded by all three media wordings, with the standard write-back for liability that would exist absent the contract. Equivalent."),
     ("Deliberate / reckless / dishonest acts (with employee write-back)",
-     ["yes","yes","yes","na","na","pending"],
+     ["yes","yes","yes","na","na","na"],
      "All exclude deliberate/dishonest acts of the insured but write back dishonest acts of employees. Equivalent."),
     ("Bodily injury / property damage",
-     ["yes","yes","yes","na","na","pending"],
+     ["yes","yes","yes","na","na","na"],
      "Excluded unless arising from negligent publication/advice. Equivalent."),
     ("Fines / penalties / punitive damages",
-     ["partial","review","review","na","na","pending"],
-     "TMHCC excludes non-compensatory damages BUT writes back libel/slander/defamation awards and punitive damages where the law permits payment \u2014 a favourable, clearly-drafted carve-back. Competitor positions require review."),
+     ["partial","review","review","na","na","na"],
+     "TMHCC excludes non-compensatory damages BUT writes back libel/slander/defamation awards and punitive damages where the law permits \u2014 a favourable carve-back. (Note: AXA XL\u2019s general policy excludes punitive/exemplary damages and fines ABSOLUTELY, with no write-back \u2014 TMHCC is clearer/broader.)"),
     ("Prior known claims / circumstances",
-     ["yes","yes","yes","na","na","pending"],
-     "Excluded by all (claims-made hygiene). Equivalent."),
+     ["yes","yes","yes","na","na","na"],
+     "Excluded by all three (claims-made hygiene). Equivalent."),
     ("Insolvency / financial failure of the insured",
-     ["yes","review","review","na","na","pending"],
+     ["yes","review","review","na","na","na"],
      "TMHCC expressly excludes claims arising from its own insolvency/liquidation. Competitor positions require review."),
     ("USA / Canada jurisdiction",
-     ["yes","no","partial","na","na","pending"],
-     "TMHCC excludes actions brought / governed outside the stated Jurisdiction (default ex-US/Canada). Tysers PI is WORLDWIDE (no such exclusion). Yutree restricts US/Canada exposure. Competitor (Tysers) broader."),
+     ["yes","no","partial","na","na","na"],
+     "TMHCC excludes actions brought / governed outside the stated Jurisdiction (default ex-US/Canada). Tysers PI is WORLDWIDE. Yutree restricts US/Canada exposure. Competitor (Tysers) broader."),
     ("Patent infringement",
-     ["yes","no","yes","na","na","pending"],
+     ["yes","no","yes","na","na","na"],
      "TMHCC and Yutree exclude patents; Tysers covers patent infringement. TMHCC sensibly more restrictive."),
     ("Cyber act / breach of data-protection law (within PI)",
-     ["no","no","yes","na","na","pending"],
+     ["no","no","yes","na","na","na"],
      "Yutree\u2019s PI carries a broad cyber-act & data-protection-law exclusion. TMHCC instead grants bespoke cover (virus, unauthorised access, DP defence costs) \u2014 TMHCC broader/clearer."),
     ("Pollution / seepage",
-     ["yes","yes","partial","na","na","pending"],
+     ["yes","yes","partial","na","na","na"],
      "TMHCC and Tysers exclude pollution from PI; Yutree grants a limited write-back for the insured\u2019s own negligent act/error/omission."),
 ]
 
 # ---------------------------------------------------------------------------
-# 5. CONDITIONS / WARRANTIES / CLAIMS OBLIGATIONS
+# 5. CONDITIONS / WARRANTIES / CLAIMS OBLIGATIONS (6 wording columns)
+#    tuple: (label, tmhcc, tysers, yutree, liberty, allianz, axaxl)
 # ---------------------------------------------------------------------------
 CONDITIONS = [
     ("Claim notification",
@@ -246,23 +249,27 @@ CONDITIONS = [
      "Notification under Special Condition 1; S8 PI is claims-made.",
      "Claims-made; defined notification conditions for claims and claim circumstances.",
      "Forward every claim document immediately on receipt.",
-     "Forward claim/notify in accordance with claims condition; potential proportionate remedy."),
+     "Forward claim/notify per claims condition; potential proportionate remedy.",
+     "Written notice to Insurer per Policy Conditions; claims co-operation conditions."),
     ("Basis of cover (PI/Media)",
      "S12 Media Liability is claims-made with Retroactive Date; defence-costs in addition.",
      "S8 PI/E&O claims-made; defence costs in addition; Excess does not apply to defence costs.",
      "PI-Media claims-made; retroactive date; defence costs in addition.",
      "n/a \u2014 no PI/media section.",
+     "n/a \u2014 no PI/media section.",
      "n/a \u2014 no PI/media section."),
-    ("Reasonable precautions / cyber-security conditions",
-     "S12 imposes detailed computer-security conditions (firewall, AV, password change every 60 days, encryption, logging, regular back-ups) and \u2018reasonable steps to avoid loss\u2019.",
-     "Loss-of-documents condition requires back-ups at least every 7 days held off-site.",
+    ("Reasonable precautions / cyber-security",
+     "S12 imposes detailed computer-security conditions (firewall, AV, password change/60 days, encryption, logging, back-ups) and \u2018reasonable steps to avoid loss\u2019.",
+     "Loss-of-documents condition requires back-ups at least every 7 days off-site.",
      "Reasonable-precautions and security expectations apply.",
      "General \u2018your duties\u2019 / reasonable precautions section.",
-     "Reasonable-precautions and maintenance conditions."),
+     "Reasonable-precautions and maintenance conditions.",
+     "Reasonable-precautions / maintenance and duty-of-care conditions."),
     ("Change of control",
      "S12 cover ceases on a change of control unless notified and agreed by endorsement.",
      "Requires review.",
      "Addressed via subsidiary creation/acquisition cover.",
+     "n/a (no PI).",
      "n/a (no PI).",
      "n/a (no PI)."),
     ("Premium payment",
@@ -270,36 +277,40 @@ CONDITIONS = [
      "Per policy/General Conditions.",
      "Premium-adjustment condition with cancellation rights.",
      "Standard cancellation section.",
-     "Standard cancellation provisions."),
+     "Standard cancellation provisions.",
+     "Standard premium / cancellation provisions (Policy Conditions)."),
     ("Fair presentation (Insurance Act 2015)",
      "Duty of fair presentation applies (UK).",
      "Duty of fair presentation; Zurich data terms.",
      "Express duty of fair presentation.",
-     "\u2018About this policy / your duties\u2019 \u2014 fair presentation.",
-     "Fair-presentation conditions."),
+     "\u2018Your duties\u2019 \u2014 fair presentation.",
+     "Fair-presentation conditions.",
+     "Insurer relies on information provided; fair-presentation basis."),
     ("Defence / dispute resolution",
      "Insurer consent required (CP); general mediation/dispute condition (England & Wales).",
      "Insurer controls defence; consent to settle.",
      "Clear King\u2019s Counsel arbitration clause for defence/settlement disputes \u2014 strong drafting.",
      "Insurer conduct-of-claims rights.",
+     "Insurer conduct-of-claims rights.",
      "Insurer conduct-of-claims rights."),
 ]
 
 # ---------------------------------------------------------------------------
-# 6. KEY SUB-LIMITS WITHIN MEDIA / PI (limit comparison)
+# 6. KEY SUB-LIMITS WITHIN MEDIA / PI (6 wording columns; AXA XL has no PI)
+#    tuple: (label, tmhcc, tysers, yutree, liberty, allianz, axaxl)
 # ---------------------------------------------------------------------------
 SUBLIMITS = [
-    ("Primary limit of indemnity", "Per Schedule", "Per Schedule", "Per Schedule", "n/a", "n/a"),
-    ("Virus transmission", "GBP 500,000", "GBP 250,000", "Within cyber exclusion", "n/a", "n/a"),
-    ("Data-protection defence costs", "GBP 250,000", "\u2014", "Excluded", "n/a", "n/a"),
-    ("Criminal / statutory defence costs", "\u2014 (DP only)", "GBP 1,000,000", "GBP 250,000", "n/a", "n/a"),
-    ("Reputation management", "GBP 250,000", "\u2014", "GBP 250,000", "n/a", "n/a"),
-    ("Withdrawal of content", "GBP 250,000", "\u2014", "GBP 250,000", "n/a", "n/a"),
-    ("Pursue insured\u2019s own IP", "GBP 25,000", "\u2014", "Limit of indemnity", "n/a", "n/a"),
-    ("Loss of documents", "Per Schedule", "GBP 1,000,000", "Limit (GBP 500 excess)", "n/a", "n/a"),
-    ("Representation costs", "DP only", "GBP 25,000", "Within criminal defence", "n/a", "n/a"),
-    ("Court attendance (per day)", "GBP 500 / GBP 250", "GBP 500 / GBP 250 (GBP 25k agg)", "Requires review", "n/a", "n/a"),
-    ("Distributors & purchasers", "\u2014", "5x limit of indemnity", "\u2014", "n/a", "n/a"),
+    ("Primary limit of indemnity", "Per Schedule", "Per Schedule", "Per Schedule", "n/a", "n/a", "n/a"),
+    ("Virus transmission", "GBP 500,000", "GBP 250,000", "Within cyber excl.", "n/a", "n/a", "n/a"),
+    ("Data-protection defence costs", "GBP 250,000", "\u2014", "Excluded", "n/a", "n/a", "PL: DP Act 2018 ext."),
+    ("Criminal / statutory defence", "\u2014 (DP only)", "GBP 1,000,000", "GBP 250,000", "n/a", "n/a", "n/a"),
+    ("Reputation management", "GBP 250,000", "\u2014", "GBP 250,000", "n/a", "n/a", "n/a"),
+    ("Withdrawal of content", "GBP 250,000", "\u2014", "GBP 250,000", "n/a", "n/a", "n/a"),
+    ("Pursue insured\u2019s own IP", "GBP 25,000", "\u2014", "Limit", "n/a", "n/a", "n/a"),
+    ("Loss of documents", "Per Schedule", "GBP 1,000,000", "Limit (GBP 500 xs)", "n/a", "n/a", "n/a"),
+    ("Representation costs", "DP only", "GBP 25,000", "Within crim. defence", "n/a", "n/a", "n/a"),
+    ("Court attendance (per day)", "GBP 500 / 250", "GBP 500 / 250 (25k agg)", "Review", "n/a", "n/a", "n/a"),
+    ("Distributors & purchasers", "\u2014", "5x limit", "\u2014", "n/a", "n/a", "n/a"),
 ]
 
 # ---------------------------------------------------------------------------
@@ -310,7 +321,7 @@ COMPETITOR_PROFILES = {
    title="Tysers \u201cFocus\u201d Combined \u2018All Risks\u2019 Media (capacity: Zurich Insurance plc)",
    shape="9 sections: Production Property, Property Damage, BI, Money, Production (Multimedia & Producers Indemnity), EL, Public & Products, Professional Indemnity/E&O, Personal Accident & Business Travel.",
    strengths=[
-     "PI/E&O (S8) is WORLDWIDE and notably broad \u2014 includes PATENT infringement, statutory defence costs (Bribery/Corporate Manslaughter/H&S/CDM, GBP 1m), Distributors & Purchasers extension (5x limit), journalistic source-protection costs (challenge to subpoena), and representation costs (GBP 25k).",
+     "PI/E&O (S8) is WORLDWIDE and notably broad \u2014 includes PATENT infringement, statutory defence costs (Bribery/Corporate Manslaughter/H&S/CDM, GBP 1m), Distributors & Purchasers extension (5x limit), journalistic source-protection costs, and representation costs (GBP 25k).",
      "Extensive standalone Personal Accident & Business Travel section (S9).",
      "Loss of documents sub-limit GBP 1m.",
    ],
@@ -337,7 +348,7 @@ COMPETITOR_PROFILES = {
    title="Liberty Entertainment Combined Policy",
    shape="6 cover sections: Material Damage, Business Interruption, Terrorism, Money, Employer\u2019s Liability, Public & Products Liability.",
    strengths=[
-     "Property-led wording with detailed Material-Damage extensions (e.g. removal to private home, capital additions, professional fees).",
+     "Property-led wording with detailed Material-Damage extensions (removal to private home, capital additions, professional fees).",
      "Clear, well-structured general exclusions/conditions.",
    ],
    gaps=[
@@ -348,7 +359,7 @@ COMPETITOR_PROFILES = {
    title="Allianz Entertainment \u2018Complete\u2019 Policy",
    shape="8 cover sections (+Terrorism): Property Damage, BI, Increased Cost of Working, Book Debts, Money, Own Goods in Transit, Specified All Risks, EL, Public & Products.",
    strengths=[
-     "Granular BI suite \u2014 Increased Cost of Working (S2a) and Book Debts (S3) as discrete sections.",
+     "Granular BI suite \u2014 Increased Cost of Working and Book Debts as discrete sections.",
      "Mature property-package drafting (Specified All Risks, GIT).",
    ],
    gaps=[
@@ -356,18 +367,31 @@ COMPETITOR_PROFILES = {
      "No Production Indemnity, Loss of Licence, Legal Expenses, Management Liability or standalone Cyber.",
      "Personal Accident referenced in exclusions but not in the provided cover list (requires review).",
    ]),
+ "axaxl": dict(
+   title="AXA XL \u2014 Media & Entertainment Combined Corporate (XL Catlin Insurance Company UK Ltd; \u2018Crisis Management & Special Risks\u2019, June 2021)",
+   shape="3 operative sections only: Material Damage (Buildings/Contents, Machinery/Plant/Equipment, \u2018Technical Equipment\u2019 and a Money specification), Business Interruption (incl. Rent Receivable/Turnover), and Liability (7A Public, 7B Product, 7C Employers\u2019).",
+   strengths=[
+     "Clean, modern \u2018single contract\u2019 combined drafting; Material Damage covers Technical Equipment used in the Business and includes a Money specification.",
+     "Public Liability includes a Data Protection Act 2018 defence-costs extension (a deliberate carve-out from the broad cyber exclusion).",
+   ],
+   gaps=[
+     "NO Media Liability / PI / E&O, Production Indemnity, Cyber section, Legal Expenses, Management Liability, Loss of Licence, Goods in Transit or Personal Accident \u2014 despite the \u2018Media & Entertainment\u2019 title.",
+     "Terrorism EXCLUDED absolutely (Policy Exclusion 3.4, ex-EL) \u2014 no buy-back.",
+     "Punitive/exemplary damages and fines EXCLUDED absolutely (3.2) \u2014 no defamation write-back.",
+     "Broad cyber / electronic-data exclusion across all sections (only a DP Act 2018 carve-out within Public Liability).",
+   ]),
 }
 
 # ---------------------------------------------------------------------------
 # 8. TMHCC STRENGTHS  /  WHERE COMPETITORS ARE BROADER
 # ---------------------------------------------------------------------------
 TMHCC_STRENGTHS = [
-  ("Widest section count in the peer group", "The only wording reviewed offering all 15 sections in a single contract \u2014 a genuine \u2018one-stop\u2019 media & entertainment package."),
-  ("Four sections no competitor offers", "Loss of Licence (S10), Commercial Legal Expenses (S13), Management Liability (S14) and a standalone Cyber-liability section (S15 CyberGuard) are unique to TMHCC across the peer group."),
-  ("Standalone cyber that is genuine liability cover", "CyberGuard provides multimedia, security & privacy, privacy-regulatory defence & penalties and PCI DSS cover \u2014 not merely first-party computer breakdown."),
+  ("Widest section count in the peer group", "The only wording among the six offering all 15 sections in a single contract \u2014 a genuine \u2018one-stop\u2019 media & entertainment package. Three of the five competitors (Liberty, Allianz and AXA XL) carry NO media/PI cover at all."),
+  ("Four sections no competitor offers", "Loss of Licence (S10), Commercial Legal Expenses (S13), Management Liability (S14) and a standalone Cyber-liability section (S15 CyberGuard) are unique to TMHCC across all five competitors."),
+  ("Standalone cyber that is genuine liability cover", "CyberGuard provides multimedia, security & privacy, privacy-regulatory defence & penalties and PCI DSS cover \u2014 not merely first-party breakdown, and not a bare cyber EXCLUSION (as in AXA XL)."),
   ("Broad, well-extended Media Liability (S12)", "Wide \u2018any other civil liability\u2019 grant plus employee-dishonesty write-back, Data-Protection Defence Costs (GBP 250k), Reputation Management (GBP 250k), Withdrawal of Content (GBP 250k), IP-pursuit costs (GBP 25k) and M&A auto-acquisition."),
-  ("Clean exclusion architecture", "The general cyber/date exclusion is dis-applied to Sections 12\u201315, so the liability sections are governed by their own bespoke terms \u2014 avoiding the \u2018silent-cyber strip\u2019 seen in a competitor PI section."),
-  ("Favourable fines/penalties carve-back", "Non-compensatory damages are written back for libel/slander/defamation awards and for punitive damages where the law permits payment."),
+  ("Clean exclusion architecture", "The general cyber/date exclusion is dis-applied to Sections 12\u201315, so the liability sections are governed by their own bespoke terms \u2014 avoiding the \u2018silent-cyber strip\u2019 seen in a competitor PI section and AXA XL\u2019s blanket cyber exclusion."),
+  ("Favourable fines/penalties carve-back", "Non-compensatory damages are written back for libel/slander/defamation awards and for punitive damages where the law permits payment \u2014 AXA XL, by contrast, excludes punitive/fines absolutely."),
   ("Protective, clearly-drafted claims architecture", "Claim notification is an express condition precedent; aggregation, retroactive date and territorial/jurisdiction terms are clearly defined."),
 ]
 
@@ -377,7 +401,7 @@ COMP_BROADER = [
   ("Statutory / criminal defence costs (Tysers & Yutree)", "Tysers funds Bribery/Corporate-Manslaughter/H&S/CDM defence (GBP 1m); Yutree funds criminal-prosecution defence (GBP 250k). TMHCC S12 funds only data-protection defence (broader criminal cover sits in S13/S14)."),
   ("Distributors & purchasers (Tysers)", "Tysers extends PI to purchasers/co-producers/distributors of the insured\u2019s media material (5x limit) \u2014 absent from TMHCC."),
   ("Journalistic source protection (Tysers)", "Tysers funds legal costs to challenge a subpoena requiring disclosure of a source \u2014 absent from TMHCC."),
-  ("Personal Accident & Business Travel (Tysers; Yutree assault)", "Tysers has an extensive PA/business-travel section; Yutree covers PA assault. TMHCC has no PA section."),
+  ("Personal Accident & Business Travel (Tysers; Yutree assault)", "Tysers has an extensive PA/business-travel section; Yutree covers PA assault. TMHCC, Liberty, Allianz and AXA XL have no PA section."),
   ("Granular BI heads (Allianz)", "Allianz splits Increased Cost of Working and Book Debts into discrete sections \u2014 a presentational advantage."),
   ("Standalone Computer Breakdown (Yutree)", "Yutree offers a dedicated computer-breakdown section; TMHCC consolidates IT breakdown within S1/S2 \u2014 confirm it is explicit."),
   ("Limited pollution write-back in PI (Yutree)", "Yutree grants a limited pollution write-back for the insured\u2019s own negligent act/error/omission."),
@@ -389,8 +413,8 @@ COMP_BROADER = [
 # ---------------------------------------------------------------------------
 GAPFILL = [
  dict(title="Add a Personal Accident & Business Travel extension/section",
-   comp="Tysers (S9, extensive); Yutree (PA assault within Money/PA)",
-   does="Tysers provides a full personal-accident and business-travel section (incl. directors/employees/visitors, family travel, assault); Yutree covers personal-accident assault.",
+   comp="Tysers (extensive); Yutree (PA assault)",
+   does="Tysers provides a full personal-accident and business-travel section (directors/employees/visitors, family travel, assault); Yutree covers personal-accident assault.",
    tmhcc="No standalone PA / business-travel section within the 15-section structure.",
    gap="Entertainment clients (crew, artists, touring personnel) routinely expect PA/business-travel; its absence is visible on a section-by-section comparison.",
    action="Add new optional extension/section (PA & Business Travel) \u2014 capacity-permitting.",
@@ -485,8 +509,8 @@ GAPFILL = [
    priority="Low-Medium",
    legal="Standard clause; confirm cost-allocation wording."),
  dict(title="Make Increased Cost of Working / Book Debts explicit in BI",
-   comp="Allianz (S2a ICOW; S3 Book Debts)",
-   does="Presents ICOW/AICOW and Book Debts as named, discrete cover heads.",
+   comp="Allianz (ICOW; Book Debts)",
+   does="Presents ICOW/AICOW and Book Debts as named, discrete cover heads (AXA XL also names Rent Receivable/Turnover).",
    tmhcc="BI cover exists (S3) but ICOW/book-debts may be implicit.",
    gap="Presentational \u2014 competitors show more named BI heads.",
    action="Confirm and, if needed, name ICOW/AICOW and book-debts heads expressly in S3.",
@@ -521,8 +545,8 @@ GAPFILL = [
    priority="Low",
    legal="Optional drafting polish."),
  dict(title="LEAVE UNCHANGED \u2014 patents, communicable disease and default US/Canada exclusion",
-   comp="Tysers (patents, worldwide)",
-   does="Tysers covers patents and is worldwide; some competitors omit a pandemic exclusion.",
+   comp="Tysers (patents, worldwide); AXA XL (supports restriction)",
+   does="Tysers covers patents and is worldwide; AXA XL by contrast excludes terrorism and punitive damages ABSOLUTELY and carries a broad communicable-disease and cyber exclusion \u2014 evidencing that disciplined restrictions are market-normal.",
    tmhcc="Excludes patents; carries a broad communicable-disease exclusion; default ex-US/Canada jurisdiction.",
    gap="These are deliberate, defensible restrictions \u2014 not true gaps.",
    action="Leave unchanged (offer US/Canada only as a rated option per rec. 2).",
@@ -543,9 +567,9 @@ EXCL_WRITEBACKS = [
    "TMHCC excludes actions outside Jurisdiction (default ex-US/Canada)", "Offer rated worldwide/US-Canada option; keep default", "High"),
   ("Patent infringement (PI)", "Tysers", "Patents covered within IP",
    "TMHCC excludes patents", "At most a limited defence-costs write-back; otherwise leave excluded", "Low"),
-  ("Cyber/data exclusion vs PI", "(TMHCC favourable)", "Yutree strips cyber-related PI",
+  ("Cyber/data exclusion vs PI", "(TMHCC favourable)", "Yutree strips cyber-related PI; AXA XL blanket cyber exclusion",
    "TMHCC dis-applies cyber/date exclusion to S12\u201315", "No change \u2014 retain as a TMHCC strength", "n/a"),
-  ("Fines/penalties (PI)", "(TMHCC favourable)", "TMHCC writes back defamation awards & permitted punitive",
+  ("Fines/penalties (PI)", "(TMHCC favourable)", "TMHCC writes back defamation awards & permitted punitive; AXA XL excludes absolutely",
    "TMHCC already favourable", "No change \u2014 retain", "n/a"),
 ]
 
@@ -556,13 +580,14 @@ METHOD_NOTES = [
   "No cover has been invented; competitor marketing language has not been treated as cover.",
   "TMHCC is recorded as having a gap ONLY where at least one competitor genuinely provides broader, clearer or materially useful cover.",
   "Exclusions, limits, conditions, warranties and write-backs were reviewed in detail and are not softened.",
-  "Liberty and Allianz are property/BI/liability combined packages and contain NO media/PI/E&O, production-indemnity, cyber-liability, legal-expenses or management-liability sections.",
-  "Fifth competitor (Wording E) is shown as a PENDING placeholder column, to be completed when the wording is supplied.",
+  "Liberty, Allianz and AXA XL are property / BI / liability combined packages and contain NO media/PI/E&O, production-indemnity, cyber-liability, legal-expenses or management-liability sections.",
+  "All five competitor wordings have now been mapped, including AXA XL (the fifth wording).",
 ]
 
 ASSUMPTIONS = [
-  "Competitor names are used as supplied; \u2018capacity\u2019 insurers (Zurich for Tysers; AXA for Yutree) are noted from the wordings.",
-  "Primary limits, excesses and any \u2018insured/not insured\u2019 section toggles are schedule-driven and were not supplied \u2014 section availability reflects the wording booklet only.",
+  "Competitor names are used as supplied; \u2018capacity\u2019 insurers are noted from the wordings (Zurich for Tysers; AXA for Yutree; XL Catlin/AXA XL for the AXA XL wording).",
+  "Primary limits, excesses and any \u2018insured/not insured\u2019 section toggles are schedule-driven and were not supplied \u2014 section availability reflects the wording booklets only.",
   "Allianz\u2019s \u2018Personal Accident\u2019 section is referenced in its exclusions but not in the provided cover list \u2014 treated as \u2018requires review\u2019.",
+  "AXA XL provides Money as a sub-limited specification within Material Damage (not a standalone section); shown as \u2018partial\u2019.",
   "Page/clause citations are available in the working text extracts and can be added on request.",
 ]

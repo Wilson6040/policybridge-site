@@ -106,7 +106,7 @@ def build():
         ("9. Exclusion write-backs / narrowing opportunities",
          "Asbestos professional-duty (Tysers) and pollution negligent-advice (Yutree) write-backs \u2014 adopt narrowly; worldwide/US-Canada as a rated option. Retain patents, communicable-disease and default US/Canada exclusions."),
         ("10. Items requiring legal / underwriting sign-off",
-         "All recommendations; any write-back drafting; rated-option pricing/reinsurance/capacity; PA appetite; confirmation of the \u2018review\u2019-flagged competitor positions; incorporation of the fifth competitor."),
+         "All recommendations; any write-back drafting; rated-option pricing/reinsurance/capacity; PA appetite; and confirmation of the \u2018review\u2019-flagged competitor positions."),
     ]
     t = b.make_table(doc, ["Final-report item", "Outcome"], [4.6, 13.0])
     for k, v in fr:
@@ -116,7 +116,7 @@ def build():
     b.zebra(t, start=1)
 
     b.spacer(doc, 6)
-    b.callout(doc, "Completion status:", "Both branded documents are produced; all four available competitors are mapped; the full comparison and the gap-fill strategy are complete; recommendations are evidence-based; exclusions are reviewed in detail. The deliverables are market-ready SUBJECT TO TMHCC legal/underwriting sign-off and to incorporation of the fifth competitor wording when supplied.")
+    b.callout(doc, "Completion status:", "Both branded documents are produced; all FIVE competitors (Tysers, Yutree, Liberty, Allianz and AXA XL) are mapped against the TMHCC base wording; the full comparison and the gap-fill strategy are complete; recommendations are evidence-based; exclusions are reviewed in detail. The deliverables are market-ready SUBJECT TO TMHCC legal/underwriting sign-off.")
 
     out = "/app/work/compare/out/TMHCC_Media_Comparison_QA_Methodology.docx"
     b.save_doc(doc, out)

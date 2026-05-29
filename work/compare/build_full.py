@@ -13,7 +13,7 @@ VERDICT_LABEL = {
     "review":("Review", "8A6A1E"),
 }
 
-W_HEADERS = ["TMHCC", "Tysers\n(Zurich)", "Yutree\n(AXA)", "Liberty", "Allianz", "Wording E\n(pending)"]
+W_HEADERS = ["TMHCC", "Tysers\n(Zurich)", "Yutree\n(AXA)", "Liberty", "Allianz", "AXA XL"]
 
 
 def comment_cell(cell, verdict, text):
@@ -57,7 +57,7 @@ def build():
         doc,
         doc_kicker="Coverage Comparison \u2014 Media & Entertainment",
         title="Full Coverage Comparison",
-        subtitle="A like-for-like, section-by-section comparison of the TMHCC Media & Music Combined wording against four competitor wordings (fifth competitor pending).",
+        subtitle="A like-for-like, section-by-section comparison of the TMHCC Media & Music Combined wording against five competitor wordings (Tysers/Zurich, Yutree/AXA, Liberty, Allianz and AXA XL).",
         meta_lines=[
             "Indicative wording comparison against the TMHCC Media & Music Combined wording \u2014 for broking reference only. Always refer to the full policy wordings.",
             "Market-ready subject to final TMHCC legal / underwriting sign-off.   Prepared from the wordings supplied; competitor capacity insurers noted where stated.",
@@ -68,7 +68,7 @@ def build():
     # ---------------- 2. EXECUTIVE SUMMARY ----------------
     doc.add_page_break()
     b.h1(doc, "Executive summary", num="1")
-    b.para(doc, "TMHCC\u2019s Media & Music Combined wording is, structurally, the broadest in the peer group reviewed. It is the only wording that offers all fifteen sections in a single contract, and it is the only wording to provide Loss of Licence, Commercial Legal Expenses, Management Liability and a genuine standalone Cyber-liability section. Two of the four competitors (Liberty and Allianz) are property / business-interruption / liability combined packages and contain no media, professional-indemnity, production-indemnity, cyber, legal-expenses or management-liability cover at all.", align='just')
+    b.para(doc, "TMHCC\u2019s Media & Music Combined wording is, structurally, the broadest in the peer group reviewed. It is the only wording that offers all fifteen sections in a single contract, and it is the only wording to provide Loss of Licence, Commercial Legal Expenses, Management Liability and a genuine standalone Cyber-liability section. Three of the five competitors (Liberty, Allianz and AXA XL) are property / business-interruption / liability combined packages and contain no media, professional-indemnity, production-indemnity, cyber, legal-expenses or management-liability cover at all \u2014 AXA XL despite carrying a \u2018Media & Entertainment\u2019 title.", align='just')
     b.para(doc, "The meaningful competition therefore sits in the sections the wordings share \u2014 principally Media Liability / Professional Indemnity (where Tysers, via Zurich, and Yutree, via AXA, both offer strong wordings) and the property / BI / liability suite (where Allianz and Liberty are mature property-led packages).", align='just')
     b.h3(doc, "Headline conclusions")
     b.bullet(doc, "TMHCC is broader or unique on at least six rows (Terrorism vs Tysers; Goods in Transit; Loss of Licence; Legal Expenses; Management Liability; standalone Cyber).", bold_lead="TMHCC wins outright:  ")
@@ -99,7 +99,7 @@ def build():
     # ---------------- 4. MARKET COMPARISON AT A GLANCE ----------------
     doc.add_page_break()
     b.h1(doc, "Market comparison at a glance", num="3")
-    b.para(doc, "Section-by-section availability across the six wordings (the fifth competitor column is reserved). This is the headline coverage matrix; feature-level detail for the Media Liability / PI section follows in part 4.")
+    b.para(doc, "Section-by-section availability across all six wordings. This is the headline coverage matrix; feature-level detail for the Media Liability / PI section follows in part 4.")
     b.legend_bar(doc)
     render_matrix(doc, "Section of cover", d.SECTION_ROWS)
 
@@ -113,7 +113,7 @@ def build():
     # ---------------- 6. COMPETITOR-BY-COMPETITOR ----------------
     doc.add_page_break()
     b.h1(doc, "Competitor-by-competitor analysis", num="5")
-    for key in ["tysers", "yutree", "liberty", "allianz"]:
+    for key in ["tysers", "yutree", "liberty", "allianz", "axaxl"]:
         prof = d.COMPETITOR_PROFILES[key]
         b.h2(doc, prof['title'])
         b.para(doc, prof['shape'], italic=True, color=b.GREY, size=9)
@@ -124,7 +124,7 @@ def build():
         for g in prof['gaps']:
             b.bullet(doc, g)
         b.spacer(doc, 4)
-    b.callout(doc, "Wording E (fifth competitor):", "Pending. A reserved column has been carried through every matrix so the fifth wording can be dropped in without re-formatting.", bg="EEF1F3", border=b.GREY, lead_color=b.GREY)
+    b.callout(doc, "All five competitors mapped:", "Tysers (Zurich), Yutree (AXA), Liberty, Allianz and AXA XL have each been parsed in full and assessed against the TMHCC base wording. AXA XL \u2014 the fifth wording \u2014 confirms the pattern: it is a lean property/BI/liability package with no media/PI cover.", bg="EEF1F3", border=b.GREY, lead_color=b.GREY)
 
     # ---------------- 7. TMHCC STRENGTHS ----------------
     doc.add_page_break()
@@ -155,34 +155,34 @@ def build():
     b.callout(doc, "Note:", "In this table \u2713 = the exclusion APPLIES, \u25D0 = partial / write-back present, \u2717 = exclusion absent or carved back, ? = requires review.", bg="FBF1DA", border=b.GOLD, lead_color="8A6A1E")
     render_matrix(doc, "General exclusion", [(r[0], r[1], None, r[2]) for r in d.GENERAL_EXCL], label_w=5.6, comment_w=11.4)
     b.h2(doc, "Media Liability / PI-specific exclusions")
-    b.para(doc, "Liberty and Allianz have no PI section and are shown as not applicable.")
+    b.para(doc, "Liberty, Allianz and AXA XL have no PI section and are shown as not applicable.")
     render_matrix(doc, "PI exclusion", [(r[0], r[1], None, r[2]) for r in d.PI_EXCL], label_w=5.6, comment_w=11.4)
     b.callout(doc, "Exclusions \u2014 key takeaways:", "TMHCC is sensibly MORE protected on communicable disease, patents and US/Canada jurisdiction. The genuine write-back opportunities a competitor offers are: asbestos professional-duty (Tysers), pollution negligent-advice (Yutree) and a rated worldwide/US-Canada PI option (Tysers). TMHCC is clearer where its cyber/date exclusion is dis-applied to the liability sections, avoiding a \u2018silent-cyber strip\u2019 of PI.")
 
     # ---------------- 10. CONDITIONS / WARRANTIES / CLAIMS ----------------
     doc.add_page_break()
     b.h1(doc, "Conditions, warranties and claims obligations", num="9")
-    headers = ["Condition / obligation", "TMHCC", "Tysers (Zurich)", "Yutree (AXA)", "Liberty", "Allianz"]
-    t = b.make_table(doc, headers, [4.6, 5.0, 4.3, 4.3, 4.0, 3.8])
+    headers = ["Condition / obligation", "TMHCC", "Tysers (Zurich)", "Yutree (AXA)", "Liberty", "Allianz", "AXA XL"]
+    t = b.make_table(doc, headers, [3.9, 4.5, 3.9, 3.9, 3.3, 3.3, 3.2])
     for row in d.CONDITIONS:
         cells = t.add_row().cells
-        b.text_cell(cells[0], row[0], size=8.2, bold=True, color=b.TEAL)
-        for j in range(5):
-            b.text_cell(cells[1 + j], row[1 + j], size=7.9)
+        b.text_cell(cells[0], row[0], size=8.0, bold=True, color=b.TEAL)
+        for j in range(6):
+            b.text_cell(cells[1 + j], row[1 + j], size=7.6)
     b.zebra(t)
     b.callout(doc, "Claims obligations:", "TMHCC\u2019s claim-notification is an EXPRESS condition precedent to liability \u2014 among the most protective drafting in the peer group, and a point to retain (not soften). Yutree\u2019s King\u2019s Counsel dispute clause is a drafting-clarity advantage TMHCC could adopt.")
 
     # ---------------- 11. LIMITS / SUB-LIMITS / EXCESS ----------------
     doc.add_page_break()
     b.h1(doc, "Limits, sub-limits and excess comparison", num="10")
-    b.para(doc, "Primary limits and excesses are schedule-driven and were not supplied; the table below compares the principal SUB-LIMITS within the Media Liability / PI sections (Liberty and Allianz have no PI section).")
-    headers = ["Media / PI sub-limit", "TMHCC", "Tysers (Zurich)", "Yutree (AXA)", "Liberty", "Allianz"]
-    t = b.make_table(doc, headers, [5.4, 4.4, 4.6, 4.6, 3.5, 3.5])
+    b.para(doc, "Primary limits and excesses are schedule-driven and were not supplied; the table below compares the principal SUB-LIMITS within the Media Liability / PI sections (Liberty, Allianz and AXA XL have no PI section).")
+    headers = ["Media / PI sub-limit", "TMHCC", "Tysers (Zurich)", "Yutree (AXA)", "Liberty", "Allianz", "AXA XL"]
+    t = b.make_table(doc, headers, [4.6, 3.6, 3.7, 3.7, 3.3, 3.3, 3.3])
     for row in d.SUBLIMITS:
         cells = t.add_row().cells
-        b.text_cell(cells[0], row[0], size=8.3, bold=True, color=b.TEAL)
-        for j in range(5):
-            b.text_cell(cells[1 + j], row[1 + j], size=8.0, align='center')
+        b.text_cell(cells[0], row[0], size=8.1, bold=True, color=b.TEAL)
+        for j in range(6):
+            b.text_cell(cells[1 + j], row[1 + j], size=7.7, align='center')
     b.zebra(t)
     b.callout(doc, "Excess:", "TMHCC and the competitors apply a per-claim excess per the Schedule; both Tysers and TMHCC pay defence costs in addition to the limit (Tysers states the excess does not apply to defence costs). Confirm final limits/excesses against each Schedule.")
 
@@ -207,29 +207,29 @@ def build():
     b.h1(doc, "Appendix \u2014 detailed clause mapping", num="12")
     b.para(doc, "Cross-reference of comparable cover by FUNCTION across the wordings (section names are the actual headings used in each policy).")
     mapping = [
-        ("Premises material damage", "S1 Business \u2018All Risks\u2019", "S2 Property Damage", "Property damage \u2013 All risks", "S1 Material Damage", "S1 Property Damage"),
-        ("Production / entertainment equipment", "S2 Property & Equipment", "S1 Production Property", "Production property", "Within S1 / Schedule", "S6 Specified All Risks"),
-        ("Business interruption", "S3 Business Interruption", "S3 BI \u2018All Risks\u2019", "BI \u2013 All risks", "S2 Business Interruption", "S2 BI / S2a ICOW / S3 Book Debts"),
-        ("Terrorism", "S4 Terrorism", "Excluded", "Terrorism section", "S3 Terrorism", "Terrorism"),
-        ("Employers\u2019 liability", "S5 Employers\u2019 Liability", "S6 Employers\u2019 Liability", "Employers liability", "S5 Employer\u2019s Liability", "S7 Employers\u2019 Liability"),
-        ("Public & products liability", "S6 Public / S7 Products", "S7 Public & Products", "Public & products liability", "S6 Public & Products", "S8 Public & Products"),
-        ("Money", "S8 Money", "S4 Money", "Money & PA assault", "S4 Money", "S4 Money"),
-        ("Goods in transit", "S9 Goods in Transit", "\u2014", "Goods in transit", "\u2014", "S5 Own Goods in Transit"),
-        ("Loss of licence", "S10 Loss of Licence", "\u2014", "\u2014", "\u2014", "\u2014"),
-        ("Production indemnity", "S11 Production Indemnity", "S5 Multimedia & Producers Indemnity", "Production indemnity \u2013 All risks", "\u2014", "\u2014"),
-        ("Media liability / PI / E&O", "S12 Media Liability", "S8 Professional Indemnity/E&O", "PI \u2013 Media; PI \u2013 Events", "\u2014", "\u2014"),
-        ("Legal expenses", "S13 Commercial Legal Expenses", "\u2014", "\u2014", "\u2014", "\u2014"),
-        ("Management liability", "S14 Management Liability", "\u2014", "\u2014", "\u2014", "\u2014"),
-        ("Cyber liability (standalone)", "S15 CyberGuard", "\u2014", "Computer breakdown (first-party only)", "\u2014", "\u2014"),
-        ("Personal accident / travel", "\u2014", "S9 PA & Business Travel", "PA assault (within Money/PA)", "\u2014", "Referenced \u2013 review"),
+        ("Premises material damage", "S1 Business \u2018All Risks\u2019", "S2 Property Damage", "Property damage \u2013 All risks", "S1 Material Damage", "S1 Property Damage", "MD: Buildings/Contents"),
+        ("Production / entertainment equipment", "S2 Property & Equipment", "S1 Production Property", "Production property", "Within S1 / Schedule", "S6 Specified All Risks", "MD: Technical Equipment"),
+        ("Business interruption", "S3 Business Interruption", "S3 BI \u2018All Risks\u2019", "BI \u2013 All risks", "S2 Business Interruption", "S2 BI / S2a ICOW / S3 Book Debts", "BI Section"),
+        ("Terrorism", "S4 Terrorism", "Excluded", "Terrorism section", "S3 Terrorism", "Terrorism", "Excluded (3.4)"),
+        ("Employers\u2019 liability", "S5 Employers\u2019 Liability", "S6 Employers\u2019 Liability", "Employers liability", "S5 Employer\u2019s Liability", "S7 Employers\u2019 Liability", "7C Employers\u2019 Liability"),
+        ("Public & products liability", "S6 Public / S7 Products", "S7 Public & Products", "Public & products liability", "S6 Public & Products", "S8 Public & Products", "7A Public / 7B Product"),
+        ("Money", "S8 Money", "S4 Money", "Money & PA assault", "S4 Money", "S4 Money", "MD: Money spec"),
+        ("Goods in transit", "S9 Goods in Transit", "\u2014", "Goods in transit", "\u2014", "S5 Own Goods in Transit", "\u2014"),
+        ("Loss of licence", "S10 Loss of Licence", "\u2014", "\u2014", "\u2014", "\u2014", "\u2014"),
+        ("Production indemnity", "S11 Production Indemnity", "S5 Multimedia & Producers Indemnity", "Production indemnity \u2013 All risks", "\u2014", "\u2014", "\u2014"),
+        ("Media liability / PI / E&O", "S12 Media Liability", "S8 Professional Indemnity/E&O", "PI \u2013 Media; PI \u2013 Events", "\u2014", "\u2014", "\u2014"),
+        ("Legal expenses", "S13 Commercial Legal Expenses", "\u2014", "\u2014", "\u2014", "\u2014", "\u2014"),
+        ("Management liability", "S14 Management Liability", "\u2014", "\u2014", "\u2014", "\u2014", "\u2014"),
+        ("Cyber liability (standalone)", "S15 CyberGuard", "\u2014", "Computer breakdown (first-party)", "\u2014", "\u2014", "Excluded (3.7)"),
+        ("Personal accident / travel", "\u2014", "S9 PA & Business Travel", "PA assault (Money/PA)", "\u2014", "Referenced \u2013 review", "\u2014"),
     ]
-    headers = ["Cover (by function)", "TMHCC", "Tysers (Zurich)", "Yutree (AXA)", "Liberty", "Allianz"]
-    t = b.make_table(doc, headers, [4.6, 4.8, 4.8, 4.6, 3.6, 3.6])
+    headers = ["Cover (by function)", "TMHCC", "Tysers (Zurich)", "Yutree (AXA)", "Liberty", "Allianz", "AXA XL"]
+    t = b.make_table(doc, headers, [4.0, 3.8, 3.8, 3.6, 3.3, 3.3, 3.3])
     for row in mapping:
         cells = t.add_row().cells
-        b.text_cell(cells[0], row[0], size=8.0, bold=True, color=b.TEAL)
-        for j in range(5):
-            b.text_cell(cells[1 + j], row[1 + j], size=7.8)
+        b.text_cell(cells[0], row[0], size=7.9, bold=True, color=b.TEAL)
+        for j in range(6):
+            b.text_cell(cells[1 + j], row[1 + j], size=7.5)
     b.zebra(t)
     b.spacer(doc, 6)
     b.para(doc, "End of Full Coverage Comparison. A companion document \u2014 TMHCC Gap-Fill / Wording Enhancement Strategy \u2014 sets out the recommended enhancements arising from this comparison.", italic=True, color=b.GREY, size=8.5)

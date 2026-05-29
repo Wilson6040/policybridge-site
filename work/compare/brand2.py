@@ -195,10 +195,36 @@ def _table_full_width(table):
 
 
 def _set_col_widths(table, widths_cm):
-    for j, w in enumerate(widths_cm):
+    """Set explicit grid + cell widths in twips and pin the table to the
+    summed width with a fixed layout, so it can never exceed the page."""
+    EMU_PER_CM = 360000
+    TWIPS_PER_CM = 567
+    total_tw = int(round(sum(widths_cm) * TWIPS_PER_CM))
+    tbl = table._tbl
+    tblPr = tbl.tblPr
+    # table total width (dxa) + fixed layout
+    for tag in ('w:tblW', 'w:tblLayout'):
+        ex = tblPr.find(qn(tag))
+        if ex is not None:
+            tblPr.remove(ex)
+    w = OxmlElement('w:tblW'); w.set(qn('w:type'), 'dxa'); w.set(qn('w:w'), str(total_tw))
+    tblPr.append(w)
+    lay = OxmlElement('w:tblLayout'); lay.set(qn('w:type'), 'fixed'); tblPr.append(lay)
+    table.autofit = False
+    # rebuild tblGrid
+    grid = tbl.find(qn('w:tblGrid'))
+    if grid is not None:
+        tbl.remove(grid)
+    grid = OxmlElement('w:tblGrid')
+    for wcm in widths_cm:
+        gc = OxmlElement('w:gridCol'); gc.set(qn('w:w'), str(int(round(wcm * TWIPS_PER_CM))))
+        grid.append(gc)
+    tblPr.addnext(grid)
+    # per-cell widths
+    for j, wcm in enumerate(widths_cm):
         for row in table.rows:
             if j < len(row.cells):
-                row.cells[j].width = Cm(w)
+                row.cells[j].width = Cm(wcm)
 
 
 # ---------------- text helpers ----------------
@@ -331,7 +357,6 @@ def make_table(doc, headers, widths_cm, header_bg=TEAL):
     table = doc.add_table(rows=1, cols=len(headers))
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     _table_borders(table, LINE, 4)
-    _table_full_width(table)
     header_row(table, headers, bg=header_bg)
     if widths_cm:
         _set_col_widths(table, widths_cm)

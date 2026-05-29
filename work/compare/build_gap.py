@@ -25,7 +25,7 @@ def prio_chip(doc, priority):
     b._set_run(r, size=9, bold=True, color=fg)
 
 
-def attr_table(doc, pairs, label_w=4.3, val_w=13.4):
+def attr_table(doc, pairs, label_w=4.2, val_w=13.2):
     t = doc.add_table(rows=0, cols=2)
     b._table_borders(t, b.LINE, 4)
     b._table_full_width(t)
@@ -73,8 +73,8 @@ def build():
             "Recommendations are commercial proposals only and are subject to final TMHCC legal / underwriting sign-off.",
         ],
         wordings=[
-            "Benchmarked against: Tysers (Zurich), Yutree (AXA), Liberty, Allianz",
-            "Fifth competitor (Wording E): pending \u2014 to be incorporated later",
+            "Benchmarked against all five competitor wordings:",
+            "Tysers (Zurich), Yutree (AXA), Liberty, Allianz and AXA XL (XL Catlin) \u2014 now incorporated",
         ],
     )
 
@@ -223,7 +223,7 @@ def build():
         "\u2018Reputation management, withdrawal-of-content and data-protection defence as standard in media liability.\u2019",
     ]:
         b.bullet(doc, s)
-    b.callout(doc, "Positioning:", "TMHCC can credibly market the wording as broader, clearer and more complete than the four competitors reviewed \u2014 subject to legal/underwriting sign-off and to incorporating the fifth competitor when supplied.")
+    b.callout(doc, "Positioning:", "TMHCC can credibly market the wording as broader, clearer and more complete than all five competitor wordings reviewed (Tysers, Yutree, Liberty, Allianz and AXA XL) \u2014 subject to legal/underwriting sign-off.")
 
     # ---- 10. UNDERWRITING RISK ASSESSMENT ----
     doc.add_page_break()
@@ -269,7 +269,7 @@ def build():
           "Consider narrow asbestos / pollution negligent-advice write-backs."]),
         ("Phase 4 \u2014 Document deliberate restrictions",
          ["Record the rationale for retaining the patent, communicable-disease and default US/Canada exclusions.",
-          "Re-run the comparison once Wording E (fifth competitor) is supplied."]),
+          "Re-issue the comparison if any competitor updates its wording or a further competitor is added."]),
     ]
     for title, items in phases:
         b.h3(doc, title)
@@ -286,7 +286,7 @@ def build():
         "Rated options (PA, worldwide/US-Canada, distributors) require pricing, reinsurance-treaty and capacity confirmation.",
         "Confirm freelancer/contractor and \u2018insured\u2019 definitions remain consistent across all amended sections.",
         "No cover has been invented in this strategy; every item is supported by at least one competitor wording cited above.",
-        "Incorporate the fifth competitor (Wording E) and revisit priorities once that wording is supplied.",
+        "All five competitor wordings (incl. AXA XL) are incorporated; revisit priorities if any competitor wording is updated.",
     ]:
         b.bullet(doc, n)
     b.spacer(doc, 6)
