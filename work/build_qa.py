@@ -36,10 +36,11 @@ for f in [
 
 add_h1(doc, "DELIVERABLES PRODUCED")
 for f in [
-    "TMHCC_Media_Combined_0526_FINAL_amended.docx \u2013 new wording with a live, auto-updating Word table "
-    "of contents field (accurate page numbers and clickable hyperlinks), page numbers added to the "
-    "footer throughout, the Section 15 CyberGuard\u2122 wording restyled to match the document and the "
-    "stray \u201cSection 16\u201d / \u201cInformation Technology Section\u201d references corrected (branding otherwise unchanged).",
+    "TMHCC_Media_Combined_0526_FINAL_amended.docx \u2013 new wording with a two-column, hyperlinked table "
+    "of contents showing accurate page numbers (each entry links to the start of its section), page "
+    "numbers added to the footer throughout, the Section 15 CyberGuard\u2122 wording restyled to match the "
+    "document and the stray \u201cSection 16\u201d / \u201cInformation Technology Section\u201d references corrected "
+    "(branding otherwise unchanged).",
     "TMHCC_Media_Combined_Summary_of_Changes_FINAL.docx (+ PDF) \u2013 branded 0223C vs 0526 comparison.",
     "TMHCC_Media_Combined_Summary_of_Cover_FINAL.docx (+ PDF) \u2013 branded summary based on the 0526 wording only.",
     "TMHCC_Media_Combined_QA_Report.docx (+ PDF) \u2013 this report.",
@@ -102,8 +103,8 @@ for f in [
     "Cyber) are in force only where shown in the Schedule.",
     "Branding (logo, colours, fonts, cover graphic and footer) was replicated from the supplied "
     "Summary of Cover draft and applied to the Summary of Changes and Summary of Cover.",
-    "The new wording now uses a live, auto-updating Word table-of-contents field; page numbers are "
-    "calculated by the field and by the footer, so both stay accurate when the document is updated.",
+    "The new wording uses a two-column hyperlinked contents with page numbers computed from the "
+    "rendered document; page numbers are also shown in the footer throughout.",
 ]:
     add_bullet(doc, f)
 
@@ -117,8 +118,9 @@ for f in [
     "Business \u201cAll Risks\u201d Section (Section 1), which is already listed in those clauses.",
     "CORRECTED: the Section 15 (CyberGuard\u2122) wording has been restyled to match the rest of the "
     "document (section title, headings and two-column layout) and now appears in the live contents.",
-    "CORRECTED: the contents is now a live Word table-of-contents field with accurate page numbers and "
-    "clickable hyperlinks, replacing the previous static list.",
+    "CORRECTED: the contents is now a two-column, hyperlinked list with accurate page numbers "
+    "(computed from the rendered document) and page numbers in the footer throughout, replacing the "
+    "previous static list.",
     "OPEN: minor typographical / OCR artefacts remain in a few clauses (e.g. Conduct of Claims, Duty to "
     "Defend) \u2013 recommend a final proofreading pass before external issue.",
     "OPEN: confirm whether the IT-specific \u201cData Storage\u201d condition precedent from the former IT "

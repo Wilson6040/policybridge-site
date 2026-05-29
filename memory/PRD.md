@@ -67,3 +67,18 @@ no restrictions softened.
 - Scripts: amend_v2.py (wording), uno_pdf.py (UNO PDF/TOC build), docx_brand.py + build_*.py (summaries).
 - Remaining OPEN items for sign-off: minor OCR artefacts (proofread); IT "Data Storage" CP placement;
   "Production Property" vs "Property & Equipment" naming in some internal lists.
+
+---
+## Update (round 3) — two-column TOC + in-app Document Centre
+- **TOC changed to TWO COLUMNS** (user preference over a live field): two-column, hyperlinked contents
+  with right-aligned dot leaders and ACCURATE page numbers computed from the actual rendered document
+  via the UNO page cursor (build_2col.py + uno_pagenums.py). Footer page numbers throughout. Cover and
+  body remain two-column; CyberGuard restyled; Section 16 / IT references corrected (all retained).
+- **In-app Document Centre** (so the user can download from the Preview):
+  - Backend: GET /api/documents (lists 4 docs + formats/sizes), GET /api/documents/download/{filename}
+    (FileResponse, attachment disposition). Files served from /app/backend/deliverables/.
+  - Frontend: branded Tokio Marine "Document Centre" page (App.js) listing the 4 documents with
+    Word/PDF download buttons. Verified end-to-end (browser download triggers; backend curl 200).
+- Download/export guidance given: "Save to GitHub" to export the whole project, or download via the app.
+  Emergent has no built-in email delivery (would need SendGrid/SES).
+- Deliverables (docx+pdf) in /app/deliverables and /app/backend/deliverables.

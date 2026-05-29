@@ -1,4 +1,5 @@
-from fastapi import FastAPI, APIRouter
+from fastapi import FastAPI, APIRouter, HTTPException
+from fastapi.responses import FileResponse
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -65,6 +66,79 @@ async def get_status_checks():
             check['timestamp'] = datetime.fromisoformat(check['timestamp'])
     
     return status_checks
+
+
+# ---- Document deliverables (download centre) ----
+DELIVERABLES_DIR = ROOT_DIR / 'deliverables'
+
+DOCUMENTS = [
+    {
+        "id": "wording",
+        "title": "Final New Wording (0526)",
+        "subtitle": "Amended policy wording",
+        "description": "The full TMHCC Media Combined 0526 wording with a two-column hyperlinked "
+                       "table of contents, accurate page numbers, footer pagination, the CyberGuard "
+                       "section restyled and the Section 16 / Information Technology references corrected.",
+        "base": "TMHCC_Media_Combined_0526_FINAL_amended",
+        "accent": "#009CE5",
+    },
+    {
+        "id": "changes",
+        "title": "Summary of Changes",
+        "subtitle": "0223C vs 0526 comparison",
+        "description": "A branded, traffic-light comparison of the previous and new wordings, with an "
+                       "exclusions deep-dive, conditions and limits changes, and reviewer notes.",
+        "base": "TMHCC_Media_Combined_Summary_of_Changes_FINAL",
+        "accent": "#C79000",
+    },
+    {
+        "id": "cover",
+        "title": "Summary of Cover",
+        "subtitle": "Based on the 0526 wording",
+        "description": "A clear, high-level summary of cover across all 15 sections, with key exclusions, "
+                       "conditions, a limits/excess table and the required disclaimer.",
+        "base": "TMHCC_Media_Combined_Summary_of_Cover_FINAL",
+        "accent": "#0066CC",
+    },
+    {
+        "id": "qa",
+        "title": "QA Report",
+        "subtitle": "Review & sign-off notes",
+        "description": "Files reviewed, comparison method, key enhancements, restrictions, exclusions, "
+                       "corrections made and items recommended for underwriting / legal sign-off.",
+        "base": "TMHCC_Media_Combined_QA_Report",
+        "accent": "#E20033",
+    },
+]
+
+
+@api_router.get("/documents")
+async def list_documents():
+    items = []
+    for d in DOCUMENTS:
+        formats = []
+        for ext in ("docx", "pdf"):
+            fp = DELIVERABLES_DIR / f"{d['base']}.{ext}"
+            if fp.exists():
+                formats.append({
+                    "ext": ext,
+                    "filename": fp.name,
+                    "size_kb": round(fp.stat().st_size / 1024),
+                })
+        items.append({k: v for k, v in d.items() if k != "base"} | {"formats": formats})
+    return {"documents": items}
+
+
+@api_router.get("/documents/download/{filename}")
+async def download_document(filename: str):
+    safe = os.path.basename(filename)
+    fp = DELIVERABLES_DIR / safe
+    if not fp.exists() or fp.suffix.lower() not in (".docx", ".pdf"):
+        raise HTTPException(status_code=404, detail="Document not found")
+    media = ("application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+             if fp.suffix.lower() == ".docx" else "application/pdf")
+    return FileResponse(path=str(fp), media_type=media, filename=safe)
+
 
 # Include the router in the main app
 app.include_router(api_router)
