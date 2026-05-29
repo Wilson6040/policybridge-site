@@ -108,8 +108,10 @@ add_bullet(doc, "The standalone Information Technology Section has been removed.
 add_bullet(doc, "The new specialist Sections (13, 14, 15) each carry their own, sometimes broader, "
                 "exclusions and conditions which prevail over the General Policy terms for those "
                 "Sections.", color="7A5800")
-add_bullet(doc, "Some carried-over General Exclusions still reference the now-removed \u201cInformation "
-                "Technology Section\u201d \u2013 a drafting inconsistency to confirm (see Reviewer Notes).", color="7A5800")
+add_bullet(doc, "Carried-over conditions and exclusions previously referenced the now-removed "
+                "\u201cInformation Technology Section\u201d; these have been corrected in the final amended "
+                "wording so the cover applies via the Business \u201cAll Risks\u201d Section, which now "
+                "contains the IT Property cover (see Reviewer Notes).", color="7A5800")
 
 # ---------- Exclusions deep dive ----------
 add_h1(doc, "EXCLUSIONS DEEP DIVE")
@@ -215,18 +217,25 @@ for b in [
 
 # ---------- Reviewer notes ----------
 add_h1(doc, "REVIEWER NOTES (FOR UNDERWRITING / LEGAL SIGN-OFF)")
+add_para(doc, "The drafting points originally identified in the supplied 0526 wording have been "
+              "corrected in the final amended wording delivered alongside this document. They are "
+              "recorded here for transparency, with the items still recommended for sign-off.",
+              size=9, italic=True, color=GREY)
 for n in [
-    "The Insuring Agreement and Policy Exclusions refer to a \u201cSection 16\u201d, but no Section 16 appears in "
-    "the body of the 0526 wording \u2013 confirm whether a Section 16 is intended.",
-    "Certain General Exclusions (Northern Ireland, Pollution, Terrorism) still reference the "
-    "\u201cInformation Technology Section\u201d although that standalone Section has been removed \u2013 recommend "
-    "tidying these cross-references.",
-    "The Section 15 (CyberGuard\u2122) wording is appended in a different style and is not integrated into "
-    "the heading/contents hierarchy \u2013 confirm final pagination and cross-references.",
-    "Minor typographical / OCR artefacts were noted in the Conduct of Claims and Duty to Defend clauses "
-    "of the new wording \u2013 recommend a proofreading pass before external issue.",
-    "Confirm whether the IT-specific \u201cData Storage\u201d condition precedent from the former IT Section is "
-    "intended to carry across to Section 1.",
+    "CORRECTED: references to a non-existent \u201cSection 16\u201d (Insuring Agreement, General Conditions and "
+    "Policy Exclusions) have been amended to read Sections 13/14/15. This arose from deleting the old "
+    "Section 4 (Information Technology) after the three new Sections had been numbered.",
+    "CORRECTED: stale references to the removed standalone \u201cInformation Technology Section\u201d have been "
+    "taken out of the conditions and exclusions; the IT cover and its conditions now sit within the "
+    "Business \u201cAll Risks\u201d Section (Section 1), which is already listed in those clauses.",
+    "CORRECTED: the Section 15 (CyberGuard\u2122) wording has been restyled to match the rest of the "
+    "document and now appears in the live table of contents.",
+    "OPEN: minor typographical / OCR artefacts remain in a few clauses (e.g. Conduct of Claims, Duty to "
+    "Defend) \u2013 recommend a final proofreading pass before external issue.",
+    "OPEN: confirm whether the IT-specific \u201cData Storage\u201d condition precedent from the former IT "
+    "Section should be reproduced within Section 1.",
+    "OPEN: some internal applicability lists still use the former name \u201cProduction Property\u201d for "
+    "Section 2 (now titled \u201cProperty & Equipment\u201d) \u2013 recommend aligning the naming.",
     "All limits and excesses are Schedule-driven; this comparison does not confirm amounts.",
     "This document is a professional comparison aid prepared from the supplied wordings. It does not "
     "constitute legal advice and does not alter the policy wording; material points should be confirmed "

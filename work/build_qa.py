@@ -36,8 +36,10 @@ for f in [
 
 add_h1(doc, "DELIVERABLES PRODUCED")
 for f in [
-    "TMHCC_Media_Combined_0526_FINAL_amended.docx \u2013 new wording with a two-column, fully hyperlinked "
-    "table of contents and page numbers added to the footer throughout (branding otherwise unchanged).",
+    "TMHCC_Media_Combined_0526_FINAL_amended.docx \u2013 new wording with a live, auto-updating Word table "
+    "of contents field (accurate page numbers and clickable hyperlinks), page numbers added to the "
+    "footer throughout, the Section 15 CyberGuard\u2122 wording restyled to match the document and the "
+    "stray \u201cSection 16\u201d / \u201cInformation Technology Section\u201d references corrected (branding otherwise unchanged).",
     "TMHCC_Media_Combined_Summary_of_Changes_FINAL.docx (+ PDF) \u2013 branded 0223C vs 0526 comparison.",
     "TMHCC_Media_Combined_Summary_of_Cover_FINAL.docx (+ PDF) \u2013 branded summary based on the 0526 wording only.",
     "TMHCC_Media_Combined_QA_Report.docx (+ PDF) \u2013 this report.",
@@ -100,26 +102,29 @@ for f in [
     "Cyber) are in force only where shown in the Schedule.",
     "Branding (logo, colours, fonts, cover graphic and footer) was replicated from the supplied "
     "Summary of Cover draft and applied to the Summary of Changes and Summary of Cover.",
-    "The new wording\u2019s existing table-of-contents page references were left unchanged; navigation is via "
-    "the added hyperlinks. Footer page numbers reflect the amended pagination.",
+    "The new wording now uses a live, auto-updating Word table-of-contents field; page numbers are "
+    "calculated by the field and by the footer, so both stay accurate when the document is updated.",
 ]:
     add_bullet(doc, f)
 
-add_h1(doc, "REVIEWER NOTES \u2013 ITEMS FOR UNDERWRITING / LEGAL SIGN-OFF")
+add_h1(doc, "REVIEWER NOTES \u2013 CORRECTIONS MADE AND ITEMS FOR SIGN-OFF")
 for f in [
-    "The Insuring Agreement and Policy Exclusions refer to a \u201cSection 16\u201d, but no Section 16 appears in "
-    "the body of the 0526 wording \u2013 confirm whether one is intended.",
-    "Some General Exclusions (Northern Ireland, Pollution, Terrorism) still reference the now-removed "
-    "\u201cInformation Technology Section\u201d \u2013 recommend tidying the cross-references.",
-    "The Section 15 (CyberGuard\u2122) wording is appended in a different style and is not integrated into the "
-    "heading / contents hierarchy of the new wording \u2013 confirm final pagination and cross-references.",
-    "Minor typographical / OCR artefacts in the Conduct of Claims and Duty to Defend clauses \u2013 recommend "
-    "a proofreading pass before external issue.",
-    "Confirm whether the IT-specific \u201cData Storage\u201d condition precedent from the former IT Section is "
-    "intended to carry across to Section 1.",
-    "Because the table of contents now sits on its own page, the printed page references in the contents "
-    "list may differ from the live footer page numbers \u2013 the hyperlinks navigate correctly regardless; "
-    "the printed references can be regenerated on request.",
+    "CORRECTED: references to a non-existent \u201cSection 16\u201d (Insuring Agreement, General Conditions and "
+    "Policy Exclusions) have been amended to read Sections 13/14/15. This arose from deleting the old "
+    "Section 4 (Information Technology) after the three new Sections had been numbered.",
+    "CORRECTED: stale references to the removed standalone \u201cInformation Technology Section\u201d have been "
+    "taken out of the conditions and exclusions; the IT cover and its conditions now sit within the "
+    "Business \u201cAll Risks\u201d Section (Section 1), which is already listed in those clauses.",
+    "CORRECTED: the Section 15 (CyberGuard\u2122) wording has been restyled to match the rest of the "
+    "document (section title, headings and two-column layout) and now appears in the live contents.",
+    "CORRECTED: the contents is now a live Word table-of-contents field with accurate page numbers and "
+    "clickable hyperlinks, replacing the previous static list.",
+    "OPEN: minor typographical / OCR artefacts remain in a few clauses (e.g. Conduct of Claims, Duty to "
+    "Defend) \u2013 recommend a final proofreading pass before external issue.",
+    "OPEN: confirm whether the IT-specific \u201cData Storage\u201d condition precedent from the former IT "
+    "Section should be reproduced within Section 1.",
+    "OPEN: some internal applicability lists still use the former name \u201cProduction Property\u201d for "
+    "Section 2 (now titled \u201cProperty & Equipment\u201d) \u2013 recommend aligning the naming.",
 ]:
     add_bullet(doc, f)
 

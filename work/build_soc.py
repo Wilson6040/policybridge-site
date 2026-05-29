@@ -423,8 +423,7 @@ section(
 # ---------- General exclusions ----------
 add_h1(doc, "GENERAL POLICY EXCLUSIONS (APPLY ACROSS SECTIONS 1\u201311)")
 add_para(doc, "The following General Policy Exclusions apply unless a Section states otherwise. "
-              "Sections 13, 15 (and any Section 16) carry their own exclusions which prevail for those "
-              "Sections:")
+              "Sections 13, 14 and 15 carry their own exclusions which prevail for those Sections:")
 for e in [
     "Communicable Disease (not applicable to EL/PL/Products)",
     "Contribution (where other insurance applies)",

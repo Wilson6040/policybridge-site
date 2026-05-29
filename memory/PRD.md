@@ -48,3 +48,22 @@ no restrictions softened.
 - TOC printed page references unchanged (navigation via hyperlinks); live footer numbers reflect new pagination.
 
 ## Status: COMPLETE — all 4 documents produced (docx + PDF), branding + content verified via render/analysis.
+
+---
+## Update (round 2) — live TOC field + wording corrections
+- **Live Word TOC field**: replaced the manual contents with a genuine Word TOC field built from
+  26 hidden TC entries (`updateFields=true`, clickable hyperlinks, dot-leader page numbers). Renders
+  full-width single column on its own page (cover + body remain two-column). PDFs are generated via a
+  Python-UNO pipeline (uno_pdf.py) that refreshes indexes/fields so the TOC + page numbers populate.
+  NOTE: a true 2-column *live* field could not be rendered reliably by LibreOffice (it ignores `\f`
+  identifiers and index column settings), so a clean single-column live field was chosen.
+- **Section 16 removed**: stray references (Insuring Agreement, General Conditions, Policy Exclusions)
+  corrected to Sections 13/14/15.
+- **Information Technology Section citations removed** from conditions/exclusions; IT cover stays inside
+  Section 1 (Business "All Risks"). Legitimate "Information Technology Property" cover text preserved.
+- **CyberGuard (Section 15) restyled** (Subtitle + Heading 1/2/3, two-column) to match the wording and
+  now appears in the live contents (≈ p.105).
+- Summary of Changes, Summary of Cover and QA Report regenerated to reflect the corrections.
+- Scripts: amend_v2.py (wording), uno_pdf.py (UNO PDF/TOC build), docx_brand.py + build_*.py (summaries).
+- Remaining OPEN items for sign-off: minor OCR artefacts (proofread); IT "Data Storage" CP placement;
+  "Production Property" vs "Property & Equipment" naming in some internal lists.
