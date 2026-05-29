@@ -112,14 +112,39 @@ DOCUMENTS = [
         "group": COMPARISON_GROUP,
     },
     {
+        "id": "wording_tracked",
+        "title": "Final Wording (0526) — Tracked Changes (Round 7)",
+        "subtitle": "Latest update — shows the changes",
+        "description": "The final TMHCC Media Combined 0526 wording with the Round 7 amendments shown as tracked changes "
+                       "(from a clean accepted baseline): the Admission-of-Liability condition precedent replaced with a "
+                       "prejudice-qualified condition; a new 'Proof of Ownership and Value' claims requirement (Sections 1–11); "
+                       "'Accounts Receivable (Book Debts)' in Section 3; and the Section 15 'CyberGuard™ (Cyber Liability)' title. "
+                       "Section 12 enhancements are held for sign-off and are NOT in the wording.",
+        "base": "TMHCC_Media_Combined_0526_FINAL_TrackedChanges",
+        "accent": "#E20033",
+        "group": WORDING_GROUP,
+    },
+    {
+        "id": "wording_clean",
+        "title": "Final Wording (0526) — Clean (Round 7)",
+        "subtitle": "Latest update — changes accepted",
+        "description": "The same final wording as the tracked-changes version with the Round 7 amendments accepted "
+                       "(clean copy). This is the current working policy wording.",
+        "base": "TMHCC_Media_Combined_0526_FINAL_Clean",
+        "accent": "#009CE5",
+        "group": WORDING_GROUP,
+    },
+    {
         "id": "wording",
-        "title": "Final New Wording (0526) — Polished",
-        "subtitle": "Master policy wording",
+        "title": "New Wording (0526) — Polished (pre-update baseline)",
+        "subtitle": "Prior baseline (superseded by Round 7)",
         "description": "The full TMHCC Media Combined 0526 wording with red text removed, a clean two-column hyperlinked "
                        "Contents page (bold 'Section N:' labels, right-aligned page numbers, accurate destinations), "
-                       "no blank pages, and a PDF copy that retains all clickable internal navigation.",
+                       "no blank pages, and a PDF copy that retains all clickable internal navigation. Superseded by the "
+                       "Round 7 Tracked Changes / Clean versions above.",
         "base": "TMHCC_Media_Combined_0526_FINAL_polished",
-        "accent": "#009CE5",
+        "accent": "#6C7378",
+        "group": WORDING_GROUP,
     },
     {
         "id": "changes",
