@@ -166,61 +166,87 @@ def _cell_bg(cell, hexcolor):
     _shade(cell._tc.get_or_add_tcPr(), hexcolor)
 
 
-def _no_table_borders(table):
-    tblPr = table._tbl.tblPr
-    borders = OxmlElement('w:tblBorders')
-    for edge in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
-        e = OxmlElement('w:' + edge); e.set(qn('w:val'), 'none'); borders.append(e)
-    tblPr.append(borders)
+_TBLPR_ORDER = ['tblStyle', 'tblpPr', 'tblOverlap', 'bidiVisual', 'tblStyleRowBandSize',
+                'tblStyleColBandSize', 'tblW', 'jc', 'tblCellSpacing', 'tblInd', 'tblBorders',
+                'shd', 'tblLayout', 'tblCellMar', 'tblLook', 'tblCaption', 'tblDescription']
 
 
-def _table_borders(table, color=LINE, sz=4):
-    tblPr = table._tbl.tblPr
+def _local(el):
+    return el.tag.split('}')[-1]
+
+
+def _ordered_set(tblPr, elem):
+    """Remove any existing element(s) with the same tag, then insert elem at the
+    schema-correct position in tblPr. Prevents the duplicate / out-of-order table
+    properties that Microsoft Word rejects (rendering the document blank)."""
+    tag = _local(elem)
+    for ex in list(tblPr):
+        if _local(ex) == tag:
+            tblPr.remove(ex)
+    idx = _TBLPR_ORDER.index(tag) if tag in _TBLPR_ORDER else len(_TBLPR_ORDER)
+    ref = None
+    for child in tblPr:
+        ctag = _local(child)
+        cidx = _TBLPR_ORDER.index(ctag) if ctag in _TBLPR_ORDER else len(_TBLPR_ORDER)
+        if cidx > idx:
+            ref = child
+            break
+    if ref is not None:
+        ref.addprevious(elem)
+    else:
+        tblPr.append(elem)
+    return elem
+
+
+def _make_borders(color, sz, val):
     borders = OxmlElement('w:tblBorders')
     for edge in ('top', 'left', 'bottom', 'right', 'insideH', 'insideV'):
         e = OxmlElement('w:' + edge)
-        e.set(qn('w:val'), 'single'); e.set(qn('w:sz'), str(sz))
-        e.set(qn('w:space'), '0'); e.set(qn('w:color'), color)
+        e.set(qn('w:val'), val)
+        if val != 'none':
+            e.set(qn('w:sz'), str(sz)); e.set(qn('w:space'), '0'); e.set(qn('w:color'), color)
         borders.append(e)
-    tblPr.append(borders)
+    return borders
+
+
+def _no_table_borders(table):
+    _ordered_set(table._tbl.tblPr, _make_borders(LINE, 4, 'none'))
+
+
+def _table_borders(table, color=LINE, sz=4):
+    _ordered_set(table._tbl.tblPr, _make_borders(color, sz, 'single'))
 
 
 def _table_full_width(table):
     tblPr = table._tbl.tblPr
     w = OxmlElement('w:tblW'); w.set(qn('w:type'), 'pct'); w.set(qn('w:w'), '5000')
-    tblPr.append(w)
+    _ordered_set(tblPr, w)
+    lay = OxmlElement('w:tblLayout'); lay.set(qn('w:type'), 'fixed')
+    _ordered_set(tblPr, lay)
     table.autofit = False
-    # fixed layout for predictable column widths
-    lay = OxmlElement('w:tblLayout'); lay.set(qn('w:type'), 'fixed'); tblPr.append(lay)
 
 
 def _set_col_widths(table, widths_cm):
-    """Set explicit grid + cell widths in twips and pin the table to the
-    summed width with a fixed layout, so it can never exceed the page."""
-    EMU_PER_CM = 360000
+    """Set explicit grid + cell widths in twips and pin the table to the summed
+    width with a fixed layout (schema-ordered, de-duplicated), so it can never
+    exceed the page and opens cleanly in Microsoft Word."""
     TWIPS_PER_CM = 567
     total_tw = int(round(sum(widths_cm) * TWIPS_PER_CM))
     tbl = table._tbl
     tblPr = tbl.tblPr
-    # table total width (dxa) + fixed layout
-    for tag in ('w:tblW', 'w:tblLayout'):
-        ex = tblPr.find(qn(tag))
-        if ex is not None:
-            tblPr.remove(ex)
     w = OxmlElement('w:tblW'); w.set(qn('w:type'), 'dxa'); w.set(qn('w:w'), str(total_tw))
-    tblPr.append(w)
-    lay = OxmlElement('w:tblLayout'); lay.set(qn('w:type'), 'fixed'); tblPr.append(lay)
+    _ordered_set(tblPr, w)
+    lay = OxmlElement('w:tblLayout'); lay.set(qn('w:type'), 'fixed')
+    _ordered_set(tblPr, lay)
     table.autofit = False
-    # rebuild tblGrid
-    grid = tbl.find(qn('w:tblGrid'))
-    if grid is not None:
-        tbl.remove(grid)
+    # rebuild tblGrid (must sit directly after tblPr)
+    for g in tbl.findall(qn('w:tblGrid')):
+        tbl.remove(g)
     grid = OxmlElement('w:tblGrid')
     for wcm in widths_cm:
         gc = OxmlElement('w:gridCol'); gc.set(qn('w:w'), str(int(round(wcm * TWIPS_PER_CM))))
         grid.append(gc)
     tblPr.addnext(grid)
-    # per-cell widths
     for j, wcm in enumerate(widths_cm):
         for row in table.rows:
             if j < len(row.cells):
