@@ -1,24 +1,49 @@
 import { useEffect, useState } from "react";
 import "@/App.css";
 import axios from "axios";
-import { FileText, Download, FileType, ShieldCheck, Loader2, ExternalLink } from "lucide-react";
+import {
+  FileText, Download, FileType, ShieldCheck, Loader2, ExternalLink, CheckCircle2, AlertCircle,
+} from "lucide-react";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
 
 const DocCard = ({ doc }) => {
-  const download = (filename) => {
-    const url = `${API}/documents/download/${encodeURIComponent(filename)}`;
-    // Robust download that also works when opened in a new browser tab.
-    const a = document.createElement("a");
-    a.href = url;
-    a.download = filename;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+  const [busy, setBusy] = useState(null);
+  const [status, setStatus] = useState(null); // {type:'ok'|'err', text}
+
+  const download = async (f) => {
+    setBusy(f.ext);
+    setStatus(null);
+    try {
+      // Fetch the bytes and download via a local blob URL — works in any
+      // browser/tab and isn't affected by download/popup blockers.
+      const res = await axios.get(
+        `${API}/documents/download/${encodeURIComponent(f.filename)}`,
+        { responseType: "blob" }
+      );
+      const blob = new Blob([res.data], {
+        type: res.headers["content-type"] || "application/octet-stream",
+      });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = f.filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+      setStatus({ type: "ok", text: `Saved ${f.filename} to your Downloads.` });
+    } catch (e) {
+      setStatus({
+        type: "err",
+        text: "Download failed. Open this page in a new browser tab (button at the top), then try again.",
+      });
+    } finally {
+      setBusy(null);
+    }
   };
+
   return (
     <div
       data-testid={`doc-card-${doc.id}`}
@@ -47,20 +72,50 @@ const DocCard = ({ doc }) => {
             <button
               key={f.ext}
               data-testid={`download-${doc.id}-${f.ext}`}
-              onClick={() => download(f.filename)}
-              className={`inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-semibold transition-all duration-200 active:scale-[0.98] ${
-                f.ext === "docx"
-                  ? "text-white hover:brightness-110"
-                  : "bg-slate-100 text-slate-700 hover:bg-slate-200"
+              onClick={() => download(f)}
+              disabled={busy === f.ext}
+              className={`inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-semibold transition-all duration-200 active:scale-[0.98] disabled:opacity-70 ${
+                f.ext === "docx" ? "text-white hover:brightness-110" : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
               style={f.ext === "docx" ? { backgroundColor: doc.accent } : {}}
             >
-              {f.ext === "docx" ? <Download size={16} /> : <FileType size={16} />}
+              {busy === f.ext ? (
+                <Loader2 size={16} className="animate-spin" />
+              ) : f.ext === "docx" ? (
+                <Download size={16} />
+              ) : (
+                <FileType size={16} />
+              )}
               {f.ext === "docx" ? "Word (.docx)" : "PDF"}
               <span className="text-[11px] font-normal opacity-80">{f.size_kb} KB</span>
             </button>
           ))}
+          {doc.formats.map((f) => (
+            <a
+              key={`open-${f.ext}`}
+              href={`${API}/documents/download/${encodeURIComponent(f.filename)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid={`open-${doc.id}-${f.ext}`}
+              className="inline-flex items-center gap-1.5 rounded-lg px-2.5 py-2 text-xs font-medium text-slate-500 hover:text-slate-800 hover:bg-slate-100 transition-colors"
+              title={`Open ${f.ext.toUpperCase()} in a new tab`}
+            >
+              <ExternalLink size={13} /> open {f.ext}
+            </a>
+          ))}
         </div>
+
+        {status && (
+          <div
+            data-testid={`status-${doc.id}`}
+            className={`mt-3 flex items-start gap-2 text-[12.5px] rounded-lg px-3 py-2 ${
+              status.type === "ok" ? "bg-emerald-50 text-emerald-800" : "bg-red-50 text-red-700"
+            }`}
+          >
+            {status.type === "ok" ? <CheckCircle2 size={15} className="mt-px shrink-0" /> : <AlertCircle size={15} className="mt-px shrink-0" />}
+            <span>{status.text}</span>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -75,13 +130,12 @@ const Home = () => {
     axios
       .get(`${API}/documents`)
       .then((res) => setDocs(res.data.documents || []))
-      .catch((e) => setError("Could not load documents."))
+      .catch(() => setError("Could not load documents."))
       .finally(() => setLoading(false));
   }, []);
 
   return (
     <div className="min-h-screen bg-slate-50" data-testid="document-centre">
-      {/* Header */}
       <header className="bg-[#0B2A45] text-white">
         <div className="max-w-5xl mx-auto px-6 py-10">
           <div className="flex items-center gap-2 text-[#62c7f0] text-sm font-semibold tracking-wide">
@@ -95,16 +149,15 @@ const Home = () => {
         </div>
       </header>
 
-      {/* Body */}
       <main className="max-w-5xl mx-auto px-6 py-10">
         <div
           data-testid="open-new-tab-banner"
           className="mb-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3"
         >
           <p className="text-[13.5px] text-amber-900">
-            <span className="font-semibold">Downloads not working?</span> The preview window inside the
-            chat can block file downloads. Open this page in its own browser tab, then the buttons will
-            download normally.
+            <span className="font-semibold">Best results:</span> open this page in its own browser tab,
+            then click a button — the file saves straight to your Downloads. Each card also has a small
+            “open” link to view the file in a new tab.
           </p>
           <a
             href={window.location.href}
@@ -116,6 +169,7 @@ const Home = () => {
             <ExternalLink size={16} /> Open in a new tab
           </a>
         </div>
+
         {loading && (
           <div className="flex items-center gap-2 text-slate-500" data-testid="loading-state">
             <Loader2 className="animate-spin" size={18} /> Loading documents…
@@ -135,9 +189,8 @@ const Home = () => {
         )}
 
         <div className="mt-10 rounded-xl border border-slate-200 bg-white p-5 text-[13.5px] text-slate-600">
-          <p className="font-semibold text-slate-800 mb-1">Tip: editing the Word files</p>
-          When you open the new wording in Microsoft Word, the table of contents page numbers and footer
-          numbers are already set. To keep the whole project (including these files), use the
+          <p className="font-semibold text-slate-800 mb-1">Keeping the files</p>
+          To keep the whole project (including these documents) in your own GitHub, use the
           <span className="font-semibold text-slate-800"> “Save to GitHub” </span>
           option in the chat input and download them from your repository.
         </div>
