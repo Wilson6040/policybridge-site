@@ -141,3 +141,53 @@ no restrictions softened.
 - Regenerated all three deliverables (docx+PDF) — Full Comparison 17pp, Gap-Fill 16pp, QA 6pp —
   in /app/deliverables and /app/backend/deliverables (same filenames; Document Centre auto-serves).
 - Status: COMPLETE — all five competitors analysed; layout verified by render.
+
+
+---
+## Update (round 6) — Master Policy wording polish — Feb 2026
+- **New requirement** (user message): Take the user-edited
+  `TMHCC_Media_Combined_0526_FINAL_amended.docx` master wording and (a) remove
+  red text, (b) verify heading colours, (c) reformat the Contents page (fix
+  column misalignment, bold only the literal "Section N:" labels, swap the
+  dot-leader approach for something cleaner), (d) remove blank pages, while
+  (e) preserving all hyperlinks AND producing a PDF copy whose links remain
+  clickable.
+- **Chosen Contents layout (Option B)**: borderless two-column-feel with thin
+  TMHCC-blue row dividers, bold "Section N:" in TMHCC navy, page numbers
+  right-aligned in TMHCC blue. Implemented via right-aligned tab stops (table
+  approach was abandoned because LibreOffice + 2-column body section
+  squeezed it to half-width).
+- **Implementation** (single script `/app/work/master/rebuild.py`):
+  1. Strip red — converts every live `<w:color val="E20033">` (TMHCC magenta)
+     and `<w:color val="FF0000">` to `000000`, skipping `<w:rPrChange>` so
+     tracked-change history is preserved (162 runs converted).
+  2. Replace the 33 raw TOC paragraphs (with broken dot-leaders + a manually
+     pasted `…………` on Section 15) with 26 polished paragraphs using
+     `<w:hyperlink w:anchor="tocpg_N">` element form, a right tab at 9900 twips,
+     bold-TMHCC-navy "Section N:" prefix, page number in bold TMHCC-blue,
+     and a thin blue `pBdr` bottom border.
+  3. Bracket the Contents page in a `cols=1, type=nextPage` section so the
+     full A4 width is usable (the document body is otherwise `cols=2`).
+  4. Remove 22 empty filler paragraphs between TOC and "Introduction" plus
+     the redundant `<w:br w:type="page"/>` paragraph (saved ≥1 blank page).
+  5. Two-pass build: pass 1 produces a draft PDF; we then auto-detect each
+     heading's real PDF page (heading-sized span >= 13pt, blob-joined across
+     spans to survive multi-run headings); pass 2 rebuilds the docx with the
+     corrected printed page numbers (Section 1 was claiming 25 → actually 23,
+     Section 15 claiming 105 → actually 103, etc.).
+  6. **Hyperlink retention in PDF** — LibreOffice's PDF export does NOT
+     emit clickable Goto link annotations for Word internal-bookmark hyperlinks
+     (known limitation; the original `_amended.pdf` also lacks them). We
+     post-process with PyMuPDF (`insert_link`) to add a clickable Goto
+     annotation on each TOC row covering the full row, pointing at the
+     re-detected heading page. Final PDF has 26 TOC Goto links + 5 external
+     URI/mailto links + 875 outline bookmarks.
+- **Deliverables** (in `/app/backend/deliverables` and `/app/work/master`):
+  - `TMHCC_Media_Combined_0526_FINAL_polished.docx`  (1.78 MB, 4045 paragraphs, opens cleanly in Word/LibreOffice)
+  - `TMHCC_Media_Combined_0526_FINAL_polished.pdf`   (1.66 MB, 126 pages)
+- **Document Centre** — backend `DOCUMENTS` entry id `wording` updated to
+  serve the polished file (title now "Final New Wording (0526) — Polished").
+  The original `_amended` file remains in deliverables for archival.
+- **Status:** COMPLETE — Contents page renders cleanly, page numbers are
+  correct, all 26 TOC links navigate to the right pages in the PDF, no red
+  body text remains, tracked-change history is intact.

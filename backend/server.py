@@ -113,12 +113,12 @@ DOCUMENTS = [
     },
     {
         "id": "wording",
-        "title": "Final New Wording (0526)",
-        "subtitle": "Amended policy wording",
-        "description": "The full TMHCC Media Combined 0526 wording with a two-column hyperlinked "
-                       "table of contents, accurate page numbers, footer pagination, the CyberGuard "
-                       "section restyled and the Section 16 / Information Technology references corrected.",
-        "base": "TMHCC_Media_Combined_0526_FINAL_amended",
+        "title": "Final New Wording (0526) — Polished",
+        "subtitle": "Master policy wording",
+        "description": "The full TMHCC Media Combined 0526 wording with red text removed, a clean two-column hyperlinked "
+                       "Contents page (bold 'Section N:' labels, right-aligned page numbers, accurate destinations), "
+                       "no blank pages, and a PDF copy that retains all clickable internal navigation.",
+        "base": "TMHCC_Media_Combined_0526_FINAL_polished",
         "accent": "#009CE5",
     },
     {
